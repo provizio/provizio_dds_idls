@@ -6,7 +6,7 @@
 
 module geometry_msgs {
   module msg {
-    typedef double double__36[36];
+    typedef double double36[36];
     @verbatim (language="comment", text=
       "This expresses velocity in free space with uncertainty.")
     struct TwistWithCovariance {
@@ -17,7 +17,7 @@ module geometry_msgs {
         "The orientation parameters use a fixed-axis representation." "\n"
         "In order, the parameters are:" "\n"
         "(x, y, z, rotation about X axis, rotation about Y axis, rotation about Z axis)")
-      double__36 covariance;
+      double36 covariance;
     };
   };
 };

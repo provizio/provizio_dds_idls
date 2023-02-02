@@ -2,6 +2,8 @@
 // with input from builtin_interfaces/msg/Time.msg
 // generated code does not contain a copyright notice
 
+#ifndef __ros__builtin_interfaces__msg__Time__idl
+#define __ros__builtin_interfaces__msg__Time__idl
 
 module builtin_interfaces {
   module msg {
@@ -19,3 +21,5 @@ module builtin_interfaces {
     };
   };
 };
+
+#endif // __ros__builtin_interfaces__msg__Time__idl

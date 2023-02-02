@@ -14,7 +14,7 @@ module nav_msgs {
     @verbatim (language="comment", text=
       "The current map hosted by this map service.")
     struct GetMap_Response {
-      nav_msgs::msg::OccupancyGrid map;
+      nav_msgs::msg::OccupancyGrid the_map;
     };
   };
 };

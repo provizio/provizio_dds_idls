@@ -25,7 +25,7 @@ module nav_msgs {
     struct LoadMap_Response {
       @verbatim (language="comment", text=
         "Returned map is only valid if result equals RESULT_SUCCESS")
-      nav_msgs::msg::OccupancyGrid map;
+      nav_msgs::msg::OccupancyGrid the_map;
 
       uint8 result;
     };

@@ -4,6 +4,9 @@
 
 #include "geometry_msgs/msg/Vector3.idl"
 
+#ifndef __ros__geometry_msgs__msg__Accel__idl
+#define __ros__geometry_msgs__msg__Accel__idl
+
 module geometry_msgs {
   module msg {
     @verbatim (language="comment", text=
@@ -15,3 +18,5 @@ module geometry_msgs {
     };
   };
 };
+
+#endif // __ros__geometry_msgs__msg__Accel__idl

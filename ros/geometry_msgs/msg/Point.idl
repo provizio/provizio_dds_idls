@@ -2,6 +2,8 @@
 // with input from geometry_msgs/msg/Point.msg
 // generated code does not contain a copyright notice
 
+#ifndef __ros__geometry_msgs__msg__Point__idl
+#define __ros__geometry_msgs__msg__Point__idl
 
 module geometry_msgs {
   module msg {
@@ -16,3 +18,5 @@ module geometry_msgs {
     };
   };
 };
+
+#endif // __ros__geometry_msgs__msg__Point__idl

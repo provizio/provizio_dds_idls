@@ -2,6 +2,8 @@
 // with input from rmw_dds_common/msg/Gid.msg
 // generated code does not contain a copyright notice
 
+#ifndef __ros__rmw_dds_common__msg__Gid__idl
+#define __ros__rmw_dds_common__msg__Gid__idl
 
 module rmw_dds_common {
   module msg {
@@ -11,3 +13,5 @@ module rmw_dds_common {
     };
   };
 };
+
+#endif // __ros__rmw_dds_common__msg__Gid__idl

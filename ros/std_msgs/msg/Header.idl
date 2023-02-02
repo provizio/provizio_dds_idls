@@ -2,6 +2,9 @@
 // with input from std_msgs/msg/Header.msg
 // generated code does not contain a copyright notice
 
+#ifndef __ros__std_msgs__msg__Header__idl
+#define __ros__std_msgs__msg__Header__idl
+
 #include "builtin_interfaces/msg/Time.idl"
 
 module std_msgs {
@@ -21,3 +24,5 @@ module std_msgs {
     };
   };
 };
+
+#endif // __ros__std_msgs__msg__Header__idl
