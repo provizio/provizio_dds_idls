@@ -37,7 +37,7 @@ using namespace eprosima::fastcdr::exception;
 
 rmw_dds_common::msg::Gid::Gid()
 {
-    // m_data com.eprosima.idl.parser.typecode.AliasTypeCode@42cf6349
+    // m_data com.eprosima.idl.parser.typecode.AliasTypeCode@60591e1b
     memset(&m_data, 0, (24) * 1);
 
 }

@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 rosbag2_interfaces::msg::WriteSplitEvent::WriteSplitEvent()
 {
-    // m_closed_file com.eprosima.idl.parser.typecode.StringTypeCode@4985cbcb
+    // m_closed_file com.eprosima.idl.parser.typecode.StringTypeCode@6a988392
     m_closed_file ="";
-    // m_opened_file com.eprosima.idl.parser.typecode.StringTypeCode@72f46e16
+    // m_opened_file com.eprosima.idl.parser.typecode.StringTypeCode@1d71006f
     m_opened_file ="";
 
 }

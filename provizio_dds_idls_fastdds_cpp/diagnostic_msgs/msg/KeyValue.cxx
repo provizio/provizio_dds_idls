@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 diagnostic_msgs::msg::KeyValue::KeyValue()
 {
-    // m_key com.eprosima.idl.parser.typecode.StringTypeCode@38bb9d7a
+    // m_key com.eprosima.idl.parser.typecode.StringTypeCode@8deb645
     m_key ="";
-    // m_value com.eprosima.idl.parser.typecode.StringTypeCode@1e8ab90f
+    // m_value com.eprosima.idl.parser.typecode.StringTypeCode@7dd611c8
     m_value ="";
 
 }

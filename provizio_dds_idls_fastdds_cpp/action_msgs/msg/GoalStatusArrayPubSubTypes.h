@@ -20,8 +20,8 @@
  */
 
 
-#ifndef _FAST_DDS_GENERATED_ACTIONLIB_MSGS_MSG_GOALSTATUSARRAY_PUBSUBTYPES_H_
-#define _FAST_DDS_GENERATED_ACTIONLIB_MSGS_MSG_GOALSTATUSARRAY_PUBSUBTYPES_H_
+#ifndef _FAST_DDS_GENERATED_ACTION_MSGS_MSG_GOALSTATUSARRAY_PUBSUBTYPES_H_
+#define _FAST_DDS_GENERATED_ACTION_MSGS_MSG_GOALSTATUSARRAY_PUBSUBTYPES_H_
 
 #include <fastdds/dds/topic/TopicDataType.hpp>
 #include <fastrtps/utils/md5.h>
@@ -33,7 +33,7 @@
     Generated GoalStatusArray is not compatible with current installed Fast DDS. Please, regenerate it with fastddsgen.
 #endif  // GEN_API_VER
 
-namespace actionlib_msgs
+namespace action_msgs
 {
     namespace msg
     {
@@ -104,4 +104,4 @@ namespace actionlib_msgs
     }
 }
 
-#endif // _FAST_DDS_GENERATED_ACTIONLIB_MSGS_MSG_GOALSTATUSARRAY_PUBSUBTYPES_H_
+#endif // _FAST_DDS_GENERATED_ACTION_MSGS_MSG_GOALSTATUSARRAY_PUBSUBTYPES_H_

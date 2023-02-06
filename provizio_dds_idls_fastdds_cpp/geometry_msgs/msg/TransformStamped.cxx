@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::TransformStamped::TransformStamped()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@389a1e34
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@213012a0
 
-    // m_child_frame_id com.eprosima.idl.parser.typecode.StringTypeCode@204b0f07
+    // m_child_frame_id com.eprosima.idl.parser.typecode.StringTypeCode@43a59289
     m_child_frame_id ="";
-    // m_transform com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6f68756d
+    // m_transform com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6c2883b1
 
 
 }

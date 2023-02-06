@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::TimeReference::TimeReference()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4bf324f9
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@48e7b3d2
 
-    // m_time_ref com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4f7c0be3
+    // m_time_ref com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7f4037ed
 
-    // m_source com.eprosima.idl.parser.typecode.StringTypeCode@ca66933
+    // m_source com.eprosima.idl.parser.typecode.StringTypeCode@24e8de5c
     m_source ="";
 
 }

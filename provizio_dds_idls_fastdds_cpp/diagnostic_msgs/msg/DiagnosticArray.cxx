@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 diagnostic_msgs::msg::DiagnosticArray::DiagnosticArray()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3e27aa33
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@2beee7ff
 
-    // m_status com.eprosima.idl.parser.typecode.SequenceTypeCode@2e385cce
+    // m_status com.eprosima.idl.parser.typecode.SequenceTypeCode@5136d012
 
 
 }

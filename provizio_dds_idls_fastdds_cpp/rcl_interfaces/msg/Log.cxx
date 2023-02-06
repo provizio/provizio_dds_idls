@@ -42,19 +42,19 @@ using namespace eprosima::fastcdr::exception;
 
 rcl_interfaces::msg::Log::Log()
 {
-    // m_stamp com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1c7fd41f
+    // m_stamp com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5dd91bca
 
-    // m_level com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3b77a04f
+    // m_level com.eprosima.idl.parser.typecode.PrimitiveTypeCode@40cb698e
     m_level = 0;
-    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@7b324585
+    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@3382f8ae
     m_name ="";
-    // m_msg com.eprosima.idl.parser.typecode.StringTypeCode@2e11485
+    // m_msg com.eprosima.idl.parser.typecode.StringTypeCode@60641ec8
     m_msg ="";
-    // m_file com.eprosima.idl.parser.typecode.StringTypeCode@60dce7ea
+    // m_file com.eprosima.idl.parser.typecode.StringTypeCode@75f65e45
     m_file ="";
-    // m_function com.eprosima.idl.parser.typecode.StringTypeCode@662f5666
+    // m_function com.eprosima.idl.parser.typecode.StringTypeCode@6eeade6c
     m_function ="";
-    // m_line com.eprosima.idl.parser.typecode.PrimitiveTypeCode@fd8294b
+    // m_line com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4a891c97
     m_line = 0;
 
 }

@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 rosbag2_interfaces::srv::SetRate_Request::SetRate_Request()
 {
-    // m_rate com.eprosima.idl.parser.typecode.PrimitiveTypeCode@73511076
+    // m_rate com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4816c290
     m_rate = 0.0;
 
 }
@@ -182,7 +182,7 @@ void rosbag2_interfaces::srv::SetRate_Request::serializeKey(
 
 rosbag2_interfaces::srv::SetRate_Response::SetRate_Response()
 {
-    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7927bd9f
+    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4940809c
     m_success = false;
 
 }

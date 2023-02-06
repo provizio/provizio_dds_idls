@@ -20,8 +20,8 @@
  */
 
 
-#ifndef _FAST_DDS_GENERATED_ACTIONLIB_MSGS_MSG_GOALSTATUS_PUBSUBTYPES_H_
-#define _FAST_DDS_GENERATED_ACTIONLIB_MSGS_MSG_GOALSTATUS_PUBSUBTYPES_H_
+#ifndef _FAST_DDS_GENERATED_ACTION_MSGS_MSG_GOALSTATUS_PUBSUBTYPES_H_
+#define _FAST_DDS_GENERATED_ACTION_MSGS_MSG_GOALSTATUS_PUBSUBTYPES_H_
 
 #include <fastdds/dds/topic/TopicDataType.hpp>
 #include <fastrtps/utils/md5.h>
@@ -33,15 +33,12 @@
     Generated GoalStatus is not compatible with current installed Fast DDS. Please, regenerate it with fastddsgen.
 #endif  // GEN_API_VER
 
-namespace actionlib_msgs
+namespace action_msgs
 {
     namespace msg
     {
         namespace GoalStatus_Constants
         {
-
-
-
 
 
 
@@ -88,7 +85,7 @@ namespace actionlib_msgs
         #ifdef TOPIC_DATA_TYPE_API_HAS_IS_BOUNDED
             eProsima_user_DllExport inline bool is_bounded() const override
             {
-                return false;
+                return true;
             }
 
         #endif  // TOPIC_DATA_TYPE_API_HAS_IS_BOUNDED
@@ -96,7 +93,7 @@ namespace actionlib_msgs
         #ifdef TOPIC_DATA_TYPE_API_HAS_IS_PLAIN
             eProsima_user_DllExport inline bool is_plain() const override
             {
-                return false;
+                return true;
             }
 
         #endif  // TOPIC_DATA_TYPE_API_HAS_IS_PLAIN
@@ -105,8 +102,8 @@ namespace actionlib_msgs
             eProsima_user_DllExport inline bool construct_sample(
                     void* memory) const override
             {
-                (void)memory;
-                return false;
+                new (memory) GoalStatus();
+                return true;
             }
 
         #endif  // TOPIC_DATA_TYPE_API_HAS_CONSTRUCT_SAMPLE
@@ -117,4 +114,4 @@ namespace actionlib_msgs
     }
 }
 
-#endif // _FAST_DDS_GENERATED_ACTIONLIB_MSGS_MSG_GOALSTATUS_PUBSUBTYPES_H_
+#endif // _FAST_DDS_GENERATED_ACTION_MSGS_MSG_GOALSTATUS_PUBSUBTYPES_H_

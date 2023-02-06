@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 lifecycle_msgs::srv::ChangeState_Request::ChangeState_Request()
 {
-    // m_transition com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3b00856b
+    // m_transition com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1fdf1c5
 
 
 }
@@ -189,7 +189,7 @@ void lifecycle_msgs::srv::ChangeState_Request::serializeKey(
 
 lifecycle_msgs::srv::ChangeState_Response::ChangeState_Response()
 {
-    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3016fd5e
+    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2d96543c
     m_success = false;
 
 }

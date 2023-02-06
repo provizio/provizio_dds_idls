@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 trajectory_msgs::msg::JointTrajectory::JointTrajectory()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6e495b48
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4c4f4365
 
-    // m_joint_names com.eprosima.idl.parser.typecode.SequenceTypeCode@1d61c6dc
+    // m_joint_names com.eprosima.idl.parser.typecode.SequenceTypeCode@acf859d
 
-    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@53c68ce
+    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@6df3e44c
 
 
 }

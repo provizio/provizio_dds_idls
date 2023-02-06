@@ -39,17 +39,17 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::InteractiveMarkerUpdate::InteractiveMarkerUpdate()
 {
-    // m_server_id com.eprosima.idl.parser.typecode.StringTypeCode@75769ab0
+    // m_server_id com.eprosima.idl.parser.typecode.StringTypeCode@7159a5cd
     m_server_id ="";
-    // m_seq_num com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6869a3b3
+    // m_seq_num com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4f966719
     m_seq_num = 0;
-    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6ab4ba9f
+    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@18ac53e8
     m_type = 0;
-    // m_markers com.eprosima.idl.parser.typecode.SequenceTypeCode@27ace0b1
+    // m_markers com.eprosima.idl.parser.typecode.SequenceTypeCode@4ca8dbfa
 
-    // m_poses com.eprosima.idl.parser.typecode.SequenceTypeCode@664e5dee
+    // m_poses com.eprosima.idl.parser.typecode.SequenceTypeCode@7063686f
 
-    // m_erases com.eprosima.idl.parser.typecode.SequenceTypeCode@431f1eaf
+    // m_erases com.eprosima.idl.parser.typecode.SequenceTypeCode@c3177d5
 
 
 }

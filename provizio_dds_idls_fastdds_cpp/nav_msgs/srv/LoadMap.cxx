@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 nav_msgs::srv::LoadMap_Request::LoadMap_Request()
 {
-    // m_map_url com.eprosima.idl.parser.typecode.StringTypeCode@655f7ea
+    // m_map_url com.eprosima.idl.parser.typecode.StringTypeCode@6e6d5d29
     m_map_url ="";
 
 }
@@ -194,9 +194,9 @@ void nav_msgs::srv::LoadMap_Request::serializeKey(
 
 nav_msgs::srv::LoadMap_Response::LoadMap_Response()
 {
-    // m_the_map com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@549949be
+    // m_the_map com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@48a12036
 
-    // m_result com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4b3a45f1
+    // m_result com.eprosima.idl.parser.typecode.PrimitiveTypeCode@bf1ec20
     m_result = 0;
 
 }

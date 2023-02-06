@@ -36,19 +36,19 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::Image::Image()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@70543cae
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6c24f61d
 
-    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@350567f1
+    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4537880f
     m_height = 0;
-    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1a5b7394
+    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@14292d71
     m_width = 0;
-    // m_encoding com.eprosima.idl.parser.typecode.StringTypeCode@26f75d9c
+    // m_encoding com.eprosima.idl.parser.typecode.StringTypeCode@48e74764
     m_encoding ="";
-    // m_is_bigendian com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7717b4a0
+    // m_is_bigendian com.eprosima.idl.parser.typecode.PrimitiveTypeCode@338d47b
     m_is_bigendian = 0;
-    // m_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@69b37f5c
+    // m_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7a3643e3
     m_step = 0;
-    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@28b5662d
+    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@2729bb71
 
 
 }

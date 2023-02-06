@@ -34,166 +34,113 @@ using namespace eprosima::fastcdr::exception;
 
 #include <utility>
 
-actionlib_msgs::msg::GoalStatusArray::GoalStatusArray()
+action_msgs::msg::GoalStatusArray::GoalStatusArray()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@581ac8a8
-
-    // m_status_list com.eprosima.idl.parser.typecode.SequenceTypeCode@6d4e5011
+    // m_status_list com.eprosima.idl.parser.typecode.SequenceTypeCode@5b12b668
 
 
 }
 
-actionlib_msgs::msg::GoalStatusArray::~GoalStatusArray()
+action_msgs::msg::GoalStatusArray::~GoalStatusArray()
 {
-
-
 }
 
-actionlib_msgs::msg::GoalStatusArray::GoalStatusArray(
+action_msgs::msg::GoalStatusArray::GoalStatusArray(
         const GoalStatusArray& x)
 {
-    m_header = x.m_header;
     m_status_list = x.m_status_list;
 }
 
-actionlib_msgs::msg::GoalStatusArray::GoalStatusArray(
+action_msgs::msg::GoalStatusArray::GoalStatusArray(
         GoalStatusArray&& x) noexcept 
 {
-    m_header = std::move(x.m_header);
     m_status_list = std::move(x.m_status_list);
 }
 
-actionlib_msgs::msg::GoalStatusArray& actionlib_msgs::msg::GoalStatusArray::operator =(
+action_msgs::msg::GoalStatusArray& action_msgs::msg::GoalStatusArray::operator =(
         const GoalStatusArray& x)
 {
 
-    m_header = x.m_header;
     m_status_list = x.m_status_list;
 
     return *this;
 }
 
-actionlib_msgs::msg::GoalStatusArray& actionlib_msgs::msg::GoalStatusArray::operator =(
+action_msgs::msg::GoalStatusArray& action_msgs::msg::GoalStatusArray::operator =(
         GoalStatusArray&& x) noexcept
 {
 
-    m_header = std::move(x.m_header);
     m_status_list = std::move(x.m_status_list);
 
     return *this;
 }
 
-bool actionlib_msgs::msg::GoalStatusArray::operator ==(
+bool action_msgs::msg::GoalStatusArray::operator ==(
         const GoalStatusArray& x) const
 {
 
-    return (m_header == x.m_header && m_status_list == x.m_status_list);
+    return (m_status_list == x.m_status_list);
 }
 
-bool actionlib_msgs::msg::GoalStatusArray::operator !=(
+bool action_msgs::msg::GoalStatusArray::operator !=(
         const GoalStatusArray& x) const
 {
     return !(*this == x);
 }
 
-size_t actionlib_msgs::msg::GoalStatusArray::getMaxCdrSerializedSize(
+size_t action_msgs::msg::GoalStatusArray::getMaxCdrSerializedSize(
         size_t current_alignment)
 {
     size_t initial_alignment = current_alignment;
 
 
-    current_alignment += std_msgs::msg::Header::getMaxCdrSerializedSize(current_alignment);
     current_alignment += 4 + eprosima::fastcdr::Cdr::alignment(current_alignment, 4);
 
 
     for(size_t a = 0; a < 100; ++a)
     {
-        current_alignment += actionlib_msgs::msg::GoalStatus::getMaxCdrSerializedSize(current_alignment);}
-
+        current_alignment += action_msgs::msg::GoalStatus::getMaxCdrSerializedSize(current_alignment);}
 
     return current_alignment - initial_alignment;
 }
 
-size_t actionlib_msgs::msg::GoalStatusArray::getCdrSerializedSize(
-        const actionlib_msgs::msg::GoalStatusArray& data,
+size_t action_msgs::msg::GoalStatusArray::getCdrSerializedSize(
+        const action_msgs::msg::GoalStatusArray& data,
         size_t current_alignment)
 {
     (void)data;
     size_t initial_alignment = current_alignment;
 
 
-    current_alignment += std_msgs::msg::Header::getCdrSerializedSize(data.header(), current_alignment);
     current_alignment += 4 + eprosima::fastcdr::Cdr::alignment(current_alignment, 4);
 
 
     for(size_t a = 0; a < data.status_list().size(); ++a)
     {
-        current_alignment += actionlib_msgs::msg::GoalStatus::getCdrSerializedSize(data.status_list().at(a), current_alignment);}
-
+        current_alignment += action_msgs::msg::GoalStatus::getCdrSerializedSize(data.status_list().at(a), current_alignment);}
 
     return current_alignment - initial_alignment;
 }
 
-void actionlib_msgs::msg::GoalStatusArray::serialize(
+void action_msgs::msg::GoalStatusArray::serialize(
         eprosima::fastcdr::Cdr& scdr) const
 {
 
-    scdr << m_header;
     scdr << m_status_list;
-
 }
 
-void actionlib_msgs::msg::GoalStatusArray::deserialize(
+void action_msgs::msg::GoalStatusArray::deserialize(
         eprosima::fastcdr::Cdr& dcdr)
 {
 
-    dcdr >> m_header;
-    dcdr >> m_status_list;
-}
+    dcdr >> m_status_list;}
 
-/*!
- * @brief This function copies the value in member header
- * @param _header New value to be copied in member header
- */
-void actionlib_msgs::msg::GoalStatusArray::header(
-        const std_msgs::msg::Header& _header)
-{
-    m_header = _header;
-}
-
-/*!
- * @brief This function moves the value in member header
- * @param _header New value to be moved in member header
- */
-void actionlib_msgs::msg::GoalStatusArray::header(
-        std_msgs::msg::Header&& _header)
-{
-    m_header = std::move(_header);
-}
-
-/*!
- * @brief This function returns a constant reference to member header
- * @return Constant reference to member header
- */
-const std_msgs::msg::Header& actionlib_msgs::msg::GoalStatusArray::header() const
-{
-    return m_header;
-}
-
-/*!
- * @brief This function returns a reference to member header
- * @return Reference to member header
- */
-std_msgs::msg::Header& actionlib_msgs::msg::GoalStatusArray::header()
-{
-    return m_header;
-}
 /*!
  * @brief This function copies the value in member status_list
  * @param _status_list New value to be copied in member status_list
  */
-void actionlib_msgs::msg::GoalStatusArray::status_list(
-        const std::vector<actionlib_msgs::msg::GoalStatus>& _status_list)
+void action_msgs::msg::GoalStatusArray::status_list(
+        const std::vector<action_msgs::msg::GoalStatus>& _status_list)
 {
     m_status_list = _status_list;
 }
@@ -202,8 +149,8 @@ void actionlib_msgs::msg::GoalStatusArray::status_list(
  * @brief This function moves the value in member status_list
  * @param _status_list New value to be moved in member status_list
  */
-void actionlib_msgs::msg::GoalStatusArray::status_list(
-        std::vector<actionlib_msgs::msg::GoalStatus>&& _status_list)
+void action_msgs::msg::GoalStatusArray::status_list(
+        std::vector<action_msgs::msg::GoalStatus>&& _status_list)
 {
     m_status_list = std::move(_status_list);
 }
@@ -212,7 +159,7 @@ void actionlib_msgs::msg::GoalStatusArray::status_list(
  * @brief This function returns a constant reference to member status_list
  * @return Constant reference to member status_list
  */
-const std::vector<actionlib_msgs::msg::GoalStatus>& actionlib_msgs::msg::GoalStatusArray::status_list() const
+const std::vector<action_msgs::msg::GoalStatus>& action_msgs::msg::GoalStatusArray::status_list() const
 {
     return m_status_list;
 }
@@ -221,33 +168,31 @@ const std::vector<actionlib_msgs::msg::GoalStatus>& actionlib_msgs::msg::GoalSta
  * @brief This function returns a reference to member status_list
  * @return Reference to member status_list
  */
-std::vector<actionlib_msgs::msg::GoalStatus>& actionlib_msgs::msg::GoalStatusArray::status_list()
+std::vector<action_msgs::msg::GoalStatus>& action_msgs::msg::GoalStatusArray::status_list()
 {
     return m_status_list;
 }
 
-size_t actionlib_msgs::msg::GoalStatusArray::getKeyMaxCdrSerializedSize(
+size_t action_msgs::msg::GoalStatusArray::getKeyMaxCdrSerializedSize(
         size_t current_alignment)
 {
     size_t current_align = current_alignment;
 
 
 
-
-
     return current_align;
 }
 
-bool actionlib_msgs::msg::GoalStatusArray::isKeyDefined()
+bool action_msgs::msg::GoalStatusArray::isKeyDefined()
 {
     return false;
 }
 
-void actionlib_msgs::msg::GoalStatusArray::serializeKey(
+void action_msgs::msg::GoalStatusArray::serializeKey(
         eprosima::fastcdr::Cdr& scdr) const
 {
     (void) scdr;
-      
+     
 }
 
 

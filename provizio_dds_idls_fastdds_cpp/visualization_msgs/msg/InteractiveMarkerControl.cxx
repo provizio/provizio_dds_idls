@@ -50,21 +50,21 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::InteractiveMarkerControl::InteractiveMarkerControl()
 {
-    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@77881b7a
+    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@44f23927
     m_name ="";
-    // m_orientation com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@59ac77f9
+    // m_orientation com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@59cde35
 
-    // m_orientation_mode com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6d92e327
+    // m_orientation_mode com.eprosima.idl.parser.typecode.PrimitiveTypeCode@43de9fc9
     m_orientation_mode = 0;
-    // m_interaction_mode com.eprosima.idl.parser.typecode.PrimitiveTypeCode@76134251
+    // m_interaction_mode com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2d3eb1ea
     m_interaction_mode = 0;
-    // m_always_visible com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4177d422
+    // m_always_visible com.eprosima.idl.parser.typecode.PrimitiveTypeCode@78508e6b
     m_always_visible = false;
-    // m_markers com.eprosima.idl.parser.typecode.SequenceTypeCode@7bde704a
+    // m_markers com.eprosima.idl.parser.typecode.SequenceTypeCode@1bde9a22
 
-    // m_independent_marker_orientation com.eprosima.idl.parser.typecode.PrimitiveTypeCode@12f3fcd
+    // m_independent_marker_orientation com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2cc97e47
     m_independent_marker_orientation = false;
-    // m_description com.eprosima.idl.parser.typecode.StringTypeCode@6dc2e473
+    // m_description com.eprosima.idl.parser.typecode.StringTypeCode@74a03bd5
     m_description ="";
 
 }

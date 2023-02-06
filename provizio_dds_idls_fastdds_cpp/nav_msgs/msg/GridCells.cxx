@@ -36,13 +36,13 @@ using namespace eprosima::fastcdr::exception;
 
 nav_msgs::msg::GridCells::GridCells()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@60975100
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5f6722d3
 
-    // m_cell_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1253e7cb
+    // m_cell_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2c532cd8
     m_cell_width = 0.0;
-    // m_cell_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2d36e77e
+    // m_cell_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@294e5088
     m_cell_height = 0.0;
-    // m_cells com.eprosima.idl.parser.typecode.SequenceTypeCode@61c9c3fd
+    // m_cells com.eprosima.idl.parser.typecode.SequenceTypeCode@51972dc7
 
 
 }

@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::FluidPressure::FluidPressure()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@32f61a31
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@2449cff7
 
-    // m_fluid_pressure com.eprosima.idl.parser.typecode.PrimitiveTypeCode@f5c79a6
+    // m_fluid_pressure com.eprosima.idl.parser.typecode.PrimitiveTypeCode@42a9a63e
     m_fluid_pressure = 0.0;
-    // m_variance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@669253b7
+    // m_variance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@62da83ed
     m_variance = 0.0;
 
 }

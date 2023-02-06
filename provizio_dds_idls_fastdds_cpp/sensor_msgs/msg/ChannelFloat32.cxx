@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::ChannelFloat32::ChannelFloat32()
 {
-    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@4fd7b79
+    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@4aa3fc9a
     m_name ="";
-    // m_values com.eprosima.idl.parser.typecode.SequenceTypeCode@5103eea2
+    // m_values com.eprosima.idl.parser.typecode.SequenceTypeCode@70f4f89e
 
 
 }

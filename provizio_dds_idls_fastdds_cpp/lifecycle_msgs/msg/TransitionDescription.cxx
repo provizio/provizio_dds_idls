@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 lifecycle_msgs::msg::TransitionDescription::TransitionDescription()
 {
-    // m_transition com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4640195a
+    // m_transition com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3520963d
 
-    // m_start_state com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@70d77826
+    // m_start_state com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@388d14e
 
-    // m_goal_state com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@70d77826
+    // m_goal_state com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@388d14e
 
 
 }

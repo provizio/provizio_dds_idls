@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 lifecycle_msgs::srv::GetState_Request::GetState_Request()
 {
-    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1d2bd371
+    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3243b914
     m_structure_needs_at_least_one_member = 0;
 
 }
@@ -182,7 +182,7 @@ void lifecycle_msgs::srv::GetState_Request::serializeKey(
 
 lifecycle_msgs::srv::GetState_Response::GetState_Response()
 {
-    // m_current_state com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@44040454
+    // m_current_state com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@241e8ea6
 
 
 }

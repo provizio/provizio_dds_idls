@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 std_msgs::msg::Float32::Float32()
 {
-    // m_data com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2b97cc1f
+    // m_data com.eprosima.idl.parser.typecode.PrimitiveTypeCode@34cf5a97
     m_data = 0.0;
 
 }

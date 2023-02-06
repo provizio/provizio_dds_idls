@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 std_srvs::srv::SetBool_Request::SetBool_Request()
 {
-    // m_data com.eprosima.idl.parser.typecode.PrimitiveTypeCode@47547132
+    // m_data com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1f193686
     m_data = false;
 
 }
@@ -182,9 +182,9 @@ void std_srvs::srv::SetBool_Request::serializeKey(
 
 std_srvs::srv::SetBool_Response::SetBool_Response()
 {
-    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@655523dd
+    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@31e72cbc
     m_success = false;
-    // m_message com.eprosima.idl.parser.typecode.StringTypeCode@6f7e336b
+    // m_message com.eprosima.idl.parser.typecode.StringTypeCode@5fad41be
     m_message ="";
 
 }

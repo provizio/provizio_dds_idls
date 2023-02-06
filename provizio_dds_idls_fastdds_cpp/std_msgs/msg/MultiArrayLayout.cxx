@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 std_msgs::msg::MultiArrayLayout::MultiArrayLayout()
 {
-    // m_dim com.eprosima.idl.parser.typecode.SequenceTypeCode@74bdfa0b
+    // m_dim com.eprosima.idl.parser.typecode.SequenceTypeCode@49122853
 
-    // m_data_offset com.eprosima.idl.parser.typecode.PrimitiveTypeCode@68a5aadd
+    // m_data_offset com.eprosima.idl.parser.typecode.PrimitiveTypeCode@e97f115
     m_data_offset = 0;
 
 }

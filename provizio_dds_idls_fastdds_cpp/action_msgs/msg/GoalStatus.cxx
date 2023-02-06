@@ -42,174 +42,158 @@ using namespace eprosima::fastcdr::exception;
 
 
 
-
-
-
-actionlib_msgs::msg::GoalStatus::GoalStatus()
+action_msgs::msg::GoalStatus::GoalStatus()
 {
-    // m_goal_id com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@72825400
+    // m_goal_info com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@151ef57f
 
-    // m_status com.eprosima.idl.parser.typecode.PrimitiveTypeCode@19ee1ae6
+    // m_status com.eprosima.idl.parser.typecode.PrimitiveTypeCode@10895b16
     m_status = 0;
-    // m_text com.eprosima.idl.parser.typecode.StringTypeCode@5f117b3d
-    m_text ="";
 
 }
 
-actionlib_msgs::msg::GoalStatus::~GoalStatus()
+action_msgs::msg::GoalStatus::~GoalStatus()
 {
 
 
-
 }
 
-actionlib_msgs::msg::GoalStatus::GoalStatus(
+action_msgs::msg::GoalStatus::GoalStatus(
         const GoalStatus& x)
 {
-    m_goal_id = x.m_goal_id;
+    m_goal_info = x.m_goal_info;
     m_status = x.m_status;
-    m_text = x.m_text;
 }
 
-actionlib_msgs::msg::GoalStatus::GoalStatus(
+action_msgs::msg::GoalStatus::GoalStatus(
         GoalStatus&& x) noexcept 
 {
-    m_goal_id = std::move(x.m_goal_id);
+    m_goal_info = std::move(x.m_goal_info);
     m_status = x.m_status;
-    m_text = std::move(x.m_text);
 }
 
-actionlib_msgs::msg::GoalStatus& actionlib_msgs::msg::GoalStatus::operator =(
+action_msgs::msg::GoalStatus& action_msgs::msg::GoalStatus::operator =(
         const GoalStatus& x)
 {
 
-    m_goal_id = x.m_goal_id;
+    m_goal_info = x.m_goal_info;
     m_status = x.m_status;
-    m_text = x.m_text;
 
     return *this;
 }
 
-actionlib_msgs::msg::GoalStatus& actionlib_msgs::msg::GoalStatus::operator =(
+action_msgs::msg::GoalStatus& action_msgs::msg::GoalStatus::operator =(
         GoalStatus&& x) noexcept
 {
 
-    m_goal_id = std::move(x.m_goal_id);
+    m_goal_info = std::move(x.m_goal_info);
     m_status = x.m_status;
-    m_text = std::move(x.m_text);
 
     return *this;
 }
 
-bool actionlib_msgs::msg::GoalStatus::operator ==(
+bool action_msgs::msg::GoalStatus::operator ==(
         const GoalStatus& x) const
 {
 
-    return (m_goal_id == x.m_goal_id && m_status == x.m_status && m_text == x.m_text);
+    return (m_goal_info == x.m_goal_info && m_status == x.m_status);
 }
 
-bool actionlib_msgs::msg::GoalStatus::operator !=(
+bool action_msgs::msg::GoalStatus::operator !=(
         const GoalStatus& x) const
 {
     return !(*this == x);
 }
 
-size_t actionlib_msgs::msg::GoalStatus::getMaxCdrSerializedSize(
+size_t action_msgs::msg::GoalStatus::getMaxCdrSerializedSize(
         size_t current_alignment)
 {
     size_t initial_alignment = current_alignment;
 
 
-    current_alignment += actionlib_msgs::msg::GoalID::getMaxCdrSerializedSize(current_alignment);
+    current_alignment += action_msgs::msg::GoalInfo::getMaxCdrSerializedSize(current_alignment);
     current_alignment += 1 + eprosima::fastcdr::Cdr::alignment(current_alignment, 1);
 
-
-    current_alignment += 4 + eprosima::fastcdr::Cdr::alignment(current_alignment, 4) + 255 + 1;
 
 
     return current_alignment - initial_alignment;
 }
 
-size_t actionlib_msgs::msg::GoalStatus::getCdrSerializedSize(
-        const actionlib_msgs::msg::GoalStatus& data,
+size_t action_msgs::msg::GoalStatus::getCdrSerializedSize(
+        const action_msgs::msg::GoalStatus& data,
         size_t current_alignment)
 {
     (void)data;
     size_t initial_alignment = current_alignment;
 
 
-    current_alignment += actionlib_msgs::msg::GoalID::getCdrSerializedSize(data.goal_id(), current_alignment);
+    current_alignment += action_msgs::msg::GoalInfo::getCdrSerializedSize(data.goal_info(), current_alignment);
     current_alignment += 1 + eprosima::fastcdr::Cdr::alignment(current_alignment, 1);
 
-
-    current_alignment += 4 + eprosima::fastcdr::Cdr::alignment(current_alignment, 4) + data.text().size() + 1;
 
 
     return current_alignment - initial_alignment;
 }
 
-void actionlib_msgs::msg::GoalStatus::serialize(
+void action_msgs::msg::GoalStatus::serialize(
         eprosima::fastcdr::Cdr& scdr) const
 {
 
-    scdr << m_goal_id;
+    scdr << m_goal_info;
     scdr << m_status;
-    scdr << m_text.c_str();
 
 }
 
-void actionlib_msgs::msg::GoalStatus::deserialize(
+void action_msgs::msg::GoalStatus::deserialize(
         eprosima::fastcdr::Cdr& dcdr)
 {
 
-    dcdr >> m_goal_id;
+    dcdr >> m_goal_info;
     dcdr >> m_status;
-    dcdr >> m_text;
 }
 
 /*!
- * @brief This function copies the value in member goal_id
- * @param _goal_id New value to be copied in member goal_id
+ * @brief This function copies the value in member goal_info
+ * @param _goal_info New value to be copied in member goal_info
  */
-void actionlib_msgs::msg::GoalStatus::goal_id(
-        const actionlib_msgs::msg::GoalID& _goal_id)
+void action_msgs::msg::GoalStatus::goal_info(
+        const action_msgs::msg::GoalInfo& _goal_info)
 {
-    m_goal_id = _goal_id;
+    m_goal_info = _goal_info;
 }
 
 /*!
- * @brief This function moves the value in member goal_id
- * @param _goal_id New value to be moved in member goal_id
+ * @brief This function moves the value in member goal_info
+ * @param _goal_info New value to be moved in member goal_info
  */
-void actionlib_msgs::msg::GoalStatus::goal_id(
-        actionlib_msgs::msg::GoalID&& _goal_id)
+void action_msgs::msg::GoalStatus::goal_info(
+        action_msgs::msg::GoalInfo&& _goal_info)
 {
-    m_goal_id = std::move(_goal_id);
+    m_goal_info = std::move(_goal_info);
 }
 
 /*!
- * @brief This function returns a constant reference to member goal_id
- * @return Constant reference to member goal_id
+ * @brief This function returns a constant reference to member goal_info
+ * @return Constant reference to member goal_info
  */
-const actionlib_msgs::msg::GoalID& actionlib_msgs::msg::GoalStatus::goal_id() const
+const action_msgs::msg::GoalInfo& action_msgs::msg::GoalStatus::goal_info() const
 {
-    return m_goal_id;
+    return m_goal_info;
 }
 
 /*!
- * @brief This function returns a reference to member goal_id
- * @return Reference to member goal_id
+ * @brief This function returns a reference to member goal_info
+ * @return Reference to member goal_info
  */
-actionlib_msgs::msg::GoalID& actionlib_msgs::msg::GoalStatus::goal_id()
+action_msgs::msg::GoalInfo& action_msgs::msg::GoalStatus::goal_info()
 {
-    return m_goal_id;
+    return m_goal_info;
 }
 /*!
  * @brief This function sets a value in member status
  * @param _status New value for member status
  */
-void actionlib_msgs::msg::GoalStatus::status(
-        uint8_t _status)
+void action_msgs::msg::GoalStatus::status(
+        int8_t _status)
 {
     m_status = _status;
 }
@@ -218,7 +202,7 @@ void actionlib_msgs::msg::GoalStatus::status(
  * @brief This function returns the value of member status
  * @return Value of member status
  */
-uint8_t actionlib_msgs::msg::GoalStatus::status() const
+int8_t action_msgs::msg::GoalStatus::status() const
 {
     return m_status;
 }
@@ -227,50 +211,13 @@ uint8_t actionlib_msgs::msg::GoalStatus::status() const
  * @brief This function returns a reference to member status
  * @return Reference to member status
  */
-uint8_t& actionlib_msgs::msg::GoalStatus::status()
+int8_t& action_msgs::msg::GoalStatus::status()
 {
     return m_status;
 }
 
-/*!
- * @brief This function copies the value in member text
- * @param _text New value to be copied in member text
- */
-void actionlib_msgs::msg::GoalStatus::text(
-        const std::string& _text)
-{
-    m_text = _text;
-}
 
-/*!
- * @brief This function moves the value in member text
- * @param _text New value to be moved in member text
- */
-void actionlib_msgs::msg::GoalStatus::text(
-        std::string&& _text)
-{
-    m_text = std::move(_text);
-}
-
-/*!
- * @brief This function returns a constant reference to member text
- * @return Constant reference to member text
- */
-const std::string& actionlib_msgs::msg::GoalStatus::text() const
-{
-    return m_text;
-}
-
-/*!
- * @brief This function returns a reference to member text
- * @return Reference to member text
- */
-std::string& actionlib_msgs::msg::GoalStatus::text()
-{
-    return m_text;
-}
-
-size_t actionlib_msgs::msg::GoalStatus::getKeyMaxCdrSerializedSize(
+size_t action_msgs::msg::GoalStatus::getKeyMaxCdrSerializedSize(
         size_t current_alignment)
 {
     size_t current_align = current_alignment;
@@ -279,20 +226,19 @@ size_t actionlib_msgs::msg::GoalStatus::getKeyMaxCdrSerializedSize(
 
 
 
-
     return current_align;
 }
 
-bool actionlib_msgs::msg::GoalStatus::isKeyDefined()
+bool action_msgs::msg::GoalStatus::isKeyDefined()
 {
     return false;
 }
 
-void actionlib_msgs::msg::GoalStatus::serializeKey(
+void action_msgs::msg::GoalStatus::serializeKey(
         eprosima::fastcdr::Cdr& scdr) const
 {
     (void) scdr;
-       
+      
 }
 
 

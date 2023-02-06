@@ -36,21 +36,21 @@ using namespace eprosima::fastcdr::exception;
 
 composition_interfaces::srv::LoadNode_Request::LoadNode_Request()
 {
-    // m_package_name com.eprosima.idl.parser.typecode.StringTypeCode@1b11171f
+    // m_package_name com.eprosima.idl.parser.typecode.StringTypeCode@21b2e768
     m_package_name ="";
-    // m_plugin_name com.eprosima.idl.parser.typecode.StringTypeCode@1151e434
+    // m_plugin_name com.eprosima.idl.parser.typecode.StringTypeCode@57250572
     m_plugin_name ="";
-    // m_node_name com.eprosima.idl.parser.typecode.StringTypeCode@2dc54ad4
+    // m_node_name com.eprosima.idl.parser.typecode.StringTypeCode@5609159b
     m_node_name ="";
-    // m_node_namespace com.eprosima.idl.parser.typecode.StringTypeCode@4659191b
+    // m_node_namespace com.eprosima.idl.parser.typecode.StringTypeCode@2118cddf
     m_node_namespace ="";
-    // m_log_level com.eprosima.idl.parser.typecode.PrimitiveTypeCode@55634720
+    // m_log_level com.eprosima.idl.parser.typecode.PrimitiveTypeCode@17a7f733
     m_log_level = 0;
-    // m_remap_rules com.eprosima.idl.parser.typecode.SequenceTypeCode@4b0d79fc
+    // m_remap_rules com.eprosima.idl.parser.typecode.SequenceTypeCode@68567e20
 
-    // m_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@4c1909a3
+    // m_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@76ed1b7c
 
-    // m_extra_arguments com.eprosima.idl.parser.typecode.SequenceTypeCode@428640fa
+    // m_extra_arguments com.eprosima.idl.parser.typecode.SequenceTypeCode@11fc564b
 
 
 }
@@ -574,13 +574,13 @@ void composition_interfaces::srv::LoadNode_Request::serializeKey(
 
 composition_interfaces::srv::LoadNode_Response::LoadNode_Response()
 {
-    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4efac082
+    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@672872e1
     m_success = false;
-    // m_error_message com.eprosima.idl.parser.typecode.StringTypeCode@13fd2ccd
+    // m_error_message com.eprosima.idl.parser.typecode.StringTypeCode@32910148
     m_error_message ="";
-    // m_full_node_name com.eprosima.idl.parser.typecode.StringTypeCode@b9b00e0
+    // m_full_node_name com.eprosima.idl.parser.typecode.StringTypeCode@3f56875e
     m_full_node_name ="";
-    // m_unique_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@506ae4d4
+    // m_unique_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2b4bac49
     m_unique_id = 0;
 
 }

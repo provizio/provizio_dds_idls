@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::InertiaStamped::InertiaStamped()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1acaf3d
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3b6d844d
 
-    // m_inertia com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6986852
+    // m_inertia com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@36804139
 
 
 }

@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 statistics_msgs::msg::StatisticDataPoint::StatisticDataPoint()
 {
-    // m_data_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@20864cd1
+    // m_data_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2a2b7a35
     m_data_type = 0;
-    // m_data com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5c839677
+    // m_data com.eprosima.idl.parser.typecode.PrimitiveTypeCode@58186f9f
     m_data = 0.0;
 
 }

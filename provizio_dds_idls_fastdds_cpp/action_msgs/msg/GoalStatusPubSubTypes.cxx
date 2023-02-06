@@ -28,12 +28,9 @@
 using SerializedPayload_t = eprosima::fastrtps::rtps::SerializedPayload_t;
 using InstanceHandle_t = eprosima::fastrtps::rtps::InstanceHandle_t;
 
-namespace actionlib_msgs {
+namespace action_msgs {
     namespace msg {
         namespace GoalStatus_Constants {
-
-
-
 
 
 
@@ -45,7 +42,7 @@ namespace actionlib_msgs {
         } //End of namespace GoalStatus_Constants
         GoalStatusPubSubType::GoalStatusPubSubType()
         {
-            setName("actionlib_msgs::msg::dds_::GoalStatus_");
+            setName("action_msgs::msg::dds_::GoalStatus_");
             auto type_size = GoalStatus::getMaxCdrSerializedSize();
             type_size += eprosima::fastcdr::Cdr::alignment(type_size, 4); /* possible submessage alignment */
             m_typeSize = static_cast<uint32_t>(type_size) + 4; /*encapsulation*/
@@ -186,4 +183,4 @@ namespace actionlib_msgs {
 
     } //End of namespace msg
 
-} //End of namespace actionlib_msgs
+} //End of namespace action_msgs

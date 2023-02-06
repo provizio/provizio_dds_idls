@@ -37,7 +37,7 @@ using namespace eprosima::fastcdr::exception;
 
 shape_msgs::msg::MeshTriangle::MeshTriangle()
 {
-    // m_vertex_indices com.eprosima.idl.parser.typecode.AliasTypeCode@55044b34
+    // m_vertex_indices com.eprosima.idl.parser.typecode.AliasTypeCode@5eeee124
     memset(&m_vertex_indices, 0, (3) * 4);
 
 }

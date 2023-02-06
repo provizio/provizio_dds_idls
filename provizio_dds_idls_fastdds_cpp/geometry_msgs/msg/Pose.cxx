@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::Pose::Pose()
 {
-    // m_position com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@78bce1c4
+    // m_position com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3f2ef402
 
-    // m_orientation com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@189e96af
+    // m_orientation com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@14bf9fd0
 
 
 }

@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 shape_msgs::msg::Mesh::Mesh()
 {
-    // m_triangles com.eprosima.idl.parser.typecode.SequenceTypeCode@54acff7d
+    // m_triangles com.eprosima.idl.parser.typecode.SequenceTypeCode@32639b12
 
-    // m_vertices com.eprosima.idl.parser.typecode.SequenceTypeCode@7bc9e6ab
+    // m_vertices com.eprosima.idl.parser.typecode.SequenceTypeCode@20d11153
 
 
 }

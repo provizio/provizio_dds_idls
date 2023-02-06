@@ -43,7 +43,7 @@ using namespace eprosima::fastcdr::exception;
 
 statistics_msgs::msg::StatisticDataType::StatisticDataType()
 {
-    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1a411233
+    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@781a9412
     m_structure_needs_at_least_one_member = 0;
 
 }

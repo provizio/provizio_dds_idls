@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::AccelWithCovarianceStamped::AccelWithCovarianceStamped()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7dfb0c0f
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7674f035
 
-    // m_accel com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@626abbd0
+    // m_accel com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@69e153c5
 
 
 }

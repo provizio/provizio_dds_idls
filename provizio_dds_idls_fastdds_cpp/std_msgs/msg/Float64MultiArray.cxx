@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 std_msgs::msg::Float64MultiArray::Float64MultiArray()
 {
-    // m_layout com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@30404dba
+    // m_layout com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@2abc224d
 
-    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@6050462a
+    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@13cd7ea5
 
 
 }

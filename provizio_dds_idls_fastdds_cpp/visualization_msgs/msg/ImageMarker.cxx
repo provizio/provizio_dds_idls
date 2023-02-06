@@ -44,31 +44,31 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::ImageMarker::ImageMarker()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@563a89b5
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@62ce72ff
 
-    // m_ns com.eprosima.idl.parser.typecode.StringTypeCode@506dcf55
+    // m_ns com.eprosima.idl.parser.typecode.StringTypeCode@58a63629
     m_ns ="";
-    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@270b6b5e
+    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7de843ef
     m_id = 0;
-    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7e94d093
+    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2e1af49b
     m_type = 0;
-    // m_action com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7c6189d5
+    // m_action com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3fd2322d
     m_action = 0;
-    // m_position com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4248e66b
+    // m_position com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@56ac5c80
 
-    // m_scale com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3e6534e7
+    // m_scale com.eprosima.idl.parser.typecode.PrimitiveTypeCode@69e49a81
     m_scale = 0.0;
-    // m_outline_color com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@66ad7bf0
+    // m_outline_color com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1023150a
 
-    // m_filled com.eprosima.idl.parser.typecode.PrimitiveTypeCode@167279d1
+    // m_filled com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3ece1e79
     m_filled = 0;
-    // m_fill_color com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@66ad7bf0
+    // m_fill_color com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1023150a
 
-    // m_lifetime com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@138caeca
+    // m_lifetime com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@ab20d7c
 
-    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@4d96250
+    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@474fae39
 
-    // m_outline_colors com.eprosima.idl.parser.typecode.SequenceTypeCode@9a6fbc0
+    // m_outline_colors com.eprosima.idl.parser.typecode.SequenceTypeCode@4f4c789f
 
 
 }

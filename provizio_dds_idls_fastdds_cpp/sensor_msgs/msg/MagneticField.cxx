@@ -37,11 +37,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::MagneticField::MagneticField()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@51671b08
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3d829787
 
-    // m_magnetic_field com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@15051a0
+    // m_magnetic_field com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@71652c98
 
-    // m_magnetic_field_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@1162410a
+    // m_magnetic_field_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@51bde877
     memset(&m_magnetic_field_covariance, 0, (9) * 8);
 
 }

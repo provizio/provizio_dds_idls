@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::Joy::Joy()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@19868320
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3c8bdd5b
 
-    // m_axes com.eprosima.idl.parser.typecode.SequenceTypeCode@50b0bc4c
+    // m_axes com.eprosima.idl.parser.typecode.SequenceTypeCode@29d2d081
 
-    // m_buttons com.eprosima.idl.parser.typecode.SequenceTypeCode@c20be82
+    // m_buttons com.eprosima.idl.parser.typecode.SequenceTypeCode@40e4ea87
 
 
 }

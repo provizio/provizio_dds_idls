@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 std_msgs::msg::Char::Char()
 {
-    // m_data com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5b3f3ba0
+    // m_data com.eprosima.idl.parser.typecode.PrimitiveTypeCode@43b0ade
     m_data = 0;
 
 }

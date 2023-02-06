@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 diagnostic_msgs::srv::SelfTest_Request::SelfTest_Request()
 {
-    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@221a3fa4
+    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@759d26fb
     m_structure_needs_at_least_one_member = 0;
 
 }
@@ -182,11 +182,11 @@ void diagnostic_msgs::srv::SelfTest_Request::serializeKey(
 
 diagnostic_msgs::srv::SelfTest_Response::SelfTest_Response()
 {
-    // m_id com.eprosima.idl.parser.typecode.StringTypeCode@3e08ff24
+    // m_id com.eprosima.idl.parser.typecode.StringTypeCode@3c73951
     m_id ="";
-    // m_passed com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4d1c005e
+    // m_passed com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3d5c822d
     m_passed = 0;
-    // m_status com.eprosima.idl.parser.typecode.SequenceTypeCode@8462f31
+    // m_status com.eprosima.idl.parser.typecode.SequenceTypeCode@49c7b90e
 
 
 }

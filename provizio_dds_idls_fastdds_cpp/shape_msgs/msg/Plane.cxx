@@ -37,7 +37,7 @@ using namespace eprosima::fastcdr::exception;
 
 shape_msgs::msg::Plane::Plane()
 {
-    // m_coef com.eprosima.idl.parser.typecode.AliasTypeCode@c3c4c1c
+    // m_coef com.eprosima.idl.parser.typecode.AliasTypeCode@4dd94a58
     memset(&m_coef, 0, (4) * 8);
 
 }

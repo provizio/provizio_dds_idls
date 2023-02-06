@@ -36,15 +36,15 @@ using namespace eprosima::fastcdr::exception;
 
 nav_msgs::msg::MapMetaData::MapMetaData()
 {
-    // m_map_load_time com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3b35798
+    // m_map_load_time com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@599a9cb2
 
-    // m_resolution com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1e00bfe2
+    // m_resolution com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3a1b36a1
     m_resolution = 0.0;
-    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4702e7a5
+    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5e1a986c
     m_width = 0;
-    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6a2d867d
+    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4b55ff0a
     m_height = 0;
-    // m_origin com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@73bb1337
+    // m_origin com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@46a795de
 
 
 }

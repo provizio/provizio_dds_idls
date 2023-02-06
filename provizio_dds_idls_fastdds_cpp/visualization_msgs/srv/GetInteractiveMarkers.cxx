@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::srv::GetInteractiveMarkers_Request::GetInteractiveMarkers_Request()
 {
-    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4d27d9d
+    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2e3f79a2
     m_structure_needs_at_least_one_member = 0;
 
 }
@@ -182,9 +182,9 @@ void visualization_msgs::srv::GetInteractiveMarkers_Request::serializeKey(
 
 visualization_msgs::srv::GetInteractiveMarkers_Response::GetInteractiveMarkers_Response()
 {
-    // m_sequence_number com.eprosima.idl.parser.typecode.PrimitiveTypeCode@28f878a0
+    // m_sequence_number com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1460c81d
     m_sequence_number = 0;
-    // m_markers com.eprosima.idl.parser.typecode.SequenceTypeCode@20411320
+    // m_markers com.eprosima.idl.parser.typecode.SequenceTypeCode@38b5f25
 
 
 }

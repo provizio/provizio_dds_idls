@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::WrenchStamped::WrenchStamped()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@2654635
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6ad3381f
 
-    // m_wrench com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@737a135b
+    // m_wrench com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@53dbe163
 
 
 }

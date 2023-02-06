@@ -37,7 +37,7 @@ using namespace eprosima::fastcdr::exception;
 
 unique_identifier_msgs::msg::UUID::UUID()
 {
-    // m_uuid com.eprosima.idl.parser.typecode.AliasTypeCode@69228e85
+    // m_uuid com.eprosima.idl.parser.typecode.AliasTypeCode@5e2a3040
     memset(&m_uuid, 0, (16) * 1);
 
 }

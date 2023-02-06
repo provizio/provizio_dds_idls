@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 rcl_interfaces::msg::ParameterEventDescriptors::ParameterEventDescriptors()
 {
-    // m_new_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@6bb75258
+    // m_new_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@61884cb1
 
-    // m_changed_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@c260bdc
+    // m_changed_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@75ed9710
 
-    // m_deleted_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@75e01201
+    // m_deleted_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@4fc5e095
 
 
 }

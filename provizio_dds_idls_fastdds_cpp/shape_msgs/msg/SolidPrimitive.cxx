@@ -51,11 +51,11 @@ using namespace eprosima::fastcdr::exception;
 
 shape_msgs::msg::SolidPrimitive::SolidPrimitive()
 {
-    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@22101c80
+    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1f86099a
     m_type = 0;
-    // m_dimensions com.eprosima.idl.parser.typecode.SequenceTypeCode@31ff1390
+    // m_dimensions com.eprosima.idl.parser.typecode.SequenceTypeCode@77bb0ab5
 
-    // m_polygon com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@759d81f3
+    // m_polygon com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@f2c488
 
 
 }

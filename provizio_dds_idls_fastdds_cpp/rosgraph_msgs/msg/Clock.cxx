@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 rosgraph_msgs::msg::Clock::Clock()
 {
-    // m_clock com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@23c388c2
+    // m_clock com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1b822fcc
 
 
 }

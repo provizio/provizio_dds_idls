@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::Illuminance::Illuminance()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@22db8f4
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@73393584
 
-    // m_illuminance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2b46a8c1
+    // m_illuminance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@31500940
     m_illuminance = 0.0;
-    // m_variance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1d572e62
+    // m_variance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1827a871
     m_variance = 0.0;
 
 }

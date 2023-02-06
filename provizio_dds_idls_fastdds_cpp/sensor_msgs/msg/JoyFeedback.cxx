@@ -40,11 +40,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::JoyFeedback::JoyFeedback()
 {
-    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@66d3b881
+    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@57e03347
     m_type = 0;
-    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3a45afd4
+    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2edb2f8b
     m_id = 0;
-    // m_intensity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@762a10b6
+    // m_intensity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@733f1395
     m_intensity = 0.0;
 
 }

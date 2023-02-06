@@ -67,9 +67,9 @@ using namespace eprosima::fastcdr::exception;
 
 lifecycle_msgs::msg::Transition::Transition()
 {
-    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6cfbbff7
+    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5d3b58ca
     m_id = 0;
-    // m_label com.eprosima.idl.parser.typecode.StringTypeCode@30db5536
+    // m_label com.eprosima.idl.parser.typecode.StringTypeCode@4e224df5
     m_label ="";
 
 }
