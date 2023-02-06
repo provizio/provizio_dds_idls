@@ -574,13 +574,13 @@ void composition_interfaces::srv::LoadNode_Request::serializeKey(
 
 composition_interfaces::srv::LoadNode_Response::LoadNode_Response()
 {
-    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@48aca48b
+    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4efac082
     m_success = false;
-    // m_error_message com.eprosima.idl.parser.typecode.StringTypeCode@506ae4d4
+    // m_error_message com.eprosima.idl.parser.typecode.StringTypeCode@13fd2ccd
     m_error_message ="";
-    // m_full_node_name com.eprosima.idl.parser.typecode.StringTypeCode@7d4f9aae
+    // m_full_node_name com.eprosima.idl.parser.typecode.StringTypeCode@b9b00e0
     m_full_node_name ="";
-    // m_unique_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@72e5a8e
+    // m_unique_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@506ae4d4
     m_unique_id = 0;
 
 }
