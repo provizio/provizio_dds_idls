@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 nav_msgs::msg::OccupancyGrid::OccupancyGrid()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@415795f3
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7cfb0c4c
 
-    // m_info com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@2fe2965c
+    // m_info com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6b37df8e
 
-    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@3375ebd3
+    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@6b63abdc
 
 
 }

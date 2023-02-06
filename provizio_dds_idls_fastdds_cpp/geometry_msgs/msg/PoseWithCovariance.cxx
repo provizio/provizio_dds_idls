@@ -37,9 +37,9 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::PoseWithCovariance::PoseWithCovariance()
 {
-    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1f15e689
+    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@243bf087
 
-    // m_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@195113de
+    // m_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@3086f480
     memset(&m_covariance, 0, (36) * 8);
 
 }

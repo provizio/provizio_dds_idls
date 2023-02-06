@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::MarkerArray::MarkerArray()
 {
-    // m_markers com.eprosima.idl.parser.typecode.SequenceTypeCode@5533dc72
+    // m_markers com.eprosima.idl.parser.typecode.SequenceTypeCode@6940f685
 
 
 }

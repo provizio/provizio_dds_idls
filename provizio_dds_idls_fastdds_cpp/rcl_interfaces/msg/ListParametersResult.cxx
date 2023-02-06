@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 rcl_interfaces::msg::ListParametersResult::ListParametersResult()
 {
-    // m_names com.eprosima.idl.parser.typecode.SequenceTypeCode@1788cb61
+    // m_names com.eprosima.idl.parser.typecode.SequenceTypeCode@382d71c7
 
-    // m_prefixes com.eprosima.idl.parser.typecode.SequenceTypeCode@16d431b4
+    // m_prefixes com.eprosima.idl.parser.typecode.SequenceTypeCode@2ca54da9
 
 
 }

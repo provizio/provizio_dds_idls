@@ -38,27 +38,27 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::CameraInfo::CameraInfo()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@41e8d917
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@76596288
 
-    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2ae5bd34
+    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6d815fb7
     m_height = 0;
-    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2b3f7704
+    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@51af8049
     m_width = 0;
-    // m_distortion_model com.eprosima.idl.parser.typecode.StringTypeCode@3a16984c
+    // m_distortion_model com.eprosima.idl.parser.typecode.StringTypeCode@376af784
     m_distortion_model ="";
-    // m_d com.eprosima.idl.parser.typecode.SequenceTypeCode@3db1ce78
+    // m_d com.eprosima.idl.parser.typecode.SequenceTypeCode@a9a8ec3
 
-    // m_k com.eprosima.idl.parser.typecode.AliasTypeCode@3a3ad8e7
+    // m_k com.eprosima.idl.parser.typecode.AliasTypeCode@6d0114c0
     memset(&m_k, 0, (9) * 8);
-    // m_r com.eprosima.idl.parser.typecode.AliasTypeCode@3a3ad8e7
+    // m_r com.eprosima.idl.parser.typecode.AliasTypeCode@6d0114c0
     memset(&m_r, 0, (9) * 8);
-    // m_p com.eprosima.idl.parser.typecode.AliasTypeCode@6a6d1ff3
+    // m_p com.eprosima.idl.parser.typecode.AliasTypeCode@40016ce1
     memset(&m_p, 0, (12) * 8);
-    // m_binning_x com.eprosima.idl.parser.typecode.PrimitiveTypeCode@64b73e0a
+    // m_binning_x com.eprosima.idl.parser.typecode.PrimitiveTypeCode@203765b2
     m_binning_x = 0;
-    // m_binning_y com.eprosima.idl.parser.typecode.PrimitiveTypeCode@57c6feea
+    // m_binning_y com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7e050be1
     m_binning_y = 0;
-    // m_roi com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3b57f915
+    // m_roi com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1b47b7f5
 
 
 }

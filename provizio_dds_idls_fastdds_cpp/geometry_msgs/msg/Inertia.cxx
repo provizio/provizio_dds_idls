@@ -36,21 +36,21 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::Inertia::Inertia()
 {
-    // m_m com.eprosima.idl.parser.typecode.PrimitiveTypeCode@62dbe64e
+    // m_m com.eprosima.idl.parser.typecode.PrimitiveTypeCode@12fcc71f
     m_m = 0.0;
-    // m_com com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6cff61fc
+    // m_com com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5679e96b
 
-    // m_ixx com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6e0c6a7a
+    // m_ixx com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3ed7821
     m_ixx = 0.0;
-    // m_ixy com.eprosima.idl.parser.typecode.PrimitiveTypeCode@467b684d
+    // m_ixy com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3bbf841e
     m_ixy = 0.0;
-    // m_ixz com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7baf1f5a
+    // m_ixz com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4f0f7849
     m_ixz = 0.0;
-    // m_iyy com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6cc86152
+    // m_iyy com.eprosima.idl.parser.typecode.PrimitiveTypeCode@56a4f272
     m_iyy = 0.0;
-    // m_iyz com.eprosima.idl.parser.typecode.PrimitiveTypeCode@611a990b
+    // m_iyz com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3ee0b4f7
     m_iyz = 0.0;
-    // m_izz com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7cbeac65
+    // m_izz com.eprosima.idl.parser.typecode.PrimitiveTypeCode@79b84841
     m_izz = 0.0;
 
 }

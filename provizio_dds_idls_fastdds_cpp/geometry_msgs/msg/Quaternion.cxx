@@ -36,13 +36,13 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::Quaternion::Quaternion()
 {
-    // m_x com.eprosima.idl.parser.typecode.PrimitiveTypeCode@8c18bde
+    // m_x com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3f2ef402
     m_x = 0.0;
-    // m_y com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6719f206
+    // m_y com.eprosima.idl.parser.typecode.PrimitiveTypeCode@14bf9fd0
     m_y = 0.0;
-    // m_z com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5ae16aa
+    // m_z com.eprosima.idl.parser.typecode.PrimitiveTypeCode@391e5ffa
     m_z = 0.0;
-    // m_w com.eprosima.idl.parser.typecode.PrimitiveTypeCode@344a065a
+    // m_w com.eprosima.idl.parser.typecode.PrimitiveTypeCode@f4d391c
     m_w = 1.0;
 
 }

@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 trajectory_msgs::msg::MultiDOFJointTrajectory::MultiDOFJointTrajectory()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@36f1046f
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@bc0f53b
 
-    // m_joint_names com.eprosima.idl.parser.typecode.SequenceTypeCode@56d93692
+    // m_joint_names com.eprosima.idl.parser.typecode.SequenceTypeCode@8d7b252
 
-    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@1686f0b4
+    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@4682eba5
 
 
 }

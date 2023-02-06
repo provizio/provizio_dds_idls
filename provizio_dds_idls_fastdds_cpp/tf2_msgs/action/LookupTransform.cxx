@@ -36,19 +36,19 @@ using namespace eprosima::fastcdr::exception;
 
 tf2_msgs::action::LookupTransform_Goal::LookupTransform_Goal()
 {
-    // m_target_frame com.eprosima.idl.parser.typecode.StringTypeCode@7428de63
+    // m_target_frame com.eprosima.idl.parser.typecode.StringTypeCode@7772054c
     m_target_frame ="";
-    // m_source_frame com.eprosima.idl.parser.typecode.StringTypeCode@66f659e6
+    // m_source_frame com.eprosima.idl.parser.typecode.StringTypeCode@2f61f937
     m_source_frame ="";
-    // m_source_time com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4a68135e
+    // m_source_time com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@46866946
 
-    // m_timeout com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@46678e49
+    // m_timeout com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@44de0113
 
-    // m_target_time com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4a68135e
+    // m_target_time com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@46866946
 
-    // m_fixed_frame com.eprosima.idl.parser.typecode.StringTypeCode@748e9b20
+    // m_fixed_frame com.eprosima.idl.parser.typecode.StringTypeCode@236134a1
     m_fixed_frame ="";
-    // m_advanced com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2063c53e
+    // m_advanced com.eprosima.idl.parser.typecode.PrimitiveTypeCode@369c9bb
     m_advanced = false;
 
 }
@@ -486,9 +486,9 @@ void tf2_msgs::action::LookupTransform_Goal::serializeKey(
 
 tf2_msgs::action::LookupTransform_Result::LookupTransform_Result()
 {
-    // m_transform com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@2a9bc08f
+    // m_transform com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@76d05cc9
 
-    // m_error com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@50f40653
+    // m_error com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@42b21d99
 
 
 }
@@ -690,7 +690,7 @@ void tf2_msgs::action::LookupTransform_Result::serializeKey(
 
 tf2_msgs::action::LookupTransform_Feedback::LookupTransform_Feedback()
 {
-    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@50a3d0f6
+    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@68dcfd52
     m_structure_needs_at_least_one_member = 0;
 
 }

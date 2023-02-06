@@ -36,15 +36,15 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::RegionOfInterest::RegionOfInterest()
 {
-    // m_x_offset com.eprosima.idl.parser.typecode.PrimitiveTypeCode@72715e61
+    // m_x_offset com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7c5c20ed
     m_x_offset = 0;
-    // m_y_offset com.eprosima.idl.parser.typecode.PrimitiveTypeCode@68f776ee
+    // m_y_offset com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6113a26f
     m_y_offset = 0;
-    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5a6195b8
+    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2aac8ad7
     m_height = 0;
-    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@8af1c49
+    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6a4a2090
     m_width = 0;
-    // m_do_rectify com.eprosima.idl.parser.typecode.PrimitiveTypeCode@70d5d96b
+    // m_do_rectify com.eprosima.idl.parser.typecode.PrimitiveTypeCode@778c2e7c
     m_do_rectify = false;
 
 }

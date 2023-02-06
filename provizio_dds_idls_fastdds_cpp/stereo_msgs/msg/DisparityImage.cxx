@@ -36,21 +36,21 @@ using namespace eprosima::fastcdr::exception;
 
 stereo_msgs::msg::DisparityImage::DisparityImage()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5c748168
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@67e28be3
 
-    // m_image com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6441c486
+    // m_image com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@e344ad3
 
-    // m_f com.eprosima.idl.parser.typecode.PrimitiveTypeCode@834831b
+    // m_f com.eprosima.idl.parser.typecode.PrimitiveTypeCode@de18f63
     m_f = 0.0;
-    // m_t com.eprosima.idl.parser.typecode.PrimitiveTypeCode@234a8f27
+    // m_t com.eprosima.idl.parser.typecode.PrimitiveTypeCode@108bdbd8
     m_t = 0.0;
-    // m_valid_window com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5b4d25e7
+    // m_valid_window com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6345e7b9
 
-    // m_min_disparity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@31c2affc
+    // m_min_disparity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4f8b4bd0
     m_min_disparity = 0.0;
-    // m_max_disparity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1dc2de84
+    // m_max_disparity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4e904fd5
     m_max_disparity = 0.0;
-    // m_delta_d com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6a0659ac
+    // m_delta_d com.eprosima.idl.parser.typecode.PrimitiveTypeCode@b18c4
     m_delta_d = 0.0;
 
 }

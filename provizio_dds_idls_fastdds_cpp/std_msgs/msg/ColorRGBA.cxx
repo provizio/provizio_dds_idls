@@ -36,13 +36,13 @@ using namespace eprosima::fastcdr::exception;
 
 std_msgs::msg::ColorRGBA::ColorRGBA()
 {
-    // m_r com.eprosima.idl.parser.typecode.PrimitiveTypeCode@58afecfd
+    // m_r com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6be80629
     m_r = 0.0;
-    // m_g com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4d79d187
+    // m_g com.eprosima.idl.parser.typecode.PrimitiveTypeCode@20a4cba7
     m_g = 0.0;
-    // m_b com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3e63bd6b
+    // m_b com.eprosima.idl.parser.typecode.PrimitiveTypeCode@10f10230
     m_b = 0.0;
-    // m_a com.eprosima.idl.parser.typecode.PrimitiveTypeCode@48144f1a
+    // m_a com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3dec769
     m_a = 0.0;
 
 }

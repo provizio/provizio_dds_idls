@@ -34,40 +34,31 @@ using namespace eprosima::fastcdr::exception;
 
 #include <utility>
 
-std_srvs::srv::Empty_Request::Empty_Request()
+std_msgs::msg::Empty::Empty()
 {
-    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@57d0fc89
+    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3e9803c2
     m_structure_needs_at_least_one_member = 0;
 
 }
 
-std_srvs::srv::Empty_Request::~Empty_Request()
+std_msgs::msg::Empty::~Empty()
 {
 }
 
-std_srvs::srv::Empty_Request::Empty_Request(
-        const Empty_Request& x)
-{
-    m_structure_needs_at_least_one_member = x.m_structure_needs_at_least_one_member;
-}
-
-std_srvs::srv::Empty_Request::Empty_Request(
-        Empty_Request&& x) noexcept 
+std_msgs::msg::Empty::Empty(
+        const Empty& x)
 {
     m_structure_needs_at_least_one_member = x.m_structure_needs_at_least_one_member;
 }
 
-std_srvs::srv::Empty_Request& std_srvs::srv::Empty_Request::operator =(
-        const Empty_Request& x)
+std_msgs::msg::Empty::Empty(
+        Empty&& x) noexcept 
 {
-
     m_structure_needs_at_least_one_member = x.m_structure_needs_at_least_one_member;
-
-    return *this;
 }
 
-std_srvs::srv::Empty_Request& std_srvs::srv::Empty_Request::operator =(
-        Empty_Request&& x) noexcept
+std_msgs::msg::Empty& std_msgs::msg::Empty::operator =(
+        const Empty& x)
 {
 
     m_structure_needs_at_least_one_member = x.m_structure_needs_at_least_one_member;
@@ -75,20 +66,29 @@ std_srvs::srv::Empty_Request& std_srvs::srv::Empty_Request::operator =(
     return *this;
 }
 
-bool std_srvs::srv::Empty_Request::operator ==(
-        const Empty_Request& x) const
+std_msgs::msg::Empty& std_msgs::msg::Empty::operator =(
+        Empty&& x) noexcept
+{
+
+    m_structure_needs_at_least_one_member = x.m_structure_needs_at_least_one_member;
+
+    return *this;
+}
+
+bool std_msgs::msg::Empty::operator ==(
+        const Empty& x) const
 {
 
     return (m_structure_needs_at_least_one_member == x.m_structure_needs_at_least_one_member);
 }
 
-bool std_srvs::srv::Empty_Request::operator !=(
-        const Empty_Request& x) const
+bool std_msgs::msg::Empty::operator !=(
+        const Empty& x) const
 {
     return !(*this == x);
 }
 
-size_t std_srvs::srv::Empty_Request::getMaxCdrSerializedSize(
+size_t std_msgs::msg::Empty::getMaxCdrSerializedSize(
         size_t current_alignment)
 {
     size_t initial_alignment = current_alignment;
@@ -100,8 +100,8 @@ size_t std_srvs::srv::Empty_Request::getMaxCdrSerializedSize(
     return current_alignment - initial_alignment;
 }
 
-size_t std_srvs::srv::Empty_Request::getCdrSerializedSize(
-        const std_srvs::srv::Empty_Request& data,
+size_t std_msgs::msg::Empty::getCdrSerializedSize(
+        const std_msgs::msg::Empty& data,
         size_t current_alignment)
 {
     (void)data;
@@ -114,7 +114,7 @@ size_t std_srvs::srv::Empty_Request::getCdrSerializedSize(
     return current_alignment - initial_alignment;
 }
 
-void std_srvs::srv::Empty_Request::serialize(
+void std_msgs::msg::Empty::serialize(
         eprosima::fastcdr::Cdr& scdr) const
 {
 
@@ -122,7 +122,7 @@ void std_srvs::srv::Empty_Request::serialize(
 
 }
 
-void std_srvs::srv::Empty_Request::deserialize(
+void std_msgs::msg::Empty::deserialize(
         eprosima::fastcdr::Cdr& dcdr)
 {
 
@@ -133,7 +133,7 @@ void std_srvs::srv::Empty_Request::deserialize(
  * @brief This function sets a value in member structure_needs_at_least_one_member
  * @param _structure_needs_at_least_one_member New value for member structure_needs_at_least_one_member
  */
-void std_srvs::srv::Empty_Request::structure_needs_at_least_one_member(
+void std_msgs::msg::Empty::structure_needs_at_least_one_member(
         uint8_t _structure_needs_at_least_one_member)
 {
     m_structure_needs_at_least_one_member = _structure_needs_at_least_one_member;
@@ -143,7 +143,7 @@ void std_srvs::srv::Empty_Request::structure_needs_at_least_one_member(
  * @brief This function returns the value of member structure_needs_at_least_one_member
  * @return Value of member structure_needs_at_least_one_member
  */
-uint8_t std_srvs::srv::Empty_Request::structure_needs_at_least_one_member() const
+uint8_t std_msgs::msg::Empty::structure_needs_at_least_one_member() const
 {
     return m_structure_needs_at_least_one_member;
 }
@@ -152,13 +152,13 @@ uint8_t std_srvs::srv::Empty_Request::structure_needs_at_least_one_member() cons
  * @brief This function returns a reference to member structure_needs_at_least_one_member
  * @return Reference to member structure_needs_at_least_one_member
  */
-uint8_t& std_srvs::srv::Empty_Request::structure_needs_at_least_one_member()
+uint8_t& std_msgs::msg::Empty::structure_needs_at_least_one_member()
 {
     return m_structure_needs_at_least_one_member;
 }
 
 
-size_t std_srvs::srv::Empty_Request::getKeyMaxCdrSerializedSize(
+size_t std_msgs::msg::Empty::getKeyMaxCdrSerializedSize(
         size_t current_alignment)
 {
     size_t current_align = current_alignment;
@@ -168,158 +168,12 @@ size_t std_srvs::srv::Empty_Request::getKeyMaxCdrSerializedSize(
     return current_align;
 }
 
-bool std_srvs::srv::Empty_Request::isKeyDefined()
+bool std_msgs::msg::Empty::isKeyDefined()
 {
     return false;
 }
 
-void std_srvs::srv::Empty_Request::serializeKey(
-        eprosima::fastcdr::Cdr& scdr) const
-{
-    (void) scdr;
-     
-}
-
-std_srvs::srv::Empty_Response::Empty_Response()
-{
-    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@58294867
-    m_structure_needs_at_least_one_member = 0;
-
-}
-
-std_srvs::srv::Empty_Response::~Empty_Response()
-{
-}
-
-std_srvs::srv::Empty_Response::Empty_Response(
-        const Empty_Response& x)
-{
-    m_structure_needs_at_least_one_member = x.m_structure_needs_at_least_one_member;
-}
-
-std_srvs::srv::Empty_Response::Empty_Response(
-        Empty_Response&& x) noexcept 
-{
-    m_structure_needs_at_least_one_member = x.m_structure_needs_at_least_one_member;
-}
-
-std_srvs::srv::Empty_Response& std_srvs::srv::Empty_Response::operator =(
-        const Empty_Response& x)
-{
-
-    m_structure_needs_at_least_one_member = x.m_structure_needs_at_least_one_member;
-
-    return *this;
-}
-
-std_srvs::srv::Empty_Response& std_srvs::srv::Empty_Response::operator =(
-        Empty_Response&& x) noexcept
-{
-
-    m_structure_needs_at_least_one_member = x.m_structure_needs_at_least_one_member;
-
-    return *this;
-}
-
-bool std_srvs::srv::Empty_Response::operator ==(
-        const Empty_Response& x) const
-{
-
-    return (m_structure_needs_at_least_one_member == x.m_structure_needs_at_least_one_member);
-}
-
-bool std_srvs::srv::Empty_Response::operator !=(
-        const Empty_Response& x) const
-{
-    return !(*this == x);
-}
-
-size_t std_srvs::srv::Empty_Response::getMaxCdrSerializedSize(
-        size_t current_alignment)
-{
-    size_t initial_alignment = current_alignment;
-
-
-    current_alignment += 1 + eprosima::fastcdr::Cdr::alignment(current_alignment, 1);
-
-
-    return current_alignment - initial_alignment;
-}
-
-size_t std_srvs::srv::Empty_Response::getCdrSerializedSize(
-        const std_srvs::srv::Empty_Response& data,
-        size_t current_alignment)
-{
-    (void)data;
-    size_t initial_alignment = current_alignment;
-
-
-    current_alignment += 1 + eprosima::fastcdr::Cdr::alignment(current_alignment, 1);
-
-
-    return current_alignment - initial_alignment;
-}
-
-void std_srvs::srv::Empty_Response::serialize(
-        eprosima::fastcdr::Cdr& scdr) const
-{
-
-    scdr << m_structure_needs_at_least_one_member;
-
-}
-
-void std_srvs::srv::Empty_Response::deserialize(
-        eprosima::fastcdr::Cdr& dcdr)
-{
-
-    dcdr >> m_structure_needs_at_least_one_member;
-}
-
-/*!
- * @brief This function sets a value in member structure_needs_at_least_one_member
- * @param _structure_needs_at_least_one_member New value for member structure_needs_at_least_one_member
- */
-void std_srvs::srv::Empty_Response::structure_needs_at_least_one_member(
-        uint8_t _structure_needs_at_least_one_member)
-{
-    m_structure_needs_at_least_one_member = _structure_needs_at_least_one_member;
-}
-
-/*!
- * @brief This function returns the value of member structure_needs_at_least_one_member
- * @return Value of member structure_needs_at_least_one_member
- */
-uint8_t std_srvs::srv::Empty_Response::structure_needs_at_least_one_member() const
-{
-    return m_structure_needs_at_least_one_member;
-}
-
-/*!
- * @brief This function returns a reference to member structure_needs_at_least_one_member
- * @return Reference to member structure_needs_at_least_one_member
- */
-uint8_t& std_srvs::srv::Empty_Response::structure_needs_at_least_one_member()
-{
-    return m_structure_needs_at_least_one_member;
-}
-
-
-size_t std_srvs::srv::Empty_Response::getKeyMaxCdrSerializedSize(
-        size_t current_alignment)
-{
-    size_t current_align = current_alignment;
-
-
-
-    return current_align;
-}
-
-bool std_srvs::srv::Empty_Response::isKeyDefined()
-{
-    return false;
-}
-
-void std_srvs::srv::Empty_Response::serializeKey(
+void std_msgs::msg::Empty::serializeKey(
         eprosima::fastcdr::Cdr& scdr) const
 {
     (void) scdr;

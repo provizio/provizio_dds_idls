@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::LaserEcho::LaserEcho()
 {
-    // m_echoes com.eprosima.idl.parser.typecode.SequenceTypeCode@51eb0e84
+    // m_echoes com.eprosima.idl.parser.typecode.SequenceTypeCode@a457c2b
 
 
 }

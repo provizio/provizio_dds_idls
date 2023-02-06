@@ -43,23 +43,23 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::InteractiveMarkerFeedback::InteractiveMarkerFeedback()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@33db72bd
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@14ac77b9
 
-    // m_client_id com.eprosima.idl.parser.typecode.StringTypeCode@7f92b990
+    // m_client_id com.eprosima.idl.parser.typecode.StringTypeCode@3f4cd155
     m_client_id ="";
-    // m_marker_name com.eprosima.idl.parser.typecode.StringTypeCode@31e04b13
+    // m_marker_name com.eprosima.idl.parser.typecode.StringTypeCode@563a89b5
     m_marker_name ="";
-    // m_control_name com.eprosima.idl.parser.typecode.StringTypeCode@6c1832aa
+    // m_control_name com.eprosima.idl.parser.typecode.StringTypeCode@506dcf55
     m_control_name ="";
-    // m_event_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4beeb0e
+    // m_event_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@270b6b5e
     m_event_type = 0;
-    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6e8a9c30
+    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7e94d093
 
-    // m_menu_entry_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5d01ea21
+    // m_menu_entry_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7c6189d5
     m_menu_entry_id = 0;
-    // m_mouse_point com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@70211e49
+    // m_mouse_point com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4248e66b
 
-    // m_mouse_point_valid com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3b46dd8
+    // m_mouse_point_valid com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3e6534e7
     m_mouse_point_valid = false;
 
 }

@@ -44,9 +44,9 @@ using namespace eprosima::fastcdr::exception;
 
 action_msgs::msg::GoalStatus::GoalStatus()
 {
-    // m_goal_info com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@151ef57f
+    // m_goal_info com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@165e389b
 
-    // m_status com.eprosima.idl.parser.typecode.PrimitiveTypeCode@10895b16
+    // m_status com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5c73f672
     m_status = 0;
 
 }

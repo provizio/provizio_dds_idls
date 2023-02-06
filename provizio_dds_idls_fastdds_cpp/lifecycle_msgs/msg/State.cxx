@@ -48,9 +48,9 @@ using namespace eprosima::fastcdr::exception;
 
 lifecycle_msgs::msg::State::State()
 {
-    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2b148329
+    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@416d56f2
     m_id = 0;
-    // m_label com.eprosima.idl.parser.typecode.StringTypeCode@62c72501
+    // m_label com.eprosima.idl.parser.typecode.StringTypeCode@6e31d989
     m_label ="";
 
 }

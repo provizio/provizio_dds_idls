@@ -40,15 +40,15 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::MenuEntry::MenuEntry()
 {
-    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3a239dac
+    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1b10f60e
     m_id = 0;
-    // m_parent_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@759f45f1
+    // m_parent_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4b916cc2
     m_parent_id = 0;
-    // m_title com.eprosima.idl.parser.typecode.StringTypeCode@2573b149
+    // m_title com.eprosima.idl.parser.typecode.StringTypeCode@7f5e9949
     m_title ="";
-    // m_command com.eprosima.idl.parser.typecode.StringTypeCode@1479ed5a
+    // m_command com.eprosima.idl.parser.typecode.StringTypeCode@323eecf8
     m_command ="";
-    // m_command_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3211cc84
+    // m_command_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2e02cc37
     m_command_type = 0;
 
 }

@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::Wrench::Wrench()
 {
-    // m_force com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6df11e91
+    // m_force com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5980fa73
 
-    // m_torque com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6df11e91
+    // m_torque com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5980fa73
 
 
 }
