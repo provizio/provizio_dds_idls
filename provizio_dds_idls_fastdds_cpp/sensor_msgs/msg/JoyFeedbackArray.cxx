@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::JoyFeedbackArray::JoyFeedbackArray()
 {
-    // m_array com.eprosima.idl.parser.typecode.SequenceTypeCode@4acf72b6
+    // m_array com.eprosima.idl.parser.typecode.SequenceTypeCode@25243bc1
 
 
 }

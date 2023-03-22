@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 action_msgs::srv::CancelGoal_Request::CancelGoal_Request()
 {
-    // m_goal_info com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3cd3e762
+    // m_goal_info com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1b6e1eff
 
 
 }
@@ -194,9 +194,9 @@ void action_msgs::srv::CancelGoal_Request::serializeKey(
 
 action_msgs::srv::CancelGoal_Response::CancelGoal_Response()
 {
-    // m_return_code com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1a677343
+    // m_return_code com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6c130c45
     m_return_code = 0;
-    // m_goals_canceling com.eprosima.idl.parser.typecode.SequenceTypeCode@15de0b3c
+    // m_goals_canceling com.eprosima.idl.parser.typecode.SequenceTypeCode@6d3a388c
 
 
 }

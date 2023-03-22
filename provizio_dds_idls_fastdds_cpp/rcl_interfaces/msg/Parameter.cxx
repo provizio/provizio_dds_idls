@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 rcl_interfaces::msg::Parameter::Parameter()
 {
-    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@28d739f1
+    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@451e2fa9
     m_name ="";
-    // m_value com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1c5d3a37
+    // m_value com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@497ed877
 
 
 }

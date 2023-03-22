@@ -44,9 +44,9 @@ using namespace eprosima::fastcdr::exception;
 
 tf2_msgs::msg::TF2Error::TF2Error()
 {
-    // m_error com.eprosima.idl.parser.typecode.PrimitiveTypeCode@222d9d4f
+    // m_error com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1c2096c6
     m_error = 0;
-    // m_error_string com.eprosima.idl.parser.typecode.StringTypeCode@4269aad7
+    // m_error_string com.eprosima.idl.parser.typecode.StringTypeCode@1a89414e
     m_error_string ="";
 
 }

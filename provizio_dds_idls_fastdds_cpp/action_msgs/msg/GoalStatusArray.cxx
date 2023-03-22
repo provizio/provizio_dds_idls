@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 action_msgs::msg::GoalStatusArray::GoalStatusArray()
 {
-    // m_status_list com.eprosima.idl.parser.typecode.SequenceTypeCode@5b12b668
+    // m_status_list com.eprosima.idl.parser.typecode.SequenceTypeCode@69e1dd28
 
 
 }

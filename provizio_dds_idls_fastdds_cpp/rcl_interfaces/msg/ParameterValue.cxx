@@ -36,25 +36,25 @@ using namespace eprosima::fastcdr::exception;
 
 rcl_interfaces::msg::ParameterValue::ParameterValue()
 {
-    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@353c6da1
+    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4a1a412e
     m_type = 0;
-    // m_bool_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@36c07c75
+    // m_bool_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@c568f91
     m_bool_value = false;
-    // m_integer_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6750e381
+    // m_integer_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5fd43e58
     m_integer_value = 0;
-    // m_double_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5d850a25
+    // m_double_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@70d4f672
     m_double_value = 0.0;
-    // m_string_value com.eprosima.idl.parser.typecode.StringTypeCode@b022551
+    // m_string_value com.eprosima.idl.parser.typecode.StringTypeCode@68dfda77
     m_string_value ="";
-    // m_byte_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@3e14d390
+    // m_byte_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@50cdfafa
 
-    // m_bool_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@5eb87338
+    // m_bool_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@2e952845
 
-    // m_integer_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@2b999ee8
+    // m_integer_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@79252c83
 
-    // m_double_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@31ab1e67
+    // m_double_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@6fbf5db2
 
-    // m_string_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@29bbc391
+    // m_string_array_value com.eprosima.idl.parser.typecode.SequenceTypeCode@509a6095
 
 
 }

@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::Polygon::Polygon()
 {
-    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@7cca31fc
+    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@7d28cdcd
 
 
 }

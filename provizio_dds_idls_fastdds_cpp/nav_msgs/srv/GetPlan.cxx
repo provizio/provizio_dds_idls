@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 nav_msgs::srv::GetPlan_Request::GetPlan_Request()
 {
-    // m_start com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@640f11a1
+    // m_start com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@42f33b5d
 
-    // m_goal com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@640f11a1
+    // m_goal com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@42f33b5d
 
-    // m_tolerance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5c10f1c3
+    // m_tolerance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5c8504fd
     m_tolerance = 0.0;
 
 }
@@ -284,7 +284,7 @@ void nav_msgs::srv::GetPlan_Request::serializeKey(
 
 nav_msgs::srv::GetPlan_Response::GetPlan_Response()
 {
-    // m_plan com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7ac2e39b
+    // m_plan com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4b7e96a
 
 
 }

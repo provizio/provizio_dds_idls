@@ -36,15 +36,15 @@ using namespace eprosima::fastcdr::exception;
 
 trajectory_msgs::msg::JointTrajectoryPoint::JointTrajectoryPoint()
 {
-    // m_positions com.eprosima.idl.parser.typecode.SequenceTypeCode@67ceeffd
+    // m_positions com.eprosima.idl.parser.typecode.SequenceTypeCode@9f2376f
 
-    // m_velocities com.eprosima.idl.parser.typecode.SequenceTypeCode@3fc1abf
+    // m_velocities com.eprosima.idl.parser.typecode.SequenceTypeCode@173b1af1
 
-    // m_accelerations com.eprosima.idl.parser.typecode.SequenceTypeCode@72001c71
+    // m_accelerations com.eprosima.idl.parser.typecode.SequenceTypeCode@4a520f05
 
-    // m_effort com.eprosima.idl.parser.typecode.SequenceTypeCode@e7b0bec
+    // m_effort com.eprosima.idl.parser.typecode.SequenceTypeCode@389a1e34
 
-    // m_time_from_start com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1e5aacd9
+    // m_time_from_start com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@204b0f07
 
 
 }

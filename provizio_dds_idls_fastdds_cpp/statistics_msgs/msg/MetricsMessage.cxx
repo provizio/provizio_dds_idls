@@ -36,17 +36,17 @@ using namespace eprosima::fastcdr::exception;
 
 statistics_msgs::msg::MetricsMessage::MetricsMessage()
 {
-    // m_measurement_source_name com.eprosima.idl.parser.typecode.StringTypeCode@58f174d9
+    // m_measurement_source_name com.eprosima.idl.parser.typecode.StringTypeCode@31ff1390
     m_measurement_source_name ="";
-    // m_metrics_source com.eprosima.idl.parser.typecode.StringTypeCode@78c7f9b3
+    // m_metrics_source com.eprosima.idl.parser.typecode.StringTypeCode@759d81f3
     m_metrics_source ="";
-    // m_unit com.eprosima.idl.parser.typecode.StringTypeCode@6f8d7714
+    // m_unit com.eprosima.idl.parser.typecode.StringTypeCode@781a9412
     m_unit ="";
-    // m_window_start com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1e6b9a95
+    // m_window_start com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5a4c638d
 
-    // m_window_stop com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1e6b9a95
+    // m_window_stop com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5a4c638d
 
-    // m_statistics com.eprosima.idl.parser.typecode.SequenceTypeCode@4d6f623d
+    // m_statistics com.eprosima.idl.parser.typecode.SequenceTypeCode@13e698c7
 
 
 }

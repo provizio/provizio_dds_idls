@@ -45,13 +45,13 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::PointField::PointField()
 {
-    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@3d8d970e
+    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@1d8e9d3e
     m_name ="";
-    // m_offset com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2fac80a8
+    // m_offset com.eprosima.idl.parser.typecode.PrimitiveTypeCode@360d41d0
     m_offset = 0;
-    // m_datatype com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6987a133
+    // m_datatype com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4586a8aa
     m_datatype = 0;
-    // m_count com.eprosima.idl.parser.typecode.PrimitiveTypeCode@50778bde
+    // m_count com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3dc82e6a
     m_count = 0;
 
 }

@@ -36,25 +36,25 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::LaserScan::LaserScan()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3fc08eec
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3b718392
 
-    // m_angle_min com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5cad8b7d
+    // m_angle_min com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6d2260db
     m_angle_min = 0.0;
-    // m_angle_max com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7b02e036
+    // m_angle_max com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1f2d2181
     m_angle_max = 0.0;
-    // m_angle_increment com.eprosima.idl.parser.typecode.PrimitiveTypeCode@25243bc1
+    // m_angle_increment com.eprosima.idl.parser.typecode.PrimitiveTypeCode@49bf29c6
     m_angle_increment = 0.0;
-    // m_time_increment com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1e287667
+    // m_time_increment com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7ee55e70
     m_time_increment = 0.0;
-    // m_scan_time com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2e6ee0bc
+    // m_scan_time com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3fcdcf
     m_scan_time = 0.0;
-    // m_range_min com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4201a617
+    // m_range_min com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7668d560
     m_range_min = 0.0;
-    // m_range_max com.eprosima.idl.parser.typecode.PrimitiveTypeCode@467f77a5
+    // m_range_max com.eprosima.idl.parser.typecode.PrimitiveTypeCode@46292372
     m_range_max = 0.0;
-    // m_ranges com.eprosima.idl.parser.typecode.SequenceTypeCode@1bb9aa43
+    // m_ranges com.eprosima.idl.parser.typecode.SequenceTypeCode@126be319
 
-    // m_intensities com.eprosima.idl.parser.typecode.SequenceTypeCode@420bc288
+    // m_intensities com.eprosima.idl.parser.typecode.SequenceTypeCode@6c44052e
 
 
 }

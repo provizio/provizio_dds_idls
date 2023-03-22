@@ -58,37 +58,37 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::BatteryState::BatteryState()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3670f00
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@16afbd92
 
-    // m_voltage com.eprosima.idl.parser.typecode.PrimitiveTypeCode@452e26d0
+    // m_voltage com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2c5d601e
     m_voltage = 0.0;
-    // m_temperature com.eprosima.idl.parser.typecode.PrimitiveTypeCode@46ab18da
+    // m_temperature com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7fe083b1
     m_temperature = 0.0;
-    // m_current com.eprosima.idl.parser.typecode.PrimitiveTypeCode@790174f2
+    // m_current com.eprosima.idl.parser.typecode.PrimitiveTypeCode@23c388c2
     m_current = 0.0;
-    // m_charge com.eprosima.idl.parser.typecode.PrimitiveTypeCode@42257bdd
+    // m_charge com.eprosima.idl.parser.typecode.PrimitiveTypeCode@486be205
     m_charge = 0.0;
-    // m_capacity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7689ddef
+    // m_capacity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@f713686
     m_capacity = 0.0;
-    // m_design_capacity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@687a762c
+    // m_design_capacity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@74f7d1d2
     m_design_capacity = 0.0;
-    // m_percentage com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1a2e2935
+    // m_percentage com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4b4dd216
     m_percentage = 0.0;
-    // m_power_supply_status com.eprosima.idl.parser.typecode.PrimitiveTypeCode@733c423e
+    // m_power_supply_status com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5ca17ab0
     m_power_supply_status = 0;
-    // m_power_supply_health com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4b629f13
+    // m_power_supply_health com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5a62b2a4
     m_power_supply_health = 0;
-    // m_power_supply_technology com.eprosima.idl.parser.typecode.PrimitiveTypeCode@70925b45
+    // m_power_supply_technology com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1051817b
     m_power_supply_technology = 0;
-    // m_present com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1b9ea3e3
+    // m_present com.eprosima.idl.parser.typecode.PrimitiveTypeCode@35293c05
     m_present = false;
-    // m_cell_voltage com.eprosima.idl.parser.typecode.SequenceTypeCode@aa22f1c
+    // m_cell_voltage com.eprosima.idl.parser.typecode.SequenceTypeCode@620aa4ea
 
-    // m_cell_temperature com.eprosima.idl.parser.typecode.SequenceTypeCode@55e7a35c
+    // m_cell_temperature com.eprosima.idl.parser.typecode.SequenceTypeCode@2db2dd9d
 
-    // m_location com.eprosima.idl.parser.typecode.StringTypeCode@37cd92d6
+    // m_location com.eprosima.idl.parser.typecode.StringTypeCode@3174cb09
     m_location ="";
-    // m_serial_number com.eprosima.idl.parser.typecode.StringTypeCode@5922ae77
+    // m_serial_number com.eprosima.idl.parser.typecode.StringTypeCode@4d411036
     m_serial_number ="";
 
 }

@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 rosbag2_interfaces::srv::Snapshot_Request::Snapshot_Request()
 {
-    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5db99216
+    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@24a1c17f
     m_structure_needs_at_least_one_member = 0;
 
 }
@@ -182,7 +182,7 @@ void rosbag2_interfaces::srv::Snapshot_Request::serializeKey(
 
 rosbag2_interfaces::srv::Snapshot_Response::Snapshot_Response()
 {
-    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3ec11999
+    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@56102e1c
     m_success = false;
 
 }

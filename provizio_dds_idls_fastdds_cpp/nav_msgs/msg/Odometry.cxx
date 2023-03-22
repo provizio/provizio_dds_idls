@@ -36,13 +36,13 @@ using namespace eprosima::fastcdr::exception;
 
 nav_msgs::msg::Odometry::Odometry()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1253e7cb
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@2e554a3b
 
-    // m_child_frame_id com.eprosima.idl.parser.typecode.StringTypeCode@2d36e77e
+    // m_child_frame_id com.eprosima.idl.parser.typecode.StringTypeCode@54a67a45
     m_child_frame_id ="";
-    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@61c9c3fd
+    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7d42c224
 
-    // m_twist com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3b0c9195
+    // m_twist com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@56aaaecd
 
 
 }

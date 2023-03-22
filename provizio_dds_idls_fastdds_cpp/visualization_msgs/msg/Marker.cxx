@@ -53,43 +53,43 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::Marker::Marker()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@2cc97e47
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@206bd7a0
 
-    // m_ns com.eprosima.idl.parser.typecode.StringTypeCode@74a03bd5
+    // m_ns com.eprosima.idl.parser.typecode.StringTypeCode@79fcd194
     m_ns ="";
-    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@87fc0fc
+    // m_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@73d8c8d7
     m_id = 0;
-    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@671f545b
+    // m_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@361b3ca6
     m_type = 0;
-    // m_action com.eprosima.idl.parser.typecode.PrimitiveTypeCode@c335b9
+    // m_action com.eprosima.idl.parser.typecode.PrimitiveTypeCode@48333b12
     m_action = 0;
-    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@75c8d8e7
+    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@575c23f1
 
-    // m_scale com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3c68e82
+    // m_scale com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@62f7d7bd
 
-    // m_color com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1e66bf2d
+    // m_color com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@de63949
 
-    // m_lifetime com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7112fa5
+    // m_lifetime com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5c5c784c
 
-    // m_frame_locked com.eprosima.idl.parser.typecode.PrimitiveTypeCode@342dc040
+    // m_frame_locked com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6a299b9d
     m_frame_locked = false;
-    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@3a8ead9
+    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@363fe35a
 
-    // m_colors com.eprosima.idl.parser.typecode.SequenceTypeCode@281ca256
+    // m_colors com.eprosima.idl.parser.typecode.SequenceTypeCode@a2fb8a5
 
-    // m_texture_resource com.eprosima.idl.parser.typecode.StringTypeCode@26feccf7
+    // m_texture_resource com.eprosima.idl.parser.typecode.StringTypeCode@350e3fb4
     m_texture_resource ="";
-    // m_texture com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7c8b37a8
+    // m_texture com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@13ddaffb
 
-    // m_uv_coordinates com.eprosima.idl.parser.typecode.SequenceTypeCode@3831f4c2
+    // m_uv_coordinates com.eprosima.idl.parser.typecode.SequenceTypeCode@5a31abe9
 
-    // m_text com.eprosima.idl.parser.typecode.StringTypeCode@75f2ff80
+    // m_text com.eprosima.idl.parser.typecode.StringTypeCode@2dacda9a
     m_text ="";
-    // m_mesh_resource com.eprosima.idl.parser.typecode.StringTypeCode@253b1cbd
+    // m_mesh_resource com.eprosima.idl.parser.typecode.StringTypeCode@699bb304
     m_mesh_resource ="";
-    // m_mesh_file com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@a859c5
+    // m_mesh_file com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@17477bbb
 
-    // m_mesh_use_embedded_materials com.eprosima.idl.parser.typecode.PrimitiveTypeCode@37083af6
+    // m_mesh_use_embedded_materials com.eprosima.idl.parser.typecode.PrimitiveTypeCode@40fee459
     m_mesh_use_embedded_materials = false;
 
 }

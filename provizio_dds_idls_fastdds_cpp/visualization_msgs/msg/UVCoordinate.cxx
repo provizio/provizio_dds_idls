@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::UVCoordinate::UVCoordinate()
 {
-    // m_u com.eprosima.idl.parser.typecode.PrimitiveTypeCode@446a5aa5
+    // m_u com.eprosima.idl.parser.typecode.PrimitiveTypeCode@716e6fa5
     m_u = 0.0;
-    // m_v com.eprosima.idl.parser.typecode.PrimitiveTypeCode@628bcf2c
+    // m_v com.eprosima.idl.parser.typecode.PrimitiveTypeCode@91a1005
     m_v = 0.0;
 
 }

@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 std_msgs::msg::Header::Header()
 {
-    // m_stamp com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5cf33d25
+    // m_stamp com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6b630d4b
 
-    // m_frame_id com.eprosima.idl.parser.typecode.StringTypeCode@efa04b5
+    // m_frame_id com.eprosima.idl.parser.typecode.StringTypeCode@70aa03c0
     m_frame_id ="";
 
 }

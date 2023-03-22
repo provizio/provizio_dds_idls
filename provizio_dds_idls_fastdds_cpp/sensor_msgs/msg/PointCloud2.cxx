@@ -36,23 +36,23 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::PointCloud2::PointCloud2()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3359c978
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3003697
 
-    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7ba63fe5
+    // m_height com.eprosima.idl.parser.typecode.PrimitiveTypeCode@64d43929
     m_height = 0;
-    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@73386d72
+    // m_width com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1d269ed7
     m_width = 0;
-    // m_fields com.eprosima.idl.parser.typecode.SequenceTypeCode@6f330eb9
+    // m_fields com.eprosima.idl.parser.typecode.SequenceTypeCode@437ebf59
 
-    // m_is_bigendian com.eprosima.idl.parser.typecode.PrimitiveTypeCode@125c082e
+    // m_is_bigendian com.eprosima.idl.parser.typecode.PrimitiveTypeCode@41c89d2f
     m_is_bigendian = false;
-    // m_point_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@584f5497
+    // m_point_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@410e94e
     m_point_step = 0;
-    // m_row_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@68ace111
+    // m_row_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2d691f3d
     m_row_step = 0;
-    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@1f9d6c7b
+    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@1bdbf9be
 
-    // m_is_dense com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6df20ade
+    // m_is_dense com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1e7f2e0f
     m_is_dense = false;
 
 }

@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::PolygonStamped::PolygonStamped()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@26adfd2d
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5b7a8434
 
-    // m_polygon com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3336e6b6
+    // m_polygon com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5c45d770
 
 
 }

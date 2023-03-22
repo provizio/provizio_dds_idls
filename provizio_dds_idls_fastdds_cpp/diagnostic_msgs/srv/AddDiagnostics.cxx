@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 diagnostic_msgs::srv::AddDiagnostics_Request::AddDiagnostics_Request()
 {
-    // m_load_namespace com.eprosima.idl.parser.typecode.StringTypeCode@6a84a97d
+    // m_load_namespace com.eprosima.idl.parser.typecode.StringTypeCode@7161d8d1
     m_load_namespace ="";
 
 }
@@ -188,9 +188,9 @@ void diagnostic_msgs::srv::AddDiagnostics_Request::serializeKey(
 
 diagnostic_msgs::srv::AddDiagnostics_Response::AddDiagnostics_Response()
 {
-    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6c130c45
+    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@663c9e7a
     m_success = false;
-    // m_message com.eprosima.idl.parser.typecode.StringTypeCode@50ad3bc1
+    // m_message com.eprosima.idl.parser.typecode.StringTypeCode@19e4653c
     m_message ="";
 
 }

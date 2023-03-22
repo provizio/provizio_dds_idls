@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::CompressedImage::CompressedImage()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3e63bd6b
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@389bc2d3
 
-    // m_format com.eprosima.idl.parser.typecode.StringTypeCode@48144f1a
+    // m_format com.eprosima.idl.parser.typecode.StringTypeCode@442310fd
     m_format ="";
-    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@6f7b8ae1
+    // m_data com.eprosima.idl.parser.typecode.SequenceTypeCode@23263ba
 
 
 }

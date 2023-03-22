@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::PointStamped::PointStamped()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@13df2a8c
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7ef27d7f
 
-    // m_point com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1ebea008
+    // m_point com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@490caf5f
 
 
 }

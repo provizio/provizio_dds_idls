@@ -37,19 +37,19 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::Imu::Imu()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@49a64d82
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6ebd78d1
 
-    // m_orientation com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@344561e0
+    // m_orientation com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@436390f4
 
-    // m_orientation_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@66d23e4a
+    // m_orientation_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@4d157787
     memset(&m_orientation_covariance, 0, (9) * 8);
-    // m_angular_velocity com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@36ac8a63
+    // m_angular_velocity com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@68ed96ca
 
-    // m_angular_velocity_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@66d23e4a
+    // m_angular_velocity_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@4d157787
     memset(&m_angular_velocity_covariance, 0, (9) * 8);
-    // m_linear_acceleration com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@36ac8a63
+    // m_linear_acceleration com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@68ed96ca
 
-    // m_linear_acceleration_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@66d23e4a
+    // m_linear_acceleration_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@4d157787
     memset(&m_linear_acceleration_covariance, 0, (9) * 8);
 
 }

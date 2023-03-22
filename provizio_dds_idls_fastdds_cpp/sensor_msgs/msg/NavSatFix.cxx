@@ -42,19 +42,19 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::NavSatFix::NavSatFix()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3f3ddbd9
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@88a8218
 
-    // m_status com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@14c053c6
+    // m_status com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@50b1f030
 
-    // m_latitude com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6c2d4cc6
+    // m_latitude com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4163f1cd
     m_latitude = 0.0;
-    // m_longitude com.eprosima.idl.parser.typecode.PrimitiveTypeCode@30865a90
+    // m_longitude com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5fa05212
     m_longitude = 0.0;
-    // m_altitude com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6134ac4a
+    // m_altitude com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3e681bc
     m_altitude = 0.0;
-    // m_position_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@777c9dc9
+    // m_position_covariance com.eprosima.idl.parser.typecode.AliasTypeCode@5c09d180
     memset(&m_position_covariance, 0, (9) * 8);
-    // m_position_covariance_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@71b1a49c
+    // m_position_covariance_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@23aae55
     m_position_covariance_type = 0;
 
 }

@@ -41,15 +41,15 @@ using namespace eprosima::fastcdr::exception;
 
 diagnostic_msgs::msg::DiagnosticStatus::DiagnosticStatus()
 {
-    // m_level com.eprosima.idl.parser.typecode.PrimitiveTypeCode@688d411b
+    // m_level com.eprosima.idl.parser.typecode.PrimitiveTypeCode@73d4066e
     m_level = 0;
-    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@382c90c2
+    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@25d2f66
     m_name ="";
-    // m_message com.eprosima.idl.parser.typecode.StringTypeCode@859ea42
+    // m_message com.eprosima.idl.parser.typecode.StringTypeCode@5a2fa51f
     m_message ="";
-    // m_hardware_id com.eprosima.idl.parser.typecode.StringTypeCode@28737371
+    // m_hardware_id com.eprosima.idl.parser.typecode.StringTypeCode@71945bc0
     m_hardware_id ="";
-    // m_values com.eprosima.idl.parser.typecode.SequenceTypeCode@2af46afd
+    // m_values com.eprosima.idl.parser.typecode.SequenceTypeCode@22a0d4ea
 
 
 }

@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::srv::SetCameraInfo_Request::SetCameraInfo_Request()
 {
-    // m_camera_info com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@36074e47
+    // m_camera_info com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4f7c0be3
 
 
 }
@@ -189,9 +189,9 @@ void sensor_msgs::srv::SetCameraInfo_Request::serializeKey(
 
 sensor_msgs::srv::SetCameraInfo_Response::SetCameraInfo_Response()
 {
-    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@36453307
+    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@ca66933
     m_success = false;
-    // m_status_message com.eprosima.idl.parser.typecode.StringTypeCode@7dcc91fd
+    // m_status_message com.eprosima.idl.parser.typecode.StringTypeCode@1d2644e3
     m_status_message ="";
 
 }

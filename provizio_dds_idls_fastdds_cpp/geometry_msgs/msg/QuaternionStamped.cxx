@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::QuaternionStamped::QuaternionStamped()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@59a008ba
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1458ed9c
 
-    // m_quaternion com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@338c99c8
+    // m_quaternion com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@10a9d961
 
 
 }

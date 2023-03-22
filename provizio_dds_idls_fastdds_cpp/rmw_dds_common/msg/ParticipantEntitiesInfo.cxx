@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 rmw_dds_common::msg::ParticipantEntitiesInfo::ParticipantEntitiesInfo()
 {
-    // m_gid com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3f2ef586
+    // m_gid com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1d71006f
 
-    // m_node_entities_info_seq com.eprosima.idl.parser.typecode.SequenceTypeCode@751d3241
+    // m_node_entities_info_seq com.eprosima.idl.parser.typecode.SequenceTypeCode@5b6813df
 
 
 }

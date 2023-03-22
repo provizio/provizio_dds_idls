@@ -36,15 +36,15 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::JointState::JointState()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1c807b1d
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4d4d8fcf
 
-    // m_name com.eprosima.idl.parser.typecode.SequenceTypeCode@238b521e
+    // m_name com.eprosima.idl.parser.typecode.SequenceTypeCode@610db97e
 
-    // m_position com.eprosima.idl.parser.typecode.SequenceTypeCode@1b39fd82
+    // m_position com.eprosima.idl.parser.typecode.SequenceTypeCode@6f0628de
 
-    // m_velocity com.eprosima.idl.parser.typecode.SequenceTypeCode@3e2fc448
+    // m_velocity com.eprosima.idl.parser.typecode.SequenceTypeCode@3fabf088
 
-    // m_effort com.eprosima.idl.parser.typecode.SequenceTypeCode@21680803
+    // m_effort com.eprosima.idl.parser.typecode.SequenceTypeCode@1e392345
 
 
 }

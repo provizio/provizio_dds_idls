@@ -36,19 +36,19 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::InteractiveMarker::InteractiveMarker()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3601549f
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3c82bac3
 
-    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5b2c7186
+    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3ddac0b6
 
-    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@1b9c716f
+    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@446a5aa5
     m_name ="";
-    // m_description com.eprosima.idl.parser.typecode.StringTypeCode@f6bc75c
+    // m_description com.eprosima.idl.parser.typecode.StringTypeCode@628bcf2c
     m_description ="";
-    // m_scale com.eprosima.idl.parser.typecode.PrimitiveTypeCode@33f2cf82
+    // m_scale com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4b76251c
     m_scale = 0.0;
-    // m_menu_entries com.eprosima.idl.parser.typecode.SequenceTypeCode@bea283b
+    // m_menu_entries com.eprosima.idl.parser.typecode.SequenceTypeCode@20c283b4
 
-    // m_controls com.eprosima.idl.parser.typecode.SequenceTypeCode@73852720
+    // m_controls com.eprosima.idl.parser.typecode.SequenceTypeCode@366b4a7b
 
 
 }

@@ -12,6 +12,10 @@ See also [ros/README.md](ros/README.md)
 - [Fast-DDS-Gen](https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/topic/fastddsgen/fastddsgen.html) 2.3.0+
 - CMake 3.0+
 
+## Provizio Topics
+
+See [the topics table](TOPICS.md)
+
 ## License
 
 [Apache 2.0 License](LICENSE)

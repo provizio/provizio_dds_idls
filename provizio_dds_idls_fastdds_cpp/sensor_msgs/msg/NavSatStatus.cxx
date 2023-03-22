@@ -45,9 +45,9 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::NavSatStatus::NavSatStatus()
 {
-    // m_status com.eprosima.idl.parser.typecode.PrimitiveTypeCode@a323a5b
+    // m_status com.eprosima.idl.parser.typecode.PrimitiveTypeCode@16bbaab3
     m_status = 0;
-    // m_service com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5546e754
+    // m_service com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3f357c9d
     m_service = 0;
 
 }

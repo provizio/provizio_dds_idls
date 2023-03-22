@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::Pose2D::Pose2D()
 {
-    // m_x com.eprosima.idl.parser.typecode.PrimitiveTypeCode@39d76cb5
+    // m_x com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6d07a63d
     m_x = 0.0;
-    // m_y com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4a00d9cf
+    // m_y com.eprosima.idl.parser.typecode.PrimitiveTypeCode@571c5681
     m_y = 0.0;
-    // m_theta com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6736fa8d
+    // m_theta com.eprosima.idl.parser.typecode.PrimitiveTypeCode@488d1cd7
     m_theta = 0.0;
 
 }

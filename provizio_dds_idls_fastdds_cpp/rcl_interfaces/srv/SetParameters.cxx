@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 rcl_interfaces::srv::SetParameters_Request::SetParameters_Request()
 {
-    // m_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@f6c03cb
+    // m_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@bcec031
 
 
 }
@@ -197,7 +197,7 @@ void rcl_interfaces::srv::SetParameters_Request::serializeKey(
 
 rcl_interfaces::srv::SetParameters_Response::SetParameters_Response()
 {
-    // m_results com.eprosima.idl.parser.typecode.SequenceTypeCode@46f699d5
+    // m_results com.eprosima.idl.parser.typecode.SequenceTypeCode@21005f6c
 
 
 }

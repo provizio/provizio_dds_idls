@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 std_msgs::msg::MultiArrayDimension::MultiArrayDimension()
 {
-    // m_label com.eprosima.idl.parser.typecode.StringTypeCode@49122853
+    // m_label com.eprosima.idl.parser.typecode.StringTypeCode@2b1a901d
     m_label ="";
-    // m_size com.eprosima.idl.parser.typecode.PrimitiveTypeCode@e97f115
+    // m_size com.eprosima.idl.parser.typecode.PrimitiveTypeCode@11bdab37
     m_size = 0;
-    // m_stride com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5d6b42cf
+    // m_stride com.eprosima.idl.parser.typecode.PrimitiveTypeCode@280484c7
     m_stride = 0;
 
 }

@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 visualization_msgs::msg::InteractiveMarkerPose::InteractiveMarkerPose()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5da3f32a
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@47c5cbf2
 
-    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@57b3d869
+    // m_pose com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1031c1a0
 
-    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@51f4439e
+    // m_name com.eprosima.idl.parser.typecode.StringTypeCode@519b0f00
     m_name ="";
 
 }

@@ -36,7 +36,7 @@ using namespace eprosima::fastcdr::exception;
 
 nav_msgs::srv::GetMap_Request::GetMap_Request()
 {
-    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@54a67a45
+    // m_structure_needs_at_least_one_member com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6e6d5d29
     m_structure_needs_at_least_one_member = 0;
 
 }
@@ -182,7 +182,7 @@ void nav_msgs::srv::GetMap_Request::serializeKey(
 
 nav_msgs::srv::GetMap_Response::GetMap_Response()
 {
-    // m_the_map com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@7d42c224
+    // m_the_map com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5c530d1e
 
 
 }

@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::Temperature::Temperature()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1ce93c18
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@76adb233
 
-    // m_temperature com.eprosima.idl.parser.typecode.PrimitiveTypeCode@19f21b6b
+    // m_temperature com.eprosima.idl.parser.typecode.PrimitiveTypeCode@36074e47
     m_temperature = 0.0;
-    // m_variance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1532c619
+    // m_variance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@36453307
     m_variance = 0.0;
 
 }

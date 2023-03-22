@@ -39,17 +39,17 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::Range::Range()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@1e7f2e0f
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@15515c51
 
-    // m_radiation_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1da6ee17
+    // m_radiation_type com.eprosima.idl.parser.typecode.PrimitiveTypeCode@36a7abe1
     m_radiation_type = 0;
-    // m_field_of_view com.eprosima.idl.parser.typecode.PrimitiveTypeCode@78d39a69
+    // m_field_of_view com.eprosima.idl.parser.typecode.PrimitiveTypeCode@64a896b0
     m_field_of_view = 0.0;
-    // m_min_range com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3c818ac4
+    // m_min_range com.eprosima.idl.parser.typecode.PrimitiveTypeCode@e044b4a
     m_min_range = 0.0;
-    // m_max_range com.eprosima.idl.parser.typecode.PrimitiveTypeCode@5b69d40d
+    // m_max_range com.eprosima.idl.parser.typecode.PrimitiveTypeCode@11a82d0f
     m_max_range = 0.0;
-    // m_range com.eprosima.idl.parser.typecode.PrimitiveTypeCode@71154f21
+    // m_range com.eprosima.idl.parser.typecode.PrimitiveTypeCode@1adb7478
     m_range = 0.0;
 
 }

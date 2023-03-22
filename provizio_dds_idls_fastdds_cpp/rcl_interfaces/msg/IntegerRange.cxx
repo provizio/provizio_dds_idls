@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 rcl_interfaces::msg::IntegerRange::IntegerRange()
 {
-    // m_from_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2c6c302f
+    // m_from_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@538a2f0e
     m_from_value = 0;
-    // m_to_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2478b629
+    // m_to_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@d2708a7
     m_to_value = 0;
-    // m_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@39023dbf
+    // m_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@508ad266
     m_step = 0;
 
 }

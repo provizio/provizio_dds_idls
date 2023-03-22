@@ -36,21 +36,21 @@ using namespace eprosima::fastcdr::exception;
 
 composition_interfaces::srv::LoadNode_Request::LoadNode_Request()
 {
-    // m_package_name com.eprosima.idl.parser.typecode.StringTypeCode@21b2e768
+    // m_package_name com.eprosima.idl.parser.typecode.StringTypeCode@3ee37e5a
     m_package_name ="";
-    // m_plugin_name com.eprosima.idl.parser.typecode.StringTypeCode@57250572
+    // m_plugin_name com.eprosima.idl.parser.typecode.StringTypeCode@2ea41516
     m_plugin_name ="";
-    // m_node_name com.eprosima.idl.parser.typecode.StringTypeCode@5609159b
+    // m_node_name com.eprosima.idl.parser.typecode.StringTypeCode@3a44431a
     m_node_name ="";
-    // m_node_namespace com.eprosima.idl.parser.typecode.StringTypeCode@2118cddf
+    // m_node_namespace com.eprosima.idl.parser.typecode.StringTypeCode@3c7f66c4
     m_node_namespace ="";
-    // m_log_level com.eprosima.idl.parser.typecode.PrimitiveTypeCode@17a7f733
+    // m_log_level com.eprosima.idl.parser.typecode.PrimitiveTypeCode@194bcebf
     m_log_level = 0;
-    // m_remap_rules com.eprosima.idl.parser.typecode.SequenceTypeCode@68567e20
+    // m_remap_rules com.eprosima.idl.parser.typecode.SequenceTypeCode@17497425
 
-    // m_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@76ed1b7c
+    // m_parameters com.eprosima.idl.parser.typecode.SequenceTypeCode@f0da945
 
-    // m_extra_arguments com.eprosima.idl.parser.typecode.SequenceTypeCode@11fc564b
+    // m_extra_arguments com.eprosima.idl.parser.typecode.SequenceTypeCode@4803b726
 
 
 }
@@ -574,13 +574,13 @@ void composition_interfaces::srv::LoadNode_Request::serializeKey(
 
 composition_interfaces::srv::LoadNode_Response::LoadNode_Response()
 {
-    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@672872e1
+    // m_success com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3e11f9e9
     m_success = false;
-    // m_error_message com.eprosima.idl.parser.typecode.StringTypeCode@32910148
+    // m_error_message com.eprosima.idl.parser.typecode.StringTypeCode@1de5f259
     m_error_message ="";
-    // m_full_node_name com.eprosima.idl.parser.typecode.StringTypeCode@3f56875e
+    // m_full_node_name com.eprosima.idl.parser.typecode.StringTypeCode@957e06
     m_full_node_name ="";
-    // m_unique_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@2b4bac49
+    // m_unique_id com.eprosima.idl.parser.typecode.PrimitiveTypeCode@32502377
     m_unique_id = 0;
 
 }

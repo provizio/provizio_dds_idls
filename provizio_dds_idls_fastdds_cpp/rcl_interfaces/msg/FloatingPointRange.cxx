@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 rcl_interfaces::msg::FloatingPointRange::FloatingPointRange()
 {
-    // m_from_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@3c54ddec
+    // m_from_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@723e3c17
     m_from_value = 0.0;
-    // m_to_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6d69a0d3
+    // m_to_value com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4ffced4e
     m_to_value = 0.0;
-    // m_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4f114b
+    // m_step com.eprosima.idl.parser.typecode.PrimitiveTypeCode@6094de13
     m_step = 0.0;
 
 }

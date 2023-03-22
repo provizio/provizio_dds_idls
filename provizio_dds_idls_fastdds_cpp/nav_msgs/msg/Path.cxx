@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 nav_msgs::msg::Path::Path()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@392781e
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@577bf0aa
 
-    // m_poses com.eprosima.idl.parser.typecode.SequenceTypeCode@3fcbc766
+    // m_poses com.eprosima.idl.parser.typecode.SequenceTypeCode@7455dacb
 
 
 }

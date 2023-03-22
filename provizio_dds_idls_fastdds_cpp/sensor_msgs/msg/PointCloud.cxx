@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::PointCloud::PointCloud()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3e681bc
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5e63cad
 
-    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@5c09d180
+    // m_points com.eprosima.idl.parser.typecode.SequenceTypeCode@6759f091
 
-    // m_channels com.eprosima.idl.parser.typecode.SequenceTypeCode@23aae55
+    // m_channels com.eprosima.idl.parser.typecode.SequenceTypeCode@33a053d
 
 
 }

@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 sensor_msgs::msg::RelativeHumidity::RelativeHumidity()
 {
-    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3ae66c85
+    // m_header com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@b0964b2
 
-    // m_relative_humidity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@16943e88
+    // m_relative_humidity com.eprosima.idl.parser.typecode.PrimitiveTypeCode@48e7b3d2
     m_relative_humidity = 0.0;
-    // m_variance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4604b900
+    // m_variance com.eprosima.idl.parser.typecode.PrimitiveTypeCode@7f4037ed
     m_variance = 0.0;
 
 }

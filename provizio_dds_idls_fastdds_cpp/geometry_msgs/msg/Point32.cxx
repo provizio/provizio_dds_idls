@@ -36,11 +36,11 @@ using namespace eprosima::fastcdr::exception;
 
 geometry_msgs::msg::Point32::Point32()
 {
-    // m_x com.eprosima.idl.parser.typecode.PrimitiveTypeCode@171aa66
+    // m_x com.eprosima.idl.parser.typecode.PrimitiveTypeCode@84f51d9
     m_x = 0.0;
-    // m_y com.eprosima.idl.parser.typecode.PrimitiveTypeCode@58739e5e
+    // m_y com.eprosima.idl.parser.typecode.PrimitiveTypeCode@45b96e4c
     m_y = 0.0;
-    // m_z com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4e2cdc51
+    // m_z com.eprosima.idl.parser.typecode.PrimitiveTypeCode@8383a14
     m_z = 0.0;
 
 }

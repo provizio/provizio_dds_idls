@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 builtin_interfaces::msg::Duration::Duration()
 {
-    // m_sec com.eprosima.idl.parser.typecode.PrimitiveTypeCode@76d0a290
+    // m_sec com.eprosima.idl.parser.typecode.PrimitiveTypeCode@4205d5d0
     m_sec = 0;
-    // m_nanosec com.eprosima.idl.parser.typecode.PrimitiveTypeCode@ea84346
+    // m_nanosec com.eprosima.idl.parser.typecode.PrimitiveTypeCode@29dfc68f
     m_nanosec = 0;
 
 }

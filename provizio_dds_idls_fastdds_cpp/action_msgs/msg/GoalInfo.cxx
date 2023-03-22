@@ -36,9 +36,9 @@ using namespace eprosima::fastcdr::exception;
 
 action_msgs::msg::GoalInfo::GoalInfo()
 {
-    // m_goal_id com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@37b57b54
+    // m_goal_id com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@4d8286c4
 
-    // m_stamp com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@5c1f6d57
+    // m_stamp com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@150ede8b
 
 
 }
