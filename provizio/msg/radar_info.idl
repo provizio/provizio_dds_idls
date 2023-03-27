@@ -13,10 +13,16 @@
 // limitations under the License.
 
 #include "std_msgs/msg/Header.idl"
-#include "provizio/msg/radar_mode.idl"
 
 module provizio {
   module msg {
+    enum radar_mode {
+      short_range,
+      medium_range,
+      long_range,
+      ultra_long_range
+    };
+
     struct radar_info {
       std_msgs::msg::Header header;
       string serial_number;
