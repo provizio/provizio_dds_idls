@@ -67,10 +67,10 @@ class Cdr;
 namespace diagnostic_msgs {
     namespace msg {
         namespace DiagnosticStatus_Constants {
-            const uint8_t OK = 0;
-            const uint8_t WARN = 1;
-            const uint8_t ERROR = 2;
-            const uint8_t STALE = 3;
+            const uint8_t DIAG_OK = 0;
+            const uint8_t DIAG_WARN = 1;
+            const uint8_t DIAG_ERROR = 2;
+            const uint8_t DIAG_STALE = 3;
         } // namespace DiagnosticStatus_Constants
         /*!
          * @brief This class represents the structure DiagnosticStatus defined by the user in the IDL file.

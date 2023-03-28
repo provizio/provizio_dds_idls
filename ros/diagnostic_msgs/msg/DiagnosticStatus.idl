@@ -9,10 +9,10 @@ module diagnostic_msgs {
     module DiagnosticStatus_Constants {
       @verbatim (language="comment", text=
         "Possible levels of operations.")
-      const octet OK = 0;
-      const octet WARN = 1;
-      const octet ERROR = 2;
-      const octet STALE = 3;
+      const octet DIAG_OK = 0;
+      const octet DIAG_WARN = 1;
+      const octet DIAG_ERROR = 2;
+      const octet DIAG_STALE = 3;
     };
     @verbatim (language="comment", text=
       "This message holds the status of an individual component of the robot.")

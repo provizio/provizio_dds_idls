@@ -68,8 +68,8 @@ class Cdr;
 namespace visualization_msgs {
     namespace msg {
         namespace InteractiveMarkerUpdate_Constants {
-            const uint8_t KEEP_ALIVE = 0;
-            const uint8_t UPDATE = 1;
+            const uint8_t MARKER_UPDATE_KEEP_ALIVE = 0;
+            const uint8_t MARKER_UPDATE_UPDATE = 1;
         } // namespace InteractiveMarkerUpdate_Constants
         /*!
          * @brief This class represents the structure InteractiveMarkerUpdate defined by the user in the IDL file.

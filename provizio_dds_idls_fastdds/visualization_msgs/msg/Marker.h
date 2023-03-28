@@ -74,22 +74,22 @@ class Cdr;
 namespace visualization_msgs {
     namespace msg {
         namespace Marker_Constants {
-            const int32_t ARROW = 0;
-            const int32_t CUBE = 1;
-            const int32_t SPHERE = 2;
-            const int32_t CYLINDER = 3;
-            const int32_t LINE_STRIP = 4;
-            const int32_t LINE_LIST = 5;
-            const int32_t CUBE_LIST = 6;
-            const int32_t SPHERE_LIST = 7;
-            const int32_t POINTS = 8;
-            const int32_t TEXT_VIEW_FACING = 9;
-            const int32_t MESH_RESOURCE = 10;
-            const int32_t TRIANGLE_LIST = 11;
-            const int32_t ADD = 0;
-            const int32_t MODIFY = 0;
-            const int32_t DELETE = 2;
-            const int32_t DELETEALL = 3;
+            const int32_t MARKER_ARROW = 0;
+            const int32_t MARKER_CUBE = 1;
+            const int32_t MARKER_SPHERE = 2;
+            const int32_t MARKER_CYLINDER = 3;
+            const int32_t MARKER_LINE_STRIP = 4;
+            const int32_t MARKER_LINE_LIST = 5;
+            const int32_t MARKER_CUBE_LIST = 6;
+            const int32_t MARKER_SPHERE_LIST = 7;
+            const int32_t MARKER_POINTS = 8;
+            const int32_t MARKER_TEXT_VIEW_FACING = 9;
+            const int32_t MARKER_MESH_RESOURCE = 10;
+            const int32_t MARKER_TRIANGLE_LIST = 11;
+            const int32_t MARKER_ADD = 0;
+            const int32_t MARKER_MODIFY = 0;
+            const int32_t MARKER_DELETE = 2;
+            const int32_t MARKER_DELETEALL = 3;
         } // namespace Marker_Constants
         /*!
          * @brief This class represents the structure Marker defined by the user in the IDL file.

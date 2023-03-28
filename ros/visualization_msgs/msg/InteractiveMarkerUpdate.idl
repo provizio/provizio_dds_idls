@@ -10,8 +10,8 @@ module visualization_msgs {
     module InteractiveMarkerUpdate_Constants {
       @verbatim (language="comment", text=
         "Type holds the purpose of this message.  It must be one of UPDATE or KEEP_ALIVE." "\n"        "UPDATE: Incremental update to previous state." "\n"        "        The sequence number must be 1 higher than for" "\n"        "        the previous update." "\n"        "KEEP_ALIVE: Indicates the that the server is still living." "\n"        "            The sequence number does not increase." "\n"        "            No payload data should be filled out (markers, poses, or erases).")
-      const uint8 KEEP_ALIVE = 0;
-      const uint8 UPDATE = 1;
+      const uint8 MARKER_UPDATE_KEEP_ALIVE = 0;
+      const uint8 MARKER_UPDATE_UPDATE = 1;
     };
     struct InteractiveMarkerUpdate {
       @verbatim (language="comment", text=
