@@ -2,13 +2,29 @@ cmake_minimum_required(VERSION 3.0.0)
 project(provizio_dds_idls VERSION 1.0.0)
 
 if(NOT SKIP_CODE_GENERATION)
+    if(NOT ROS_PACKAGES)
+        set(ROS_PACKAGES
+            builtin_interfaces
+            sensor_msgs
+            std_msgs
+            std_srvs
+            nav_msgs
+            geometry_msgs
+            unique_identifier_msgs
+        )
+    endif(NOT ROS_PACKAGES)
+
     # Provizio IDLS
     set(PROVIZIO_IDLS_DIR "${CMAKE_SOURCE_DIR}/provizio")
     file(GLOB_RECURSE PROVIZIO_IDLS "${PROVIZIO_IDLS_DIR}/*.idl")
 
     # ROS IDLS
     set(ROS_IDLS_DIR "${CMAKE_SOURCE_DIR}/ros")
-    file(GLOB_RECURSE ROS_IDLS "${ROS_IDLS_DIR}/*.idl")
+    set(ROS_IDLS)
+    foreach(ROS_PACKAGE ${ROS_PACKAGES})
+        file(GLOB_RECURSE _ROS_IDLS "${ROS_IDLS_DIR}/${ROS_PACKAGE}/*.idl")
+        list(APPEND ROS_IDLS ${_ROS_IDLS})
+    endforeach(ROS_PACKAGE ${ROS_PACKAGES})
 
     # DDS Code Generation
     if(WIN32)
@@ -30,7 +46,11 @@ if(NOT SKIP_CODE_GENERATION)
 
     # Copy artifacts to designated folders
     file(GLOB_RECURSE PROVIZIO_DIRS LIST_DIRECTORIES true RELATIVE "${CMAKE_SOURCE_DIR}" "${PROVIZIO_IDLS_DIR}/*")
-    file(GLOB_RECURSE ROS_DIRS LIST_DIRECTORIES true RELATIVE "${ROS_IDLS_DIR}" "${ROS_IDLS_DIR}/*")
+    set(ROS_IDLS_DIRS)
+    foreach(ROS_PACKAGE ${ROS_PACKAGES})
+        list(APPEND ROS_IDLS_DIRS "${ROS_IDLS_DIR}/${ROS_PACKAGE}/*")
+    endforeach(ROS_PACKAGE ${ROS_PACKAGES})
+    file(GLOB_RECURSE ROS_DIRS LIST_DIRECTORIES true RELATIVE "${ROS_IDLS_DIR}" ${ROS_IDLS_DIRS})
     set(IN_DIRS ${PROVIZIO_DIRS} ${ROS_DIRS})
     foreach(DIR ${IN_DIRS})
         if(IS_DIRECTORY "${CMAKE_SOURCE_DIR}/${DIR}" OR IS_DIRECTORY "${ROS_IDLS_DIR}/${DIR}")
