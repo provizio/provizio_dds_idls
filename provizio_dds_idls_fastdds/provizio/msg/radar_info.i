@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "radar_info.h"
-
 
 ////////////////////////////////////////////////////////
 // Binding for class provizio::msg::radar_info
@@ -112,6 +109,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "radar_info.h"
 
 // Include the corresponding TopicDataType
 %include "radar_infoPubSubTypes.i"

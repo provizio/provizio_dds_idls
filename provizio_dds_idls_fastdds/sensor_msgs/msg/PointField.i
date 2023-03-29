@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "PointField.h"
-
 
 
 
@@ -118,6 +115,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "PointField.h"
 
 // Include the corresponding TopicDataType
 %include "PointFieldPubSubTypes.i"

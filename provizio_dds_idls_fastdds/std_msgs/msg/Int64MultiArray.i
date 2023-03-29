@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Int64MultiArray.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class std_msgs::msg::Int64MultiArray
 ////////////////////////////////////////////////////////
@@ -95,6 +92,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Int64MultiArray.h"
 
 // Include the corresponding TopicDataType
 %include "Int64MultiArrayPubSubTypes.i"

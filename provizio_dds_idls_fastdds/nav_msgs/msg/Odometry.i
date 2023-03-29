@@ -52,9 +52,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Odometry.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class nav_msgs::msg::Odometry
 ////////////////////////////////////////////////////////
@@ -113,6 +110,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Odometry.h"
 
 // Include the corresponding TopicDataType
 %include "OdometryPubSubTypes.i"

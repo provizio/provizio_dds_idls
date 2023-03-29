@@ -51,9 +51,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "GridCells.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class nav_msgs::msg::GridCells
 ////////////////////////////////////////////////////////
@@ -112,6 +109,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "GridCells.h"
 
 // Include the corresponding TopicDataType
 %include "GridCellsPubSubTypes.i"

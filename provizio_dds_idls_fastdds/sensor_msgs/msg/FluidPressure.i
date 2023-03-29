@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "FluidPressure.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::FluidPressure
 ////////////////////////////////////////////////////////
@@ -103,6 +100,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "FluidPressure.h"
 
 // Include the corresponding TopicDataType
 %include "FluidPressurePubSubTypes.i"

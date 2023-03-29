@@ -51,9 +51,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "MagneticField.h"
-
 
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::MagneticField
@@ -104,6 +101,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "MagneticField.h"
 
 // Include the corresponding TopicDataType
 %include "MagneticFieldPubSubTypes.i"

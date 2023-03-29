@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Time.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class builtin_interfaces::msg::Time
 ////////////////////////////////////////////////////////
@@ -94,6 +91,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Time.h"
 
 // Include the corresponding TopicDataType
 %include "TimePubSubTypes.i"

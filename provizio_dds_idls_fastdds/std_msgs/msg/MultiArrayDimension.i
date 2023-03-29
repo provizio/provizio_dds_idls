@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "MultiArrayDimension.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class std_msgs::msg::MultiArrayDimension
 ////////////////////////////////////////////////////////
@@ -102,6 +99,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "MultiArrayDimension.h"
 
 // Include the corresponding TopicDataType
 %include "MultiArrayDimensionPubSubTypes.i"

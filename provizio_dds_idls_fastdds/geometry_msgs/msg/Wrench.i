@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Wrench.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class geometry_msgs::msg::Wrench
 ////////////////////////////////////////////////////////
@@ -95,6 +92,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Wrench.h"
 
 // Include the corresponding TopicDataType
 %include "WrenchPubSubTypes.i"

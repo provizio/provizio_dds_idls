@@ -51,9 +51,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "GetPlan.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class nav_msgs::srv::GetPlan_Request
 ////////////////////////////////////////////////////////
@@ -138,6 +135,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "GetPlan.h"
 
 // Include the corresponding TopicDataType
 %include "GetPlanPubSubTypes.i"

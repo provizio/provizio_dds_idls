@@ -53,9 +53,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "MultiDOFJointState.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::MultiDOFJointState
 ////////////////////////////////////////////////////////
@@ -122,6 +119,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "MultiDOFJointState.h"
 
 // Include the corresponding TopicDataType
 %include "MultiDOFJointStatePubSubTypes.i"

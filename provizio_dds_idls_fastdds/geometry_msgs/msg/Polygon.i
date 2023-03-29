@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Polygon.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class geometry_msgs::msg::Polygon
 ////////////////////////////////////////////////////////
@@ -87,6 +84,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Polygon.h"
 
 // Include the corresponding TopicDataType
 %include "PolygonPubSubTypes.i"

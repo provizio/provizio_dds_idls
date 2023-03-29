@@ -51,9 +51,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "CameraInfo.h"
-
 
 
 ////////////////////////////////////////////////////////
@@ -167,6 +164,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "CameraInfo.h"
 
 // Include the corresponding TopicDataType
 %include "CameraInfoPubSubTypes.i"

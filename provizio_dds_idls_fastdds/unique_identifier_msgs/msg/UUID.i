@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "UUID.h"
-
 
 ////////////////////////////////////////////////////////
 // Binding for class unique_identifier_msgs::msg::UUID
@@ -86,6 +83,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "UUID.h"
 
 // Include the corresponding TopicDataType
 %include "UUIDPubSubTypes.i"

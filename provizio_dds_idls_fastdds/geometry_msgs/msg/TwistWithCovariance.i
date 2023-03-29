@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "TwistWithCovariance.h"
-
 
 ////////////////////////////////////////////////////////
 // Binding for class geometry_msgs::msg::TwistWithCovariance
@@ -95,6 +92,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "TwistWithCovariance.h"
 
 // Include the corresponding TopicDataType
 %include "TwistWithCovariancePubSubTypes.i"

@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "JoyFeedbackArray.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::JoyFeedbackArray
 ////////////////////////////////////////////////////////
@@ -87,6 +84,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "JoyFeedbackArray.h"
 
 // Include the corresponding TopicDataType
 %include "JoyFeedbackArrayPubSubTypes.i"

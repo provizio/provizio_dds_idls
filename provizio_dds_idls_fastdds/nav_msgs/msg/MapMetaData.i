@@ -51,9 +51,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "MapMetaData.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class nav_msgs::msg::MapMetaData
 ////////////////////////////////////////////////////////
@@ -120,6 +117,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "MapMetaData.h"
 
 // Include the corresponding TopicDataType
 %include "MapMetaDataPubSubTypes.i"

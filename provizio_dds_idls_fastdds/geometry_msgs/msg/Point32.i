@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Point32.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class geometry_msgs::msg::Point32
 ////////////////////////////////////////////////////////
@@ -102,6 +99,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Point32.h"
 
 // Include the corresponding TopicDataType
 %include "Point32PubSubTypes.i"

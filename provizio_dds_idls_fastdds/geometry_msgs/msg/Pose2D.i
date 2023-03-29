@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Pose2D.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class geometry_msgs::msg::Pose2D
 ////////////////////////////////////////////////////////
@@ -102,6 +99,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Pose2D.h"
 
 // Include the corresponding TopicDataType
 %include "Pose2DPubSubTypes.i"

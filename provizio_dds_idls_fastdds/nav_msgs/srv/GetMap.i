@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "GetMap.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class nav_msgs::srv::GetMap_Request
 ////////////////////////////////////////////////////////
@@ -121,6 +118,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "GetMap.h"
 
 // Include the corresponding TopicDataType
 %include "GetMapPubSubTypes.i"

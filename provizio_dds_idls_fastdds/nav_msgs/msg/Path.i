@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Path.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class nav_msgs::msg::Path
 ////////////////////////////////////////////////////////
@@ -95,6 +92,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Path.h"
 
 // Include the corresponding TopicDataType
 %include "PathPubSubTypes.i"

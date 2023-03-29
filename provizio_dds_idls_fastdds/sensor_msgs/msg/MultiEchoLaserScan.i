@@ -51,9 +51,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "MultiEchoLaserScan.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::MultiEchoLaserScan
 ////////////////////////////////////////////////////////
@@ -160,6 +157,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "MultiEchoLaserScan.h"
 
 // Include the corresponding TopicDataType
 %include "MultiEchoLaserScanPubSubTypes.i"

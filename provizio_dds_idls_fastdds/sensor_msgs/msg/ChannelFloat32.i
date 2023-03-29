@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "ChannelFloat32.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::ChannelFloat32
 ////////////////////////////////////////////////////////
@@ -94,6 +91,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "ChannelFloat32.h"
 
 // Include the corresponding TopicDataType
 %include "ChannelFloat32PubSubTypes.i"

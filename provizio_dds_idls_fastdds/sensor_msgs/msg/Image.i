@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Image.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::Image
 ////////////////////////////////////////////////////////
@@ -135,6 +132,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Image.h"
 
 // Include the corresponding TopicDataType
 %include "ImagePubSubTypes.i"

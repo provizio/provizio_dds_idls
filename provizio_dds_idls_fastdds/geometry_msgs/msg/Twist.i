@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Twist.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class geometry_msgs::msg::Twist
 ////////////////////////////////////////////////////////
@@ -95,6 +92,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Twist.h"
 
 // Include the corresponding TopicDataType
 %include "TwistPubSubTypes.i"

@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Trigger.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class std_srvs::srv::Trigger_Request
 ////////////////////////////////////////////////////////
@@ -128,6 +125,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Trigger.h"
 
 // Include the corresponding TopicDataType
 %include "TriggerPubSubTypes.i"

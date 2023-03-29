@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "RelativeHumidity.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::RelativeHumidity
 ////////////////////////////////////////////////////////
@@ -103,6 +100,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "RelativeHumidity.h"
 
 // Include the corresponding TopicDataType
 %include "RelativeHumidityPubSubTypes.i"

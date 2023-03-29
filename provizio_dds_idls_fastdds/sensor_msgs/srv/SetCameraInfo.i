@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "SetCameraInfo.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::srv::SetCameraInfo_Request
 ////////////////////////////////////////////////////////
@@ -129,6 +126,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "SetCameraInfo.h"
 
 // Include the corresponding TopicDataType
 %include "SetCameraInfoPubSubTypes.i"

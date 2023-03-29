@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "BatteryState.h"
-
 
 
 
@@ -228,6 +225,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "BatteryState.h"
 
 // Include the corresponding TopicDataType
 %include "BatteryStatePubSubTypes.i"

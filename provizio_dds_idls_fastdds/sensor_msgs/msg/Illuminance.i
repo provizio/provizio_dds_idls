@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Illuminance.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::Illuminance
 ////////////////////////////////////////////////////////
@@ -103,6 +100,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Illuminance.h"
 
 // Include the corresponding TopicDataType
 %include "IlluminancePubSubTypes.i"

@@ -52,9 +52,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "Imu.h"
-
 
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::Imu
@@ -135,6 +132,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "Imu.h"
 
 // Include the corresponding TopicDataType
 %include "ImuPubSubTypes.i"

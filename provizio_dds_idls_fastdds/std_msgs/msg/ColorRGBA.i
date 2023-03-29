@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "ColorRGBA.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class std_msgs::msg::ColorRGBA
 ////////////////////////////////////////////////////////
@@ -110,6 +107,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "ColorRGBA.h"
 
 // Include the corresponding TopicDataType
 %include "ColorRGBAPubSubTypes.i"

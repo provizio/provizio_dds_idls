@@ -51,9 +51,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "PointStamped.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class geometry_msgs::msg::PointStamped
 ////////////////////////////////////////////////////////
@@ -96,6 +93,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "PointStamped.h"
 
 // Include the corresponding TopicDataType
 %include "PointStampedPubSubTypes.i"

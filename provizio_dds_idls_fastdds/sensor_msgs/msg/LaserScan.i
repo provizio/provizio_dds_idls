@@ -50,9 +50,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "LaserScan.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class sensor_msgs::msg::LaserScan
 ////////////////////////////////////////////////////////
@@ -159,6 +156,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "LaserScan.h"
 
 // Include the corresponding TopicDataType
 %include "LaserScanPubSubTypes.i"

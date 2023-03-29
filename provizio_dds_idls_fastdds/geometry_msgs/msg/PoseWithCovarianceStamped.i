@@ -51,9 +51,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "PoseWithCovarianceStamped.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class geometry_msgs::msg::PoseWithCovarianceStamped
 ////////////////////////////////////////////////////////
@@ -96,6 +93,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "PoseWithCovarianceStamped.h"
 
 // Include the corresponding TopicDataType
 %include "PoseWithCovarianceStampedPubSubTypes.i"

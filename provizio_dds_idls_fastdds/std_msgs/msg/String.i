@@ -49,9 +49,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "String.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class std_msgs::msg::String
 ////////////////////////////////////////////////////////
@@ -86,6 +83,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "String.h"
 
 // Include the corresponding TopicDataType
 %include "StringPubSubTypes.i"

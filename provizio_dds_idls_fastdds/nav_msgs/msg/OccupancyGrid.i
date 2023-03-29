@@ -51,9 +51,6 @@
 %import(module="fastdds") "fastdds/dds/core/LoanableTypedCollection.hpp"
 %import(module="fastdds") "fastdds/dds/core/LoanableSequence.hpp"
 
-// Include the class interfaces
-%include "OccupancyGrid.h"
-
 ////////////////////////////////////////////////////////
 // Binding for class nav_msgs::msg::OccupancyGrid
 ////////////////////////////////////////////////////////
@@ -104,6 +101,9 @@
     }
 }
 
+
+// Include the class interfaces
+%include "OccupancyGrid.h"
 
 // Include the corresponding TopicDataType
 %include "OccupancyGridPubSubTypes.i"
