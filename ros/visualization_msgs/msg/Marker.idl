@@ -15,22 +15,22 @@
 module visualization_msgs {
   module msg {
     module Marker_Constants {
-      const int32 ARROW = 0;
-      const int32 CUBE = 1;
-      const int32 SPHERE = 2;
-      const int32 CYLINDER = 3;
-      const int32 LINE_STRIP = 4;
-      const int32 LINE_LIST = 5;
-      const int32 CUBE_LIST = 6;
-      const int32 SPHERE_LIST = 7;
-      const int32 POINTS = 8;
-      const int32 TEXT_VIEW_FACING = 9;
-      const int32 MESH_RESOURCE = 10;
-      const int32 TRIANGLE_LIST = 11;
-      const int32 ADD = 0;
-      const int32 MODIFY = 0;
-      const int32 DELETE = 2;
-      const int32 DELETEALL = 3;
+      const int32 MARKER_ARROW = 0;
+      const int32 MARKER_CUBE = 1;
+      const int32 MARKER_SPHERE = 2;
+      const int32 MARKER_CYLINDER = 3;
+      const int32 MARKER_LINE_STRIP = 4;
+      const int32 MARKER_LINE_LIST = 5;
+      const int32 MARKER_CUBE_LIST = 6;
+      const int32 MARKER_SPHERE_LIST = 7;
+      const int32 MARKER_POINTS = 8;
+      const int32 MARKER_TEXT_VIEW_FACING = 9;
+      const int32 MARKER_MESH_RESOURCE = 10;
+      const int32 MARKER_TRIANGLE_LIST = 11;
+      const int32 MARKER_ADD = 0;
+      const int32 MARKER_MODIFY = 0;
+      const int32 MARKER_DELETE = 2;
+      const int32 MARKER_DELETEALL = 3;
     };
     @verbatim (language="comment", text=
       "See:" "\n"
