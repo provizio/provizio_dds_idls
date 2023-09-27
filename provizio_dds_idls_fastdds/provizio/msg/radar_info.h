@@ -75,7 +75,8 @@ namespace provizio {
             short_range,
             medium_range,
             long_range,
-            ultra_long_range
+            ultra_long_range,
+            hyper_long_range
         };
         /*!
          * @brief This class represents the structure radar_info defined by the user in the IDL file.
