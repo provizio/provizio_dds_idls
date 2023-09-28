@@ -20,7 +20,8 @@ module provizio {
       short_range,
       medium_range,
       long_range,
-      ultra_long_range
+      ultra_long_range,
+      hyper_long_range
     };
 
     struct radar_info {
