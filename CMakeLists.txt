@@ -41,7 +41,7 @@ if(NOT SKIP_CODE_GENERATION)
     set(TMP_GEN_DIR "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_tmp_gen")
     file(MAKE_DIRECTORY "${TMP_GEN_DIR}")
     execute_process(COMMAND
-        "${FASTDDSGEN_COMMAND}" -I "${ROS_IDLS_DIR}" -I "${CMAKE_SOURCE_DIR}" -replace -typeros2 -cs -python -d "${TMP_GEN_DIR}" ${PROVIZIO_IDLS} ${ROS_IDLS}
+        "${FASTDDSGEN_COMMAND}" -I "${ROS_IDLS_DIR}" -I "${CMAKE_SOURCE_DIR}" -de final -replace -typeros2 -cs -python -d "${TMP_GEN_DIR}" ${PROVIZIO_IDLS} ${ROS_IDLS}
     )
 
     # Copy artifacts to designated folders
@@ -62,7 +62,7 @@ if(NOT SKIP_CODE_GENERATION)
             foreach(IDL ${IDLS};${ROS_IDLS})
                 string(REGEX REPLACE "\\.[^.]*$" "" IDL_NO_EXT ${IDL})
                 set(BASE_FILE_NAME "${TMP_GEN_DIR}/${IDL_NO_EXT}")
-                file(COPY "${BASE_FILE_NAME}.h" "${BASE_FILE_NAME}.cxx" "${BASE_FILE_NAME}PubSubTypes.h" "${BASE_FILE_NAME}PubSubTypes.cxx" "${BASE_FILE_NAME}.i" "${BASE_FILE_NAME}PubSubTypes.i" DESTINATION "${OUT_DIR}")
+                file(COPY "${BASE_FILE_NAME}.h" "${BASE_FILE_NAME}.cxx" "${BASE_FILE_NAME}PubSubTypes.h" "${BASE_FILE_NAME}PubSubTypes.cxx" "${BASE_FILE_NAME}.i" "${BASE_FILE_NAME}PubSubTypes.i" "${BASE_FILE_NAME}CdrAux.hpp" "${BASE_FILE_NAME}CdrAux.ipp" DESTINATION "${OUT_DIR}")
             endforeach(IDL ${IDLS})
         endif(IS_DIRECTORY "${CMAKE_SOURCE_DIR}/${DIR}" OR IS_DIRECTORY "${ROS_IDLS_DIR}/${DIR}")
     endforeach(DIR ${ROS_DIRS})
