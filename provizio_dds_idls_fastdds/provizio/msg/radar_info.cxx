@@ -35,13 +35,14 @@ using namespace eprosima::fastcdr::exception;
 #include <utility>
 
 #define builtin_interfaces_msg_Time_max_cdr_typesize 8ULL;
+#define provizio_msg_set_radar_mode_max_cdr_typesize 532ULL;
 #define provizio_msg_radar_info_max_cdr_typesize 936ULL;
 #define std_msgs_msg_Header_max_cdr_typesize 268ULL;
 
 #define builtin_interfaces_msg_Time_max_key_cdr_typesize 0ULL;
+#define provizio_msg_set_radar_mode_max_key_cdr_typesize 0ULL;
 #define provizio_msg_radar_info_max_key_cdr_typesize 0ULL;
 #define std_msgs_msg_Header_max_key_cdr_typesize 0ULL;
-
 
 
 provizio::msg::radar_info::radar_info()
