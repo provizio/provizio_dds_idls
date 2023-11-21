@@ -203,23 +203,23 @@ namespace provizio {
              */
             eProsima_user_DllExport std::vector<provizio::msg::radar_range>& supported_ranges();
             /*!
-             * @brief This function sets a value in member current_mode
-             * @param _current_mode New value for member current_mode
+             * @brief This function sets a value in member current_range
+             * @param _current_range New value for member current_range
              */
-            eProsima_user_DllExport void current_mode(
-                    provizio::msg::radar_range _current_mode);
+            eProsima_user_DllExport void current_range(
+                    provizio::msg::radar_range _current_range);
 
             /*!
-             * @brief This function returns the value of member current_mode
-             * @return Value of member current_mode
+             * @brief This function returns the value of member current_range
+             * @return Value of member current_range
              */
-            eProsima_user_DllExport provizio::msg::radar_range current_mode() const;
+            eProsima_user_DllExport provizio::msg::radar_range current_range() const;
 
             /*!
-             * @brief This function returns a reference to member current_mode
-             * @return Reference to member current_mode
+             * @brief This function returns a reference to member current_range
+             * @return Reference to member current_range
              */
-            eProsima_user_DllExport provizio::msg::radar_range& current_mode();
+            eProsima_user_DllExport provizio::msg::radar_range& current_range();
 
 
             /*!
@@ -284,7 +284,7 @@ namespace provizio {
             std_msgs::msg::Header m_header;
             std::string m_serial_number;
             std::vector<provizio::msg::radar_range> m_supported_ranges;
-            provizio::msg::radar_range m_current_mode;
+            provizio::msg::radar_range m_current_range;
 
         };
     } // namespace msg

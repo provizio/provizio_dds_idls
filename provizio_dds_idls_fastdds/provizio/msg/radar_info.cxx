@@ -53,8 +53,8 @@ provizio::msg::radar_info::radar_info()
     m_serial_number ="";
     // sequence<provizio::msg::radar_range> m_supported_ranges
 
-    // provizio::msg::radar_range m_current_mode
-    m_current_mode = provizio::msg::short_range;
+    // provizio::msg::radar_range m_current_range
+    m_current_range = provizio::msg::short_range;
 
 }
 
@@ -72,7 +72,7 @@ provizio::msg::radar_info::radar_info(
     m_header = x.m_header;
     m_serial_number = x.m_serial_number;
     m_supported_ranges = x.m_supported_ranges;
-    m_current_mode = x.m_current_mode;
+    m_current_range = x.m_current_range;
 }
 
 provizio::msg::radar_info::radar_info(
@@ -81,7 +81,7 @@ provizio::msg::radar_info::radar_info(
     m_header = std::move(x.m_header);
     m_serial_number = std::move(x.m_serial_number);
     m_supported_ranges = std::move(x.m_supported_ranges);
-    m_current_mode = x.m_current_mode;
+    m_current_range = x.m_current_range;
 }
 
 provizio::msg::radar_info& provizio::msg::radar_info::operator =(
@@ -91,7 +91,7 @@ provizio::msg::radar_info& provizio::msg::radar_info::operator =(
     m_header = x.m_header;
     m_serial_number = x.m_serial_number;
     m_supported_ranges = x.m_supported_ranges;
-    m_current_mode = x.m_current_mode;
+    m_current_range = x.m_current_range;
 
     return *this;
 }
@@ -103,7 +103,7 @@ provizio::msg::radar_info& provizio::msg::radar_info::operator =(
     m_header = std::move(x.m_header);
     m_serial_number = std::move(x.m_serial_number);
     m_supported_ranges = std::move(x.m_supported_ranges);
-    m_current_mode = x.m_current_mode;
+    m_current_range = x.m_current_range;
 
     return *this;
 }
@@ -112,7 +112,7 @@ bool provizio::msg::radar_info::operator ==(
         const radar_info& x) const
 {
 
-    return (m_header == x.m_header && m_serial_number == x.m_serial_number && m_supported_ranges == x.m_supported_ranges && m_current_mode == x.m_current_mode);
+    return (m_header == x.m_header && m_serial_number == x.m_serial_number && m_supported_ranges == x.m_supported_ranges && m_current_range == x.m_current_range);
 }
 
 bool provizio::msg::radar_info::operator !=(
@@ -164,7 +164,7 @@ void provizio::msg::radar_info::serialize(
     scdr << static_cast<uint32_t>(m_supported_ranges.size());
     scdr.serializeArray(reinterpret_cast<const uint32_t*>(m_supported_ranges.data()), m_supported_ranges.size());
 
-    scdr << (uint32_t)m_current_mode;
+    scdr << (uint32_t)m_current_range;
 
 }
 
@@ -184,7 +184,7 @@ void provizio::msg::radar_info::deserialize(
     {
         uint32_t enum_value = 0;
         dcdr >> enum_value;
-        m_current_mode = (provizio::msg::radar_range)enum_value;
+        m_current_range = (provizio::msg::radar_range)enum_value;
     }
 
 }
@@ -301,31 +301,31 @@ std::vector<provizio::msg::radar_range>& provizio::msg::radar_info::supported_ra
     return m_supported_ranges;
 }
 /*!
- * @brief This function sets a value in member current_mode
- * @param _current_mode New value for member current_mode
+ * @brief This function sets a value in member current_range
+ * @param _current_range New value for member current_range
  */
-void provizio::msg::radar_info::current_mode(
-        provizio::msg::radar_range _current_mode)
+void provizio::msg::radar_info::current_range(
+        provizio::msg::radar_range _current_range)
 {
-    m_current_mode = _current_mode;
+    m_current_range = _current_range;
 }
 
 /*!
- * @brief This function returns the value of member current_mode
- * @return Value of member current_mode
+ * @brief This function returns the value of member current_range
+ * @return Value of member current_range
  */
-provizio::msg::radar_range provizio::msg::radar_info::current_mode() const
+provizio::msg::radar_range provizio::msg::radar_info::current_range() const
 {
-    return m_current_mode;
+    return m_current_range;
 }
 
 /*!
- * @brief This function returns a reference to member current_mode
- * @return Reference to member current_mode
+ * @brief This function returns a reference to member current_range
+ * @return Reference to member current_range
  */
-provizio::msg::radar_range& provizio::msg::radar_info::current_mode()
+provizio::msg::radar_range& provizio::msg::radar_info::current_range()
 {
-    return m_current_mode;
+    return m_current_range;
 }
 
 

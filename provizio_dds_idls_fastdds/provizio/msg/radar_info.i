@@ -85,13 +85,13 @@
 %ignore provizio::msg::radar_info::supported_ranges() const;
 %template(provizio_msg_radar_range_vector) std::vector<provizio::msg::radar_range>;
 
-%ignore provizio::msg::radar_info::current_mode(provizio::msg::radar_range&&);
+%ignore provizio::msg::radar_info::current_range(provizio::msg::radar_range&&);
 
 // Overloaded getter methods shadow each other and are equivalent in python
 // Const accesors produced constant enums instead of arrays/dictionaries when used
 // We ignore them to prevent this
-%ignore provizio::msg::radar_info::current_mode();
-%rename("%s") provizio::msg::radar_info::current_mode() const;
+%ignore provizio::msg::radar_info::current_range();
+%rename("%s") provizio::msg::radar_info::current_range() const;
 
 
 %template(_radar_infoSeq) eprosima::fastdds::dds::LoanableTypedCollection<provizio::msg::radar_info, std::false_type>;
