@@ -39,7 +39,7 @@
 #define eProsima_user_DllExport
 
 %include "std_msgs/msg/Header.i"
-%include "radar_mode.i"
+%include "radar_range.i"
 
 %{
 #include "radar_info.h"
@@ -77,15 +77,15 @@
 %ignore provizio::msg::radar_info::serial_number();
 %rename("%s") provizio::msg::radar_info::serial_number() const;
 
-%ignore provizio::msg::radar_info::supported_modes(std::vector<provizio::msg::radar_mode>&&);
+%ignore provizio::msg::radar_info::supported_ranges(std::vector<provizio::msg::radar_range>&&);
 
 // Overloaded getter methods shadow each other and are equivalent in python
 // Const accesors produced constant enums instead of arrays/dictionaries when used
 // We ignore them to prevent this
-%ignore provizio::msg::radar_info::supported_modes() const;
-%template(provizio_msg_radar_mode_vector) std::vector<provizio::msg::radar_mode>;
+%ignore provizio::msg::radar_info::supported_ranges() const;
+%template(provizio_msg_radar_range_vector) std::vector<provizio::msg::radar_range>;
 
-%ignore provizio::msg::radar_info::current_mode(provizio::msg::radar_mode&&);
+%ignore provizio::msg::radar_info::current_mode(provizio::msg::radar_range&&);
 
 // Overloaded getter methods shadow each other and are equivalent in python
 // Const accesors produced constant enums instead of arrays/dictionaries when used

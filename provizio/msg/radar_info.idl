@@ -13,15 +13,15 @@
 // limitations under the License.
 
 #include "std_msgs/msg/Header.idl"
-#include "provizio/msg/radar_mode.idl"
+#include "provizio/msg/radar_range.idl"
 
 module provizio {
   module msg {
     struct radar_info {
       std_msgs::msg::Header header;
       string serial_number;
-      sequence<radar_mode> supported_modes;
-      radar_mode current_mode;
+      sequence<radar_range> supported_ranges;
+      radar_range current_range;
     };
   };
 };

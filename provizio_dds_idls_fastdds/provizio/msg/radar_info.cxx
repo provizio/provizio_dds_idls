@@ -35,15 +35,15 @@ using namespace eprosima::fastcdr::exception;
 #include <utility>
 
 #define builtin_interfaces_msg_Time_max_cdr_typesize 8ULL;
-#define provizio_msg_set_radar_mode_max_cdr_typesize 532ULL;
+
 #define provizio_msg_radar_info_max_cdr_typesize 936ULL;
 #define std_msgs_msg_Header_max_cdr_typesize 268ULL;
-
+#define provizio_msg_set_radar_range_max_cdr_typesize 532ULL;
 #define builtin_interfaces_msg_Time_max_key_cdr_typesize 0ULL;
-#define provizio_msg_set_radar_mode_max_key_cdr_typesize 0ULL;
+
 #define provizio_msg_radar_info_max_key_cdr_typesize 0ULL;
 #define std_msgs_msg_Header_max_key_cdr_typesize 0ULL;
-
+#define provizio_msg_set_radar_range_max_key_cdr_typesize 0ULL;
 
 provizio::msg::radar_info::radar_info()
 {
@@ -51,9 +51,9 @@ provizio::msg::radar_info::radar_info()
 
     // string m_serial_number
     m_serial_number ="";
-    // sequence<provizio::msg::radar_mode> m_supported_modes
+    // sequence<provizio::msg::radar_range> m_supported_ranges
 
-    // provizio::msg::radar_mode m_current_mode
+    // provizio::msg::radar_range m_current_mode
     m_current_mode = provizio::msg::short_range;
 
 }
@@ -71,7 +71,7 @@ provizio::msg::radar_info::radar_info(
 {
     m_header = x.m_header;
     m_serial_number = x.m_serial_number;
-    m_supported_modes = x.m_supported_modes;
+    m_supported_ranges = x.m_supported_ranges;
     m_current_mode = x.m_current_mode;
 }
 
@@ -80,7 +80,7 @@ provizio::msg::radar_info::radar_info(
 {
     m_header = std::move(x.m_header);
     m_serial_number = std::move(x.m_serial_number);
-    m_supported_modes = std::move(x.m_supported_modes);
+    m_supported_ranges = std::move(x.m_supported_ranges);
     m_current_mode = x.m_current_mode;
 }
 
@@ -90,7 +90,7 @@ provizio::msg::radar_info& provizio::msg::radar_info::operator =(
 
     m_header = x.m_header;
     m_serial_number = x.m_serial_number;
-    m_supported_modes = x.m_supported_modes;
+    m_supported_ranges = x.m_supported_ranges;
     m_current_mode = x.m_current_mode;
 
     return *this;
@@ -102,7 +102,7 @@ provizio::msg::radar_info& provizio::msg::radar_info::operator =(
 
     m_header = std::move(x.m_header);
     m_serial_number = std::move(x.m_serial_number);
-    m_supported_modes = std::move(x.m_supported_modes);
+    m_supported_ranges = std::move(x.m_supported_ranges);
     m_current_mode = x.m_current_mode;
 
     return *this;
@@ -112,7 +112,7 @@ bool provizio::msg::radar_info::operator ==(
         const radar_info& x) const
 {
 
-    return (m_header == x.m_header && m_serial_number == x.m_serial_number && m_supported_modes == x.m_supported_modes && m_current_mode == x.m_current_mode);
+    return (m_header == x.m_header && m_serial_number == x.m_serial_number && m_supported_ranges == x.m_supported_ranges && m_current_mode == x.m_current_mode);
 }
 
 bool provizio::msg::radar_info::operator !=(
@@ -141,9 +141,9 @@ size_t provizio::msg::radar_info::getCdrSerializedSize(
 
     current_alignment += 4 + eprosima::fastcdr::Cdr::alignment(current_alignment, 4);
 
-    if (data.supported_modes().size() > 0)
+    if (data.supported_ranges().size() > 0)
     {
-        current_alignment += (data.supported_modes().size() * 4) + eprosima::fastcdr::Cdr::alignment(current_alignment, 4);
+        current_alignment += (data.supported_ranges().size() * 4) + eprosima::fastcdr::Cdr::alignment(current_alignment, 4);
     }
 
 
@@ -161,8 +161,8 @@ void provizio::msg::radar_info::serialize(
 
     scdr << m_header;
     scdr << m_serial_number.c_str();
-    scdr << static_cast<uint32_t>(m_supported_modes.size());
-    scdr.serializeArray(reinterpret_cast<const uint32_t*>(m_supported_modes.data()), m_supported_modes.size());
+    scdr << static_cast<uint32_t>(m_supported_ranges.size());
+    scdr.serializeArray(reinterpret_cast<const uint32_t*>(m_supported_ranges.data()), m_supported_ranges.size());
 
     scdr << (uint32_t)m_current_mode;
 
@@ -177,14 +177,14 @@ void provizio::msg::radar_info::deserialize(
     {
         uint32_t seq_length = 0;
         dcdr >> seq_length;
-        m_supported_modes.resize(seq_length);
-        dcdr.deserializeArray(reinterpret_cast<uint32_t*>(m_supported_modes.data()), seq_length);
+        m_supported_ranges.resize(seq_length);
+        dcdr.deserializeArray(reinterpret_cast<uint32_t*>(m_supported_ranges.data()), seq_length);
     }
 
     {
         uint32_t enum_value = 0;
         dcdr >> enum_value;
-        m_current_mode = (provizio::msg::radar_mode)enum_value;
+        m_current_mode = (provizio::msg::radar_range)enum_value;
     }
 
 }
@@ -264,48 +264,48 @@ std::string& provizio::msg::radar_info::serial_number()
     return m_serial_number;
 }
 /*!
- * @brief This function copies the value in member supported_modes
- * @param _supported_modes New value to be copied in member supported_modes
+ * @brief This function copies the value in member supported_ranges
+ * @param _supported_ranges New value to be copied in member supported_ranges
  */
-void provizio::msg::radar_info::supported_modes(
-        const std::vector<provizio::msg::radar_mode>& _supported_modes)
+void provizio::msg::radar_info::supported_ranges(
+        const std::vector<provizio::msg::radar_range>& _supported_ranges)
 {
-    m_supported_modes = _supported_modes;
+    m_supported_ranges = _supported_ranges;
 }
 
 /*!
- * @brief This function moves the value in member supported_modes
- * @param _supported_modes New value to be moved in member supported_modes
+ * @brief This function moves the value in member supported_ranges
+ * @param _supported_ranges New value to be moved in member supported_ranges
  */
-void provizio::msg::radar_info::supported_modes(
-        std::vector<provizio::msg::radar_mode>&& _supported_modes)
+void provizio::msg::radar_info::supported_ranges(
+        std::vector<provizio::msg::radar_range>&& _supported_ranges)
 {
-    m_supported_modes = std::move(_supported_modes);
+    m_supported_ranges = std::move(_supported_ranges);
 }
 
 /*!
- * @brief This function returns a constant reference to member supported_modes
- * @return Constant reference to member supported_modes
+ * @brief This function returns a constant reference to member supported_ranges
+ * @return Constant reference to member supported_ranges
  */
-const std::vector<provizio::msg::radar_mode>& provizio::msg::radar_info::supported_modes() const
+const std::vector<provizio::msg::radar_range>& provizio::msg::radar_info::supported_ranges() const
 {
-    return m_supported_modes;
+    return m_supported_ranges;
 }
 
 /*!
- * @brief This function returns a reference to member supported_modes
- * @return Reference to member supported_modes
+ * @brief This function returns a reference to member supported_ranges
+ * @return Reference to member supported_ranges
  */
-std::vector<provizio::msg::radar_mode>& provizio::msg::radar_info::supported_modes()
+std::vector<provizio::msg::radar_range>& provizio::msg::radar_info::supported_ranges()
 {
-    return m_supported_modes;
+    return m_supported_ranges;
 }
 /*!
  * @brief This function sets a value in member current_mode
  * @param _current_mode New value for member current_mode
  */
 void provizio::msg::radar_info::current_mode(
-        provizio::msg::radar_mode _current_mode)
+        provizio::msg::radar_range _current_mode)
 {
     m_current_mode = _current_mode;
 }
@@ -314,7 +314,7 @@ void provizio::msg::radar_info::current_mode(
  * @brief This function returns the value of member current_mode
  * @return Value of member current_mode
  */
-provizio::msg::radar_mode provizio::msg::radar_info::current_mode() const
+provizio::msg::radar_range provizio::msg::radar_info::current_mode() const
 {
     return m_current_mode;
 }
@@ -323,7 +323,7 @@ provizio::msg::radar_mode provizio::msg::radar_info::current_mode() const
  * @brief This function returns a reference to member current_mode
  * @return Reference to member current_mode
  */
-provizio::msg::radar_mode& provizio::msg::radar_info::current_mode()
+provizio::msg::radar_range& provizio::msg::radar_info::current_mode()
 {
     return m_current_mode;
 }

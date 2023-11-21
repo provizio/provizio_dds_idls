@@ -23,7 +23,7 @@
 #define _FAST_DDS_GENERATED_PROVIZIO_MSG_RADAR_INFO_H_
 
 #include "std_msgs/msg/Header.h"
-#include "radar_mode.h"
+#include "radar_range.h"
 
 #include <fastrtps/utils/fixed_size_string.hpp>
 
@@ -178,48 +178,48 @@ namespace provizio {
              */
             eProsima_user_DllExport std::string& serial_number();
             /*!
-             * @brief This function copies the value in member supported_modes
-             * @param _supported_modes New value to be copied in member supported_modes
+             * @brief This function copies the value in member supported_ranges
+             * @param _supported_ranges New value to be copied in member supported_ranges
              */
-            eProsima_user_DllExport void supported_modes(
-                    const std::vector<provizio::msg::radar_mode>& _supported_modes);
+            eProsima_user_DllExport void supported_ranges(
+                    const std::vector<provizio::msg::radar_range>& _supported_ranges);
 
             /*!
-             * @brief This function moves the value in member supported_modes
-             * @param _supported_modes New value to be moved in member supported_modes
+             * @brief This function moves the value in member supported_ranges
+             * @param _supported_ranges New value to be moved in member supported_ranges
              */
-            eProsima_user_DllExport void supported_modes(
-                    std::vector<provizio::msg::radar_mode>&& _supported_modes);
+            eProsima_user_DllExport void supported_ranges(
+                    std::vector<provizio::msg::radar_range>&& _supported_ranges);
 
             /*!
-             * @brief This function returns a constant reference to member supported_modes
-             * @return Constant reference to member supported_modes
+             * @brief This function returns a constant reference to member supported_ranges
+             * @return Constant reference to member supported_ranges
              */
-            eProsima_user_DllExport const std::vector<provizio::msg::radar_mode>& supported_modes() const;
+            eProsima_user_DllExport const std::vector<provizio::msg::radar_range>& supported_ranges() const;
 
             /*!
-             * @brief This function returns a reference to member supported_modes
-             * @return Reference to member supported_modes
+             * @brief This function returns a reference to member supported_ranges
+             * @return Reference to member supported_ranges
              */
-            eProsima_user_DllExport std::vector<provizio::msg::radar_mode>& supported_modes();
+            eProsima_user_DllExport std::vector<provizio::msg::radar_range>& supported_ranges();
             /*!
              * @brief This function sets a value in member current_mode
              * @param _current_mode New value for member current_mode
              */
             eProsima_user_DllExport void current_mode(
-                    provizio::msg::radar_mode _current_mode);
+                    provizio::msg::radar_range _current_mode);
 
             /*!
              * @brief This function returns the value of member current_mode
              * @return Value of member current_mode
              */
-            eProsima_user_DllExport provizio::msg::radar_mode current_mode() const;
+            eProsima_user_DllExport provizio::msg::radar_range current_mode() const;
 
             /*!
              * @brief This function returns a reference to member current_mode
              * @return Reference to member current_mode
              */
-            eProsima_user_DllExport provizio::msg::radar_mode& current_mode();
+            eProsima_user_DllExport provizio::msg::radar_range& current_mode();
 
 
             /*!
@@ -283,8 +283,8 @@ namespace provizio {
 
             std_msgs::msg::Header m_header;
             std::string m_serial_number;
-            std::vector<provizio::msg::radar_mode> m_supported_modes;
-            provizio::msg::radar_mode m_current_mode;
+            std::vector<provizio::msg::radar_range> m_supported_ranges;
+            provizio::msg::radar_range m_current_mode;
 
         };
     } // namespace msg
