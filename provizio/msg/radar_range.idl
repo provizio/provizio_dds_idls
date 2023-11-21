@@ -13,15 +13,21 @@
 // limitations under the License.
 
 #include "std_msgs/msg/Header.idl"
-#include "provizio/msg/radar_range.idl"
 
 module provizio {
   module msg {
-    struct radar_info {
+    enum radar_range {
+      short_range,
+      medium_range,
+      long_range,
+      ultra_long_range,
+      hyper_long_range
+    };
+
+    struct set_radar_range {
       std_msgs::msg::Header header;
-      string serial_number;
-      sequence<radar_range> supported_ranges;
-      radar_range current_range;
+      string serial_number; // Optional, specify to make sure only the desired radar gets the range changed, ignoring header.frame_id
+      radar_range target_range;
     };
   };
 };
