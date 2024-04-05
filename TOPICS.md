@@ -21,8 +21,9 @@ Radar point clouds (regular and super-resolution enhanced) can contain the follo
 | Radar-relative Y (left) position of the point in meters           | y                               | FLOAT32   | 1     | Always present                  |
 | Radar-relative Z (up) position of the point in meters             | z                               | FLOAT32   | 1     | Always present                  |
 | Radar-relative radial velocity of the point in meters per second  | radar_relative_radial_velocity  | FLOAT32   | 1     | Always present                  |
-| Ground-relative radial velocity of the point in meters per second | ground_relative_radial_velocity | FLOAT32   | 1     | **Can be missing or NaN value** |
 | Signal-to-noise ratio (dB)                                        | signal_to_noise_ratio           | FLOAT32   | 1     | Always present                  |
+| Ground-relative radial velocity of the point in meters per second | ground_relative_radial_velocity | FLOAT32   | 1     | **Can be missing or NaN value** |
+
 
 ## Entities: Fields
 
