@@ -9,7 +9,8 @@
 | Radar-based odometry | rt/provizio_radar_odometry | /provizio_radar_odometry | [nav_msgs/msg/Odometry](ros/nav_msgs/msg/Odometry.idl) | `nav_msgs::msg::Odometry` / `nav_msgs::msg::OdometryPubSubType` | `provizio_dds.Odometry` / `provizio_dds.OdometryPubSubType` | [Yes](https://docs.ros2.org/latest/api/nav_msgs/msg/Odometry.html) |
 | [Entities](#entities-fields) | rt/provizio_entities | /provizio_entities | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.idl) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
 | Raw camera frames | rt/provizio_camera | /provizio_camera | [sensor_msgs/msg/Image](ros/sensor_msgs/msg/Image.idl) | `sensor_msgs::msg::Image` / `sensor_msgs::msg::ImagePubSubType` | `provizio_dds.Image` / `provizio_dds.ImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/Image.html) |
-| [Raw freespace frames](#freespace) | rt/provizio_freespace | /provizio_freespace | [sensor_msgs/msg/Image](ros/sensor_msgs/msg/Image.idl) | `sensor_msgs::msg::Image` / `sensor_msgs::msg::ImagePubSubType` | `provizio_dds.Image` / `provizio_dds.ImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/Image.html) |
+| [Raw image freespace](#raw-image-freespaces) | rt/provizio_freespace | /provizio_freespace | [sensor_msgs/msg/Image](ros/sensor_msgs/msg/Image.idl) | `sensor_msgs::msg::Image` / `sensor_msgs::msg::ImagePubSubType` | `provizio_dds.Image` / `provizio_dds.ImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/Image.html) |
+| [Freespace polygons](#polygonal-freespaces) | rt/provizio_freespace_poly | /provizio_freespace_poly | [geometry_msgs/msg/PolygonInstanceStamped.idl](ros/geometry_msgs/msg/PolygonInstanceStamped.idl) | `geometry_msgs::msg::PolygonInstanceStamped` / `geometry_msgs::msg::PolygonInstanceStampedPubSubType` | `provizio_dds.PolygonInstanceStamped` / `provizio_dds.PolygonInstanceStampedPubSubType` | [Yes](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/PolygonInstanceStamped.msg) |
 
 ## Radar Point Cloud: Fields
 
@@ -57,7 +58,17 @@ Entities can contain the following [point fields](https://docs.ros2.org/latest/a
 
 ## Freespace
 
-Freespace is provided as video frames. Black pixels (#000000) stand for non-freespace, while gray-blue (#434758 HEX) pixels mark freespace. The default coordinate system is as following:
+There are 2 ways of representing freespaces: [Polygonal](#polygonal-freespaces) and [Raw Images](#raw-image-freespaces). Please see below for more details.
+
+### Polygonal Freespaces
+
+The primary way of representing freespace is in the form of [polygons](ros/geometry_msgs/msg/PolygonInstanceStamped.idl). The polygons are represented as sequences of vertices defining their outlines. They can be both convex and concave. The "id" specifies the type of polygon, with 0 standing for freespaces.
+
+There can be single or multiple polygons per frame. Later case produces multiple `PolygonInstanceStamped` messages with the same `frame_id` and `stamp`.
+
+### Raw Image Freespaces
+
+Freespace can also be provided in the form of raw images. Black pixels (#000000) stand for non-freespace, while gray-blue (#434758 HEX) pixels mark freespace. The default coordinate system is as following:
 
 - Bottom-center pixel is at the position of the sensor (0m forward, 0m left)
 - Up-center pixel is at (400m forward, 0m left)
