@@ -11,8 +11,8 @@ jobs:
     name: Generate and update types wrapper code
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
             repository: provizio/Fast-DDS-Gen
             ref: v3.0.1
