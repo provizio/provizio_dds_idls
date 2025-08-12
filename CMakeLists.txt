@@ -42,7 +42,12 @@ if(NOT SKIP_CODE_GENERATION)
     file(MAKE_DIRECTORY "${TMP_GEN_DIR}")
     execute_process(COMMAND
         "${FASTDDSGEN_COMMAND}" -I "${ROS_IDLS_DIR}" -I "${CMAKE_SOURCE_DIR}" -de final -replace -typeros2 -cs -python -d "${TMP_GEN_DIR}" ${PROVIZIO_IDLS} ${ROS_IDLS}
+        RESULT_VARIABLE FASTDDSGEN_RESULT
     )
+
+    if(FASTDDSGEN_RESULT)
+        message(FATAL_ERROR "code generation failed!")
+    endif(FASTDDSGEN_RESULT)
 
     # Copy artifacts to designated folders
     file(GLOB_RECURSE PROVIZIO_DIRS LIST_DIRECTORIES true RELATIVE "${CMAKE_SOURCE_DIR}" "${PROVIZIO_IDLS_DIR}/*")

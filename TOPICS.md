@@ -1,5 +1,7 @@
 # Provizio DDS Topics
 
+## Messages
+
 | Description | DDS Topic Name   | ROS 2 Topic Name | Data Type | C++ Type Name / Pub-Sub Type Name | Python Type Name / Pub-Sub Type Name | Built-in ROS 2 Type |
 | ----------- | ---------------- | ---------------- | --------- | ------------- | ---------------- | ------------------- |
 | [Radar point cloud](#radar-point-cloud-fields) | rt/provizio_radar_point_cloud | /provizio_radar_point_cloud | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.idl) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
@@ -14,6 +16,12 @@
 | [Raw image freespace](#raw-image-freespaces) | rt/provizio_freespace | /provizio_freespace | [sensor_msgs/msg/Image](ros/sensor_msgs/msg/Image.idl) | `sensor_msgs::msg::Image` / `sensor_msgs::msg::ImagePubSubType` | `provizio_dds.Image` / `provizio_dds.ImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/Image.html) |
 | [Freespace polygons](#polygonal-freespaces) | rt/provizio_freespace_poly | /provizio_freespace_poly | [geometry_msgs/msg/PolygonInstanceStamped.idl](ros/geometry_msgs/msg/PolygonInstanceStamped.idl) | `geometry_msgs::msg::PolygonInstanceStamped` / `geometry_msgs::msg::PolygonInstanceStampedPubSubType` | `provizio_dds.PolygonInstanceStamped` / `provizio_dds.PolygonInstanceStampedPubSubType` | [Yes](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/PolygonInstanceStamped.msg) |
 | [Camera freespace polygons](#polygonal-freespaces) | rt/provizio_freespace_camera_poly | /provizio_freespace_camera_poly | [geometry_msgs/msg/PolygonInstanceStamped.idl](ros/geometry_msgs/msg/PolygonInstanceStamped.idl) | `geometry_msgs::msg::PolygonInstanceStamped` / `geometry_msgs::msg::PolygonInstanceStampedPubSubType` | `provizio_dds.PolygonInstanceStamped` / `provizio_dds.PolygonInstanceStampedPubSubType` | [Yes](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/PolygonInstanceStamped.msg) |
+
+## Services
+
+| Description | Topic Name | Request Data Type | Response Data Type | C++ Type Names / Pub-Sub Type Names | Python Type Names / Pub-Sub Type Names |
+| ----------- | ---------- | ----------------- | ------------------ | ----------------------------------- | -------------------------------------- |
+| Setting radar range | [provizio_set_radar_range](provizio/msg/radar_range.idl) | provizio/srv/set_radar_range_Request | provizio/srv/set_radar_range_Response | `provizio::srv::set_radar_range_Request` / `provizio::srv::set_radar_range_RequestPubSubType` & `provizio::srv::set_radar_range_Response` / `provizio::srv::set_radar_range_ResponsePubSubType` | `provizio_dds.set_radar_range_Request` / `provizio_dds.set_radar_range_RequestPubSubType` & `provizio_dds.set_radar_range_Response` / `provizio_dds.set_radar_range_ResponsePubSubType` |
 
 ## Radar Point Cloud: Fields
 
