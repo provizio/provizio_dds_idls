@@ -70,6 +70,7 @@ class CdrSizeCalculator;
 
 namespace provizio {
     namespace msg {
+        const uint32_t unknown_range = 65535;
         /*!
          * @brief This class represents the enumeration radar_range defined by the user in the IDL file.
          * @ingroup radar_range
