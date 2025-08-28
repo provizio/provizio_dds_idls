@@ -16,6 +16,8 @@
 
 module provizio {
   module msg {
+    const unsigned long unknown_range = 65535; // 0xffff, same as in Provizio Core API
+    
     enum radar_range {
       short_range,
       medium_range,

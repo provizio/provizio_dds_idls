@@ -21,7 +21,7 @@
 
 | Description | Service Name (same in provizio_dds and ROS 2) | Request DDS Topic Name | Response DDS Topic Name | Request Data Type | Response Data Type | C++ Type Names / Pub-Sub Type Names | Python Type Names / Pub-Sub Type Names |
 | ----------- | --------------------------------------------- | ---------------------- | ----------------------- | ------------------| ------------------ | ----------------------------------- | -------------------------------------- |
-| Setting radar range | [provizio_set_radar_range](provizio/msg/radar_range.idl) | rq/provizio_set_radar_rangeRequest | rr/provizio_set_radar_rangeReply | provizio/srv/set_radar_range_Request | provizio/srv/set_radar_range_Response | `provizio::srv::set_radar_range_Request` / `provizio::srv::set_radar_range_RequestPubSubType` & `provizio::srv::set_radar_range_Response` / `provizio::srv::set_radar_range_ResponsePubSubType` | `provizio_dds.set_radar_range_Request` / `provizio_dds.set_radar_range_RequestPubSubType` & `provizio_dds.set_radar_range_Response` / `provizio_dds.set_radar_range_ResponsePubSubType` |
+| Setting radar range | [provizio_set_radar_range](provizio/srv/set_radar_range.idl) | rq/provizio_set_radar_rangeRequest | rr/provizio_set_radar_rangeReply | provizio/srv/set_radar_range_Request | provizio/srv/set_radar_range_Response | `provizio::srv::set_radar_range_Request` / `provizio::srv::set_radar_range_RequestPubSubType` & `provizio::srv::set_radar_range_Response` / `provizio::srv::set_radar_range_ResponsePubSubType` | `provizio_dds.set_radar_range_Request` / `provizio_dds.set_radar_range_RequestPubSubType` & `provizio_dds.set_radar_range_Response` / `provizio_dds.set_radar_range_ResponsePubSubType` |
 
 ## Radar Point Cloud: Fields
 
