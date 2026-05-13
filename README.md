@@ -2,14 +2,6 @@
 
 `.idl` files definining DDS API interfaces of Provizio software components.
 
-> **Note (PR in progress):** The `ros/<pkg>/{msg,srv,action}/` upstream-mirror
-> switch from pre-generated `.idl` to ROS 2 `.msg`/`.srv` source files is
-> deferred to a follow-up commit on this branch, to keep the changed-file
-> count under the Copilot reviewer's 300-file cap. The pipeline
-> (`pipeline/idl_pipeline.py`) and CMake wiring assume the post-switch
-> layout — codegen will not run cleanly on this branch until the follow-up
-> commit lands. This note is removed when that commit is applied.
-
 ## ROS2 Interoperability
 
 Messages are intentionally defined to be [ROS2](https://www.ros.org/) compatible, despite Provizio DDS API being independent of ROS.
