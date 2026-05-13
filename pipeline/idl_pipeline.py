@@ -34,13 +34,15 @@ rosidl_adapter produces:
    -> `string _default;`). Splits out of pass 2 because the main regex
    only matches PascalCase type basenames.
 
-4. escape_idl_keyword_struct_names — append a trailing underscore to
-   struct names whose lowercase form collides with an IDL reserved word
-   (Bool, Byte, Char, String, Int8/16/32/64, UInt8/16/32/64). Trailing
-   rather than leading: Fast-DDS's XTypes 1.3 is_type_name_consistent FSM
-   rejects identifiers starting with `_` after `::`, so
-   `<pkg>::msg::dds_::_String_` would fail TypeDescriptor validation
-   inside ddsrecorder.
+4. escape_idl_keyword_struct_names — prepend a leading underscore (OMG
+   IDL §7.4.4.1 escaped identifier) to struct declarations whose name's
+   lowercase form collides with an IDL reserved word (Bool, Byte, Char,
+   String, Int8/16/32/64, UInt8/16/32/64). The IDL parser strips the
+   leading underscore per spec — so `_Bool` is the same identifier as
+   `Bool`. fastddsgen v4 emits C++ class `Bool`, Python class `Bool`,
+   and on-wire `<pkg>::msg::dds_::Bool_` (single trailing underscore
+   added by `-typeros2` on top of the parsed identifier `Bool`),
+   matching what stock ROS 2 and pre-3.x provizio_dds use.
 
 5. uniquify_typedefs — prefix primitive-array typedefs (`double__9`) with
    the file's struct stem so transitive includes don't redefine the same
@@ -230,19 +232,39 @@ _IDL_KEYWORDS_LC = {
 
 
 def escape_idl_keyword_struct_names(text: str, keyword_struct_names: set) -> str:
-    """Rename `struct Foo` to `struct Foo_` (and references in field types,
-    module guards, etc.) for every struct name whose lowercase form collides
-    with an IDL reserved word. A trailing underscore differentiates the
-    identifier from the keyword while keeping the name valid under the
-    DDS XTypes 1.3 fully-qualified-name FSM, which rejects identifiers that
-    start with `_` immediately after `::`. The previous leading-underscore
-    convention from IDL §7.2.3 is legal IDL but trips Fast-DDS's
-    is_type_name_consistent check on names like `std_msgs::msg::dds_::_String_`,
-    causing TypeDescriptor validation failures inside ddsrecorder.
+    """Rename `struct Foo` to `struct _Foo` (OMG IDL §7.4.4.1 escaped
+    identifier — leading underscore) for every struct whose name's lowercase
+    form collides with an IDL reserved word (Bool, Byte, Char, String,
+    Int8/16/32/64, UInt8/16/32/64 in std_msgs).
+
+    Per OMG IDL §7.4.4.1, the leading underscore is *not* part of the
+    identifier — it's a syntactic marker that the parser strips during
+    code generation. So `_Foo` and `Foo` denote the same type: fastddsgen
+    v4 emits C++ class `Foo`, Python class `Foo`, and (with `-typeros2`)
+    the on-wire topic-type name `<pkg>::msg::dds_::Foo_` — a single
+    trailing underscore appended by `-typeros2` on top of the parsed
+    identifier `Foo`. This is exactly what stock ROS 2 advertises and
+    what pre-3.x provizio_dds nodes expect on the wire, so interop is
+    preserved.
+
+    Only the declaration site (`struct Foo`) is escaped. Field-type
+    references like `std_msgs::msg::Foo stamp;` stay unchanged: the IDL
+    parser resolves them by name lookup against the already-declared
+    identifier `Foo`, not against the keyword table.
 
     Skips `//` line comments so the rewrite doesn't touch the provenance
-    header rosidl_adapter emits (`// with input from std_msgs/msg/Bool.msg`),
-    which would otherwise become a misleading `Bool_.msg` reference.
+    header rosidl_adapter emits (`// with input from std_msgs/msg/Bool.msg`).
+
+    History note: an earlier version of this pass used a trailing
+    underscore (`Foo_`) instead of the OMG-canonical leading one, on the
+    mistaken assumption that XTypes 1.3's is_type_name_consistent FSM
+    would reject identifiers starting with `_` after `::`. That concern
+    was unfounded — by the time fastddsgen generates the type metadata,
+    the leading underscore has been stripped per spec, so the FSM only
+    ever sees `Foo`. The trailing-underscore approach produced on-wire
+    names like `std_msgs::msg::dds_::Bool__` (double underscore: one from
+    the escape, one from -typeros2), breaking discovery with both stock
+    ROS 2 and pre-3.x provizio_dds.
     """
     if not keyword_struct_names:
         return text
@@ -252,7 +274,8 @@ def escape_idl_keyword_struct_names(text: str, keyword_struct_names: set) -> str
             out_lines.append(line)
             continue
         for name in keyword_struct_names:
-            line = re.sub(rf'\b{re.escape(name)}\b', f'{name}_', line)
+            line = re.sub(rf'(\bstruct\s+){re.escape(name)}\b',
+                          rf'\1_{name}', line)
         out_lines.append(line)
     return ''.join(out_lines)
 
@@ -417,16 +440,14 @@ def process_package(package_name, package_dir, out_root, known_type_names_lower,
             out_subdir = out_root / package_name / sub
             tmp_idl = convert_one(package_dir, package_name, rel_input, out_subdir)
             text = Path(tmp_idl).read_text(encoding='utf-8')
-            # If this type's name itself collides with an IDL keyword, the
-            # output file is also renamed to "<Name>_.idl" (trailing
-            # underscore, matching escape_idl_keyword_struct_names) so
-            # consumers reference it consistently.
+            # The filename keeps the original stem (e.g. `Bool.idl`, not
+            # `_Bool.idl`) — the IDL-level escape is purely a leading-
+            # underscore marker inside the struct declaration, and the OMG
+            # IDL parser strips it, so consumers reference the type by its
+            # bare name (`std_msgs::msg::Bool`) and locate the file by its
+            # bare name too.
             type_name = src.stem
-            final_idl = tmp_idl
-            if type_name in keyword_struct_names:
-                final_idl = Path(tmp_idl).parent / f'{type_name}_.idl'
-                Path(tmp_idl).rename(final_idl)
-            Path(final_idl).write_text(
+            Path(tmp_idl).write_text(
                 post_process(text, package_name, sub, type_name,
                              known_type_names_lower, keyword_struct_names),
                 encoding='utf-8')
