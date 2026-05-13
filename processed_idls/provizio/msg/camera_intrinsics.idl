@@ -1,0 +1,24 @@
+#ifndef __ros__provizio__msg__camera_intrinsics__idl
+#define __ros__provizio__msg__camera_intrinsics__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from provizio/msg/camera_intrinsics.msg
+// generated code does not contain a copyright notice
+
+#include "provizio/msg/camera_intrinsics_orthographic.idl"
+#include "provizio/msg/camera_intrinsics_perspective.idl"
+#include "std_msgs/msg/Header.idl"
+
+module provizio {
+  module msg {
+        struct camera_intrinsics {
+      std_msgs::msg::Header _header;
+
+      provizio::msg::camera_intrinsics_perspective perspective;
+
+      provizio::msg::camera_intrinsics_orthographic orthographic;
+    };
+  };
+};
+
+#endif // __ros__provizio__msg__camera_intrinsics__idl

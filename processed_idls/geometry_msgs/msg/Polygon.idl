@@ -1,0 +1,18 @@
+#ifndef __ros__geometry_msgs__msg__Polygon__idl
+#define __ros__geometry_msgs__msg__Polygon__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from geometry_msgs/msg/Polygon.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point32.idl"
+
+module geometry_msgs {
+  module msg {
+        struct Polygon {
+      sequence<geometry_msgs::msg::Point32> points;
+    };
+  };
+};
+
+#endif // __ros__geometry_msgs__msg__Polygon__idl

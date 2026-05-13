@@ -1,0 +1,21 @@
+#ifndef __ros__geometry_msgs__msg__InertiaStamped__idl
+#define __ros__geometry_msgs__msg__InertiaStamped__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from geometry_msgs/msg/InertiaStamped.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Inertia.idl"
+#include "std_msgs/msg/Header.idl"
+
+module geometry_msgs {
+  module msg {
+        struct InertiaStamped {
+      std_msgs::msg::Header _header;
+
+      geometry_msgs::msg::Inertia _inertia;
+    };
+  };
+};
+
+#endif // __ros__geometry_msgs__msg__InertiaStamped__idl

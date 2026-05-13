@@ -1,0 +1,25 @@
+#ifndef __ros__nav_msgs__msg__GridCells__idl
+#define __ros__nav_msgs__msg__GridCells__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from nav_msgs/msg/GridCells.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "std_msgs/msg/Header.idl"
+
+module nav_msgs {
+  module msg {
+        struct GridCells {
+      std_msgs::msg::Header _header;
+
+            float cell_width;
+
+            float cell_height;
+
+            sequence<geometry_msgs::msg::Point> cells;
+    };
+  };
+};
+
+#endif // __ros__nav_msgs__msg__GridCells__idl

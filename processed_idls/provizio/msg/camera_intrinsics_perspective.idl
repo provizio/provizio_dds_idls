@@ -1,0 +1,20 @@
+#ifndef __ros__provizio__msg__camera_intrinsics_perspective__idl
+#define __ros__provizio__msg__camera_intrinsics_perspective__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from provizio/msg/camera_intrinsics_perspective.msg
+// generated code does not contain a copyright notice
+
+#include "provizio/msg/camera_intrinsics_precise_model.idl"
+
+module provizio {
+  module msg {
+        struct camera_intrinsics_perspective {
+      float hfov;
+
+      provizio::msg::camera_intrinsics_precise_model precise_model;
+    };
+  };
+};
+
+#endif // __ros__provizio__msg__camera_intrinsics_perspective__idl
