@@ -146,7 +146,15 @@ def fix_case_collisions(text: str, known_type_names_lower: set) -> str:
                 field_lc in _IDL_KEYWORDS_LC):
             return f'{m.group(1)} _{field};'
         return m.group(0)
-    return _FIELD_DECL_RE.sub(repl, text)
+    # Skip `//` line comments so prose mentioning "Header header;" or similar
+    # isn't accidentally rewritten — matches the gating used by passes 3 and 4.
+    out_lines = []
+    for line in text.splitlines(keepends=True):
+        if line.lstrip().startswith('//'):
+            out_lines.append(line)
+            continue
+        out_lines.append(_FIELD_DECL_RE.sub(repl, line))
+    return ''.join(out_lines)
 
 
 # Primitive IDL types that can appear as a field's type. _FIELD_DECL_RE
