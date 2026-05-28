@@ -1,0 +1,25 @@
+#ifndef __ros__sensor_msgs__msg__RegionOfInterest__idl
+#define __ros__sensor_msgs__msg__RegionOfInterest__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from sensor_msgs/msg/RegionOfInterest.msg
+// generated code does not contain a copyright notice
+
+
+module sensor_msgs {
+  module msg {
+        struct RegionOfInterest {
+            uint32 x_offset;
+
+            uint32 y_offset;
+
+            uint32 height;
+
+            uint32 width;
+
+            boolean do_rectify;
+    };
+  };
+};
+
+#endif // __ros__sensor_msgs__msg__RegionOfInterest__idl

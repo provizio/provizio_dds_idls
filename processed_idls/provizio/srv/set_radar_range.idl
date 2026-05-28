@@ -1,0 +1,51 @@
+#ifndef __ros__provizio__srv__set_radar_range__idl
+#define __ros__provizio__srv__set_radar_range__idl
+
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from provizio/srv/set_radar_range.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module provizio {
+  module srv {
+    module set_radar_range_Request_Constants {
+      const uint32 SHORT_RANGE = 0;
+      const uint32 MEDIUM_RANGE = 1;
+      const uint32 LONG_RANGE = 2;
+      const uint32 ULTRA_LONG_RANGE = 3;
+      const uint32 HYPER_LONG_RANGE = 4;
+      const uint32 UNKNOWN_RANGE = 65535;
+    };
+        struct set_radar_range_Request {
+      std_msgs::msg::Header _header;
+
+            string serial_number;
+
+      uint32 target_range;
+    };
+    module set_radar_range_Response_Constants {
+      const uint32 SHORT_RANGE = 0;
+      const uint32 MEDIUM_RANGE = 1;
+      const uint32 LONG_RANGE = 2;
+      const uint32 ULTRA_LONG_RANGE = 3;
+      const uint32 HYPER_LONG_RANGE = 4;
+      const uint32 UNKNOWN_RANGE = 65535;
+    };
+    struct set_radar_range_Response {
+      std_msgs::msg::Header _header;
+
+      boolean success;
+
+      string error_message;
+
+      string serial_number;
+
+      sequence<uint32> supported_ranges;
+
+      uint32 current_range;
+    };
+  };
+};
+
+#endif // __ros__provizio__srv__set_radar_range__idl

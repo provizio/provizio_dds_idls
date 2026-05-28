@@ -1,0 +1,51 @@
+# Copyright 2026 Provizio Ltd.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Request/response API for changing a radar's operating range. See
+# provizio/msg/radar_info.msg for the range constant values, replicated
+# below for callers that consume only this service definition.
+
+std_msgs/Header header
+
+# Optional: when non-empty, only the radar with this serial number
+# applies the request, ignoring header.frame_id.
+string serial_number
+
+uint32 SHORT_RANGE=0
+uint32 MEDIUM_RANGE=1
+uint32 LONG_RANGE=2
+uint32 ULTRA_LONG_RANGE=3
+uint32 HYPER_LONG_RANGE=4
+uint32 UNKNOWN_RANGE=65535
+
+uint32 target_range
+
+---
+
+std_msgs/Header header
+
+bool success
+string error_message
+
+string serial_number
+
+uint32 SHORT_RANGE=0
+uint32 MEDIUM_RANGE=1
+uint32 LONG_RANGE=2
+uint32 ULTRA_LONG_RANGE=3
+uint32 HYPER_LONG_RANGE=4
+uint32 UNKNOWN_RANGE=65535
+
+uint32[] supported_ranges
+uint32 current_range

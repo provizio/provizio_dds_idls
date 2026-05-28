@@ -1,0 +1,21 @@
+#ifndef __ros__std_msgs__msg__MultiArrayDimension__idl
+#define __ros__std_msgs__msg__MultiArrayDimension__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from std_msgs/msg/MultiArrayDimension.msg
+// generated code does not contain a copyright notice
+
+
+module std_msgs {
+  module msg {
+        struct MultiArrayDimension {
+            string label;
+
+            uint32 size;
+
+            uint32 stride;
+    };
+  };
+};
+
+#endif // __ros__std_msgs__msg__MultiArrayDimension__idl

@@ -1,0 +1,22 @@
+#ifndef __ros__sensor_msgs__msg__FluidPressure__idl
+#define __ros__sensor_msgs__msg__FluidPressure__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from sensor_msgs/msg/FluidPressure.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module sensor_msgs {
+  module msg {
+        struct FluidPressure {
+            std_msgs::msg::Header _header;
+
+            double fluid_pressure;
+
+            double variance;
+    };
+  };
+};
+
+#endif // __ros__sensor_msgs__msg__FluidPressure__idl

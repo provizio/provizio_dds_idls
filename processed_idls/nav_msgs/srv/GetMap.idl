@@ -1,0 +1,21 @@
+#ifndef __ros__nav_msgs__srv__GetMap__idl
+#define __ros__nav_msgs__srv__GetMap__idl
+
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from nav_msgs/srv/GetMap.srv
+// generated code does not contain a copyright notice
+
+#include "nav_msgs/msg/OccupancyGrid.idl"
+
+module nav_msgs {
+  module srv {
+        struct GetMap_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+        struct GetMap_Response {
+      nav_msgs::msg::OccupancyGrid _map;
+    };
+  };
+};
+
+#endif // __ros__nav_msgs__srv__GetMap__idl
