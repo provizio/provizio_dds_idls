@@ -18,6 +18,7 @@ if(NOT SKIP_CODE_GENERATION)
     if(NOT ROS_PACKAGES)
         set(ROS_PACKAGES
             builtin_interfaces
+            rcl_interfaces
             sensor_msgs
             std_msgs
             std_srvs
