@@ -7,6 +7,7 @@
 | [Radar point cloud](#radar-point-cloud-fields) | rt/provizio_radar_point_cloud | /provizio_radar_point_cloud | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
 | [Super-resolution enhanced radar point cloud](#radar-point-cloud-fields) | rt/provizio_radar_point_cloud_sr | /provizio_radar_point_cloud_sr | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
 | Radar info | rt/provizio_radar_info | /provizio_radar_info | [provizio/msg/radar_info](provizio/msg/radar_info.msg) | `provizio::msg::radar_info` / `provizio::msg::radar_infoPubSubType` | `provizio_dds.radar_info` / `provizio_dds.radar_infoPubSubType` | No |
+| [Generic sensor/frame metadata](#metadata-fields) | rt/provizio_metadata | /provizio_metadata | [provizio/msg/metadata](provizio/msg/metadata.msg) | `provizio::msg::metadata` / `provizio::msg::metadataPubSubType` | `provizio_dds.metadata` / `provizio_dds.metadataPubSubType` | No |
 | Radar-based odometry | rt/provizio_radar_odometry | /provizio_radar_odometry | [nav_msgs/msg/Odometry](ros/nav_msgs/msg/Odometry.msg) | `nav_msgs::msg::Odometry` / `nav_msgs::msg::OdometryPubSubType` | `provizio_dds.Odometry` / `provizio_dds.OdometryPubSubType` | [Yes](https://docs.ros2.org/latest/api/nav_msgs/msg/Odometry.html) |
 | [Radar-based entities](#entities-fields) | rt/provizio_entities | /provizio_entities | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
 | [Camera-based entities](#entities-fields) | rt/provizio_entities_camera | /provizio_entities_camera | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
@@ -21,6 +22,43 @@
 | Description | Service Name (same in provizio_dds and ROS 2) | Request DDS Topic Name | Response DDS Topic Name | Request Data Type | Response Data Type | C++ Type Names / Pub-Sub Type Names | Python Type Names / Pub-Sub Type Names |
 | ----------- | --------------------------------------------- | ---------------------- | ----------------------- | ------------------| ------------------ | ----------------------------------- | -------------------------------------- |
 | Setting radar range | [provizio_set_radar_range](provizio/srv/set_radar_range.srv) | rq/provizio_set_radar_rangeRequest | rr/provizio_set_radar_rangeReply | provizio/srv/set_radar_range_Request | provizio/srv/set_radar_range_Response | `provizio::srv::set_radar_range_Request` / `provizio::srv::set_radar_range_RequestPubSubType` & `provizio::srv::set_radar_range_Response` / `provizio::srv::set_radar_range_ResponsePubSubType` | `provizio_dds.set_radar_range_Request` / `provizio_dds.set_radar_range_RequestPubSubType` & `provizio_dds.set_radar_range_Response` / `provizio_dds.set_radar_range_ResponsePubSubType` |
+
+## Metadata: Fields
+
+[`metadata`](provizio/msg/metadata.msg) messages carry a `Header` (`frame_id` +
+`stamp`), a `source` string identifying the producing subsystem, and an open
+list of `parameters` — each an
+[`rcl_interfaces/Parameter`](ros/rcl_interfaces/msg/Parameter.msg): a `name`
+plus a typed `ParameterValue`. The parameters published for each `source` are
+documented below. New sources, or new parameters within a source, can be added
+without changing the message type.
+
+### Radar (`source` = `"radar"`)
+
+Radar metadata is the open-schema equivalent of
+[`radar_info`](provizio/msg/radar_info.msg), plus `multiplex` and `radar_model`:
+
+| Parameter `name`   | `ParameterValue` type                     | Description |
+| ------------------ | ----------------------------------------- | ----------- |
+| `serial_number`    | string (`PARAMETER_STRING`)               | Radar serial number. |
+| `radar_model`      | string (`PARAMETER_STRING`)               | Radar model identifier. |
+| `multiplex`        | string (`PARAMETER_STRING`)               | Multiplexing scheme. One of: `TDMA`, `DDMA`, `SPTDMA` (can be extended in the future). |
+| `current_range`    | integer (`PARAMETER_INTEGER`)             | The radar's current operating range mode — see [Radar range values](#radar-range-values). |
+| `supported_ranges` | integer array (`PARAMETER_INTEGER_ARRAY`) | The discrete set of range modes the radar can switch to — see [Radar range values](#radar-range-values). |
+
+#### Radar range values
+
+`current_range` and `supported_ranges` use the same encoding as `radar_info`'s
+range constants:
+
+| Value | Range              |
+| ----- | ------------------ |
+| 0     | `SHORT_RANGE`      |
+| 1     | `MEDIUM_RANGE`     |
+| 2     | `LONG_RANGE`       |
+| 3     | `ULTRA_LONG_RANGE` |
+| 4     | `HYPER_LONG_RANGE` |
+| 65535 | `UNKNOWN_RANGE`    |
 
 ## Radar Point Cloud: Fields
 

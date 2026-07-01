@@ -1,0 +1,21 @@
+#ifndef __ros__rcl_interfaces__srv__DescribeParameters__idl
+#define __ros__rcl_interfaces__srv__DescribeParameters__idl
+
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from rcl_interfaces/srv/DescribeParameters.srv
+// generated code does not contain a copyright notice
+
+#include "rcl_interfaces/msg/ParameterDescriptor.idl"
+
+module rcl_interfaces {
+  module srv {
+        struct DescribeParameters_Request {
+      sequence<string> names;
+    };
+        struct DescribeParameters_Response {
+      sequence<rcl_interfaces::msg::ParameterDescriptor> descriptors;
+    };
+  };
+};
+
+#endif // __ros__rcl_interfaces__srv__DescribeParameters__idl
