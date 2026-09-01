@@ -21,6 +21,7 @@
 | [Camera intrinsics](#extrinsics-and-intrinsics) | rt/provizio_camera_intrinsics | /provizio_camera_intrinsics | [provizio/msg/camera_intrinsics](provizio/msg/camera_intrinsics.msg) | `provizio::msg::camera_intrinsics` / `provizio::msg::camera_intrinsicsPubSubType` | `provizio_dds.camera_intrinsics` / `provizio_dds.camera_intrinsicsPubSubType` | No |
 | [GNSS fix](#gnss) | rt/provizio_nav_sat_fix | /provizio_nav_sat_fix | [sensor_msgs/msg/NavSatFix](ros/sensor_msgs/msg/NavSatFix.msg) | `sensor_msgs::msg::NavSatFix` / `sensor_msgs::msg::NavSatFixPubSubType` | `provizio_dds.NavSatFix` / `provizio_dds.NavSatFixPubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/NavSatFix.html) |
 | [GNSS fix with heading](#gnss) | rt/provizio_nav_sat_fix_heading | /provizio_nav_sat_fix_heading | [provizio/msg/nav_sat_fix_with_heading](provizio/msg/nav_sat_fix_with_heading.msg) | `provizio::msg::nav_sat_fix_with_heading` / `provizio::msg::nav_sat_fix_with_headingPubSubType` | `provizio_dds.nav_sat_fix_with_heading` / `provizio_dds.nav_sat_fix_with_headingPubSubType` | No |
+| **Obsolete** — [radar range control](#setting-a-radars-range) | rt/provizio_set_radar_range | /provizio_set_radar_range | `provizio/msg/set_radar_range` (no longer generated) | — | — | No |
 | [Freespace polygons](#polygonal-freespaces) | rt/provizio_freespace_poly | /provizio_freespace_poly | [geometry_msgs/msg/PolygonInstanceStamped.msg](ros/geometry_msgs/msg/PolygonInstanceStamped.msg) | `geometry_msgs::msg::PolygonInstanceStamped` / `geometry_msgs::msg::PolygonInstanceStampedPubSubType` | `provizio_dds.PolygonInstanceStamped` / `provizio_dds.PolygonInstanceStampedPubSubType` | [Yes](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/PolygonInstanceStamped.msg) |
 | [Camera freespace polygons](#polygonal-freespaces) | rt/provizio_freespace_camera_poly | /provizio_freespace_camera_poly | [geometry_msgs/msg/PolygonInstanceStamped.msg](ros/geometry_msgs/msg/PolygonInstanceStamped.msg) | `geometry_msgs::msg::PolygonInstanceStamped` / `geometry_msgs::msg::PolygonInstanceStampedPubSubType` | `provizio_dds.PolygonInstanceStamped` / `provizio_dds.PolygonInstanceStampedPubSubType` | [Yes](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/PolygonInstanceStamped.msg) |
 
@@ -29,6 +30,27 @@
 | Description | Service Name (same in provizio_dds and ROS 2) | Request DDS Topic Name | Response DDS Topic Name | Request Data Type | Response Data Type | C++ Type Names / Pub-Sub Type Names | Python Type Names / Pub-Sub Type Names |
 | ----------- | --------------------------------------------- | ---------------------- | ----------------------- | ------------------| ------------------ | ----------------------------------- | -------------------------------------- |
 | Setting radar range | [provizio_set_radar_range](provizio/srv/set_radar_range.srv) | rq/provizio_set_radar_rangeRequest | rr/provizio_set_radar_rangeReply | provizio/srv/set_radar_range_Request | provizio/srv/set_radar_range_Response | `provizio::srv::set_radar_range_Request` / `provizio::srv::set_radar_range_RequestPubSubType` & `provizio::srv::set_radar_range_Response` / `provizio::srv::set_radar_range_ResponsePubSubType` | `provizio_dds.set_radar_range_Request` / `provizio_dds.set_radar_range_RequestPubSubType` & `provizio_dds.set_radar_range_Response` / `provizio_dds.set_radar_range_ResponsePubSubType` |
+
+## Setting a Radar's Range
+
+A radar's operating range is changed through the
+[`provizio_set_radar_range`](provizio/srv/set_radar_range.srv) service listed above. The
+request names the range to switch to, and optionally a `serial_number` so that only one radar
+of several acts on it; the response says whether the change succeeded and reports the radar's
+`supported_ranges` and `current_range`. Range values are the constants in
+[Radar range values](#radar-range-values).
+
+### Obsolete: the `rt/provizio_set_radar_range` topic
+
+Before the service existed, the same change was requested by publishing a
+`provizio::msg::set_radar_range` message — a `Header`, an optional `serial_number` and a
+`target_range` — to the plain `rt/provizio_set_radar_range` topic. It was one-way: nothing
+confirmed that a radar had received the request, that it had applied it, or that the range was
+one the radar supports, which is what the request/response form exists to provide.
+
+The message type is no longer generated, so current bindings cannot publish or subscribe it.
+The topic is documented because recordings made before the change still contain it, and a tool
+reading those recordings will encounter the channel.
 
 ## Metadata: Fields
 
