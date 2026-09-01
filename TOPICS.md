@@ -218,16 +218,27 @@ sensor, and `transform` carries the translation in metres and the rotation as a 
 message is published per sensor, repeatedly rather than once, so that a consumer which starts
 late still receives the full set.
 
-This is the **tf2 format**, not a Provizio one: `TransformStamped` is the message tf2 is built
-on, and the fields carry tf2's own meaning — parent frame in `header.frame_id`, child in
+These are not in a Provizio-specific format. `TransformStamped` is the standard ROS 2 message
+that [**tf2**](https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Tf2.html) — ROS 2's
+library for tracking where each part of a robot or vehicle is relative to the others — is built
+on, and the fields carry tf2's own meaning: the parent frame in `header.frame_id`, the child in
 `child_frame_id`, and a right-handed translation and rotation from the one to the other. ROS 2
-tooling can therefore use these transforms directly, RViz included, with no conversion.
+tooling can therefore consume Provizio extrinsics as they are, with no conversion — including
+[**RViz**](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/RViz/RViz-User-Guide/RViz-User-Guide.html),
+ROS 2's 3D visualiser, which uses tf2 to place each sensor's data in a common frame.
 
-The only thing to note when feeding a tf2 tree is that tf2's own topics, `/tf` and `/tf_static`,
-carry [`tf2_msgs/TFMessage`](ros/tf2_msgs/msg/TFMessage.msg) — an array of exactly these
-messages — so a relay wraps each one in a single-element array rather than translating it.
-Because extrinsics are fixed for a given vehicle build and republished rather than sent once,
-`/tf_static` is the topic they belong on.
+Using provizio_dds does not require ROS 2, and nothing above depends on it: the transforms are
+just as usable by a consumer that reads them straight off the DDS topic. The point is only that
+those who do use ROS 2 need write no adapter.
+
+For anyone wiring these into a tf2 tree, the one thing to know is that tf2's own topics, `/tf`
+and `/tf_static`, do not carry `TransformStamped` directly — they carry
+[`tf2_msgs/TFMessage`](ros/tf2_msgs/msg/TFMessage.msg), which is simply an array of them. A
+relay therefore wraps each message in a single-element array rather than translating anything.
+Because extrinsics are fixed for a given vehicle build and are republished rather than sent
+once, `/tf_static` is the topic they belong on. The
+[tf2 tutorials](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Tf2/Tf2-Main.html) cover
+the broadcasting side if that is unfamiliar.
 
 ### Camera intrinsics — `rt/provizio_camera_intrinsics`
 
