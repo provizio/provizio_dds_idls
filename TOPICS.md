@@ -218,6 +218,17 @@ sensor, and `transform` carries the translation in metres and the rotation as a 
 message is published per sensor, repeatedly rather than once, so that a consumer which starts
 late still receives the full set.
 
+This is the **tf2 format**, not a Provizio one: `TransformStamped` is the message tf2 is built
+on, and the fields carry tf2's own meaning — parent frame in `header.frame_id`, child in
+`child_frame_id`, and a right-handed translation and rotation from the one to the other. ROS 2
+tooling can therefore use these transforms directly, RViz included, with no conversion.
+
+The only thing to note when feeding a tf2 tree is that tf2's own topics, `/tf` and `/tf_static`,
+carry [`tf2_msgs/TFMessage`](ros/tf2_msgs/msg/TFMessage.msg) — an array of exactly these
+messages — so a relay wraps each one in a single-element array rather than translating it.
+Because extrinsics are fixed for a given vehicle build and republished rather than sent once,
+`/tf_static` is the topic they belong on.
+
 ### Camera intrinsics — `rt/provizio_camera_intrinsics`
 
 [`camera_intrinsics`](provizio/msg/camera_intrinsics.msg) identifies its camera through
