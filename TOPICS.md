@@ -12,8 +12,15 @@
 | [Radar-based entities](#entities-fields) | rt/provizio_entities | /provizio_entities | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
 | [Camera-based entities](#entities-fields) | rt/provizio_entities_camera | /provizio_entities_camera | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
 | [Fusion-based entities](#entities-fields) | rt/provizio_entities_fusion | /provizio_entities_fusion | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
-| Raw camera frames | rt/provizio_camera | /provizio_camera | [sensor_msgs/msg/Image](ros/sensor_msgs/msg/Image.msg) | `sensor_msgs::msg::Image` / `sensor_msgs::msg::ImagePubSubType` | `provizio_dds.Image` / `provizio_dds.ImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/Image.html) |
-| [Raw image freespace](#raw-image-freespaces) | rt/provizio_freespace | /provizio_freespace | [sensor_msgs/msg/Image](ros/sensor_msgs/msg/Image.msg) | `sensor_msgs::msg::Image` / `sensor_msgs::msg::ImagePubSubType` | `provizio_dds.Image` / `provizio_dds.ImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/Image.html) |
+| [Compressed camera frames](#compressed-video) | rt/provizio_camera/compressed | /provizio_camera/compressed | [sensor_msgs/msg/CompressedImage](ros/sensor_msgs/msg/CompressedImage.msg) | `sensor_msgs::msg::CompressedImage` / `sensor_msgs::msg::CompressedImagePubSubType` | `provizio_dds.CompressedImage` / `provizio_dds.CompressedImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/CompressedImage.html) |
+| [Compressed image freespace](#compressed-video) | rt/provizio_freespace/compressed | /provizio_freespace/compressed | [sensor_msgs/msg/CompressedImage](ros/sensor_msgs/msg/CompressedImage.msg) | `sensor_msgs::msg::CompressedImage` / `sensor_msgs::msg::CompressedImagePubSubType` | `provizio_dds.CompressedImage` / `provizio_dds.CompressedImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/CompressedImage.html) |
+| **Obsolete** — [uncompressed camera frames](#compressed-video) | rt/provizio_camera | /provizio_camera | [sensor_msgs/msg/Image](ros/sensor_msgs/msg/Image.msg) | `sensor_msgs::msg::Image` / `sensor_msgs::msg::ImagePubSubType` | `provizio_dds.Image` / `provizio_dds.ImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/Image.html) |
+| **Obsolete** — [uncompressed image freespace](#raw-image-freespaces) | rt/provizio_freespace | /provizio_freespace | [sensor_msgs/msg/Image](ros/sensor_msgs/msg/Image.msg) | `sensor_msgs::msg::Image` / `sensor_msgs::msg::ImagePubSubType` | `provizio_dds.Image` / `provizio_dds.ImagePubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/Image.html) |
+| [Lidar point cloud](#lidar-point-cloud) | rt/lidar_point_cloud | /lidar_point_cloud | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
+| [Sensor extrinsics](#extrinsics-and-intrinsics) | rt/provizio_extrinsics | /provizio_extrinsics | [geometry_msgs/msg/TransformStamped](ros/geometry_msgs/msg/TransformStamped.msg) | `geometry_msgs::msg::TransformStamped` / `geometry_msgs::msg::TransformStampedPubSubType` | `provizio_dds.TransformStamped` / `provizio_dds.TransformStampedPubSubType` | [Yes](https://docs.ros2.org/latest/api/geometry_msgs/msg/TransformStamped.html) |
+| [Camera intrinsics](#extrinsics-and-intrinsics) | rt/provizio_camera_intrinsics | /provizio_camera_intrinsics | [provizio/msg/camera_intrinsics](provizio/msg/camera_intrinsics.msg) | `provizio::msg::camera_intrinsics` / `provizio::msg::camera_intrinsicsPubSubType` | `provizio_dds.camera_intrinsics` / `provizio_dds.camera_intrinsicsPubSubType` | No |
+| [GNSS fix](#gnss) | rt/provizio_nav_sat_fix | /provizio_nav_sat_fix | [sensor_msgs/msg/NavSatFix](ros/sensor_msgs/msg/NavSatFix.msg) | `sensor_msgs::msg::NavSatFix` / `sensor_msgs::msg::NavSatFixPubSubType` | `provizio_dds.NavSatFix` / `provizio_dds.NavSatFixPubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/NavSatFix.html) |
+| [GNSS fix with heading](#gnss) | rt/provizio_nav_sat_fix_heading | /provizio_nav_sat_fix_heading | [provizio/msg/nav_sat_fix_with_heading](provizio/msg/nav_sat_fix_with_heading.msg) | `provizio::msg::nav_sat_fix_with_heading` / `provizio::msg::nav_sat_fix_with_headingPubSubType` | `provizio_dds.nav_sat_fix_with_heading` / `provizio_dds.nav_sat_fix_with_headingPubSubType` | No |
 | [Freespace polygons](#polygonal-freespaces) | rt/provizio_freespace_poly | /provizio_freespace_poly | [geometry_msgs/msg/PolygonInstanceStamped.msg](ros/geometry_msgs/msg/PolygonInstanceStamped.msg) | `geometry_msgs::msg::PolygonInstanceStamped` / `geometry_msgs::msg::PolygonInstanceStampedPubSubType` | `provizio_dds.PolygonInstanceStamped` / `provizio_dds.PolygonInstanceStampedPubSubType` | [Yes](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/PolygonInstanceStamped.msg) |
 | [Camera freespace polygons](#polygonal-freespaces) | rt/provizio_freespace_camera_poly | /provizio_freespace_camera_poly | [geometry_msgs/msg/PolygonInstanceStamped.msg](ros/geometry_msgs/msg/PolygonInstanceStamped.msg) | `geometry_msgs::msg::PolygonInstanceStamped` / `geometry_msgs::msg::PolygonInstanceStampedPubSubType` | `provizio_dds.PolygonInstanceStamped` / `provizio_dds.PolygonInstanceStampedPubSubType` | [Yes](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/PolygonInstanceStamped.msg) |
 
@@ -106,9 +113,120 @@ Entities can be radar-detected, camera-detected or fused, and hence can contain 
 | 6        | Bus          |
 | 7        | Obstacle     |
 
+## Compressed Video
+
+Camera frames and image freespaces are published compressed. A DDS topic carries one type,
+so the compressed stream does not replace the contents of the uncompressed topic but travels
+on a sibling of it, named the way `image_transport` names one — `<base topic>/compressed`:
+
+| Uncompressed (obsolete)  | Compressed                          |
+| ------------------------ | ----------------------------------- |
+| `rt/provizio_camera`     | `rt/provizio_camera/compressed`     |
+| `rt/provizio_freespace`  | `rt/provizio_freespace/compressed`  |
+
+A publisher sends one or the other, not both, so a consumer that wants to work with either
+subscribes to both topics and takes whichever arrives. A recording likewise holds only the
+topic its producer published.
+
+### Why the uncompressed topics are obsolete
+
+Uncompressed frames cost roughly 156 Mbps per camera at 960x540 and 25 fps, which no remote
+link carries and which is a significant fraction of what a recording can be expected to hold.
+The same footage as VP9 costs around 1.5 Mbps. New publishers and consumers should use the
+compressed topics; the uncompressed ones remain documented because deployed software still
+produces and reads them.
+
+### Format field
+
+`CompressedImage.format` is free-form in ROS 2, which is what lets the same message carry a
+video codec as well as a still-image one. Provizio uses these values:
+
+| `format` | Contents                                                                 |
+| -------- | ------------------------------------------------------------------------ |
+| `vp9`    | One VP9 frame per message. **Recommended.**                              |
+| `vp8`    | One VP8 frame per message. Around twice as cheap to encode, roughly a third larger. |
+| `jpeg`   | A complete JPEG image. Intra-only, so every message stands on its own.   |
+| `png`    | A complete PNG image. Lossless, so it suits synthesised overlays such as a freespace mask, whose flat colours and hard class boundaries a lossy codec smears. |
+
+`vp8` and `vp9` are inter-predicted: a message that is not a key frame decodes only against
+the frames before it, so a consumer joining a live stream produces nothing until the next key
+frame, and one that misses a message must wait for a key frame before it can decode again.
+
+### Why VP9
+
+VP9 is the recommended codec because it is the best available balance of the three properties
+that matter here, rather than the best on any one of them:
+
+- **Encoding cost.** Compression has to run on the vehicle, alongside radar processing and
+  often on a platform with no video encoder of its own — a Jetson Orin Nano has none at all.
+  VP9 at realtime settings costs about three quarters of one Cortex-A78AE core at 1280x720 and
+  25 fps, and around one and a half cores at 1920x1080, which leaves the remaining cores to the
+  work they exist for.
+- **Decoding cost and hardware support.** Consumers range from desktop players to browsers on
+  modest hardware, and VP9 decoding is accelerated in hardware across essentially every current
+  GPU, mobile SoC and browser. Software decoding, where hardware is absent, is also cheap.
+- **Availability.** VP9 is royalty-free and decodable everywhere without licensing questions,
+  through libvpx on desktop and through the browser's own `VideoDecoder` on the web.
+
+AV1 and the emerging AV2 compress better at the same quality, but neither is the right choice
+today: their encoders are far more computationally demanding at equivalent settings, which is
+the cost this system can least afford, and hardware decoding for AV1 is still limited to recent
+devices while AV2 has essentially none. H.264 and H.265 have the widest hardware support of
+all, but carry patent licensing obligations that VP9 does not. VP9 is chosen because it is
+cheap enough to encode on the vehicle, cheap and widely accelerated to decode off it, and free
+of those obligations.
+
+## Lidar Point Cloud
+
+Lidar point clouds use the same [`PointCloud2`](ros/sensor_msgs/msg/PointCloud2.msg) type as
+radar ones, on `rt/lidar_point_cloud`, and carry at least `x`, `y` and `z` in the sensor's own
+frame. Which further fields are present depends on the lidar; consumers should read the
+message's own `fields` rather than assume a layout.
+
+## Extrinsics and Intrinsics
+
+Calibration travels on its own topics so that a consumer can place every sensor's data in a
+common frame without being configured separately.
+
+### Extrinsics — `rt/provizio_extrinsics`
+
+Each [`TransformStamped`](ros/geometry_msgs/msg/TransformStamped.msg) gives one sensor's pose:
+`header.frame_id` names the frame the transform is expressed in, `child_frame_id` names the
+sensor, and `transform` carries the translation in metres and the rotation as a quaternion. One
+message is published per sensor, repeatedly rather than once, so that a consumer which starts
+late still receives the full set.
+
+### Camera intrinsics — `rt/provizio_camera_intrinsics`
+
+[`camera_intrinsics`](provizio/msg/camera_intrinsics.msg) identifies its camera through
+`header.frame_id` and carries either a
+[perspective](provizio/msg/camera_intrinsics_perspective.msg) or an
+[orthographic](provizio/msg/camera_intrinsics_orthographic.msg) sub-message depending on the
+projection model the camera uses; the other is left at its default values. As with extrinsics,
+these are published repeatedly.
+
+## GNSS
+
+Two topics carry position, and a producer publishes whichever it can:
+
+- `rt/provizio_nav_sat_fix` — a standard
+  [`NavSatFix`](ros/sensor_msgs/msg/NavSatFix.msg): latitude, longitude, altitude and their
+  covariance.
+- `rt/provizio_nav_sat_fix_heading` —
+  [`nav_sat_fix_with_heading`](provizio/msg/nav_sat_fix_with_heading.msg), the same fix plus a
+  heading, for receivers that resolve orientation as well as position.
+
+A consumer that can use heading should subscribe to both and prefer the heading-bearing topic
+when it is present.
+
 ## Freespace
 
 There are 2 ways of representing freespaces: [Polygonal](#polygonal-freespaces) and [Raw Images](#raw-image-freespaces). Please see below for more details.
+
+An image freespace is published compressed, on `rt/provizio_freespace/compressed` — see
+[Compressed Video](#compressed-video). PNG is the format to use for one: the image is drawn
+from a handful of flat colours, which a lossy codec smears across exactly the class boundaries
+the overlay exists to draw, and for flat colours PNG is also the smaller of the two.
 
 ### Polygonal Freespaces
 
@@ -118,7 +236,11 @@ There can be single or multiple polygons per frame. Later case produces multiple
 
 ### Raw Image Freespaces
 
-Freespace can also be provided in the form of raw images. Black pixels (#000000) stand for non-freespace, while gray-blue (#434758 HEX) pixels mark freespace. The default coordinate system is as following:
+> The uncompressed `rt/provizio_freespace` topic is obsolete — see
+> [Compressed Video](#compressed-video). What follows describes the image itself, which is the
+> same whether it arrives compressed or not.
+
+Freespace can also be provided in the form of images. Black pixels (#000000) stand for non-freespace, while gray-blue (#434758 HEX) pixels mark freespace. The default coordinate system is as following:
 
 - Bottom-center pixel is at the position of the sensor (0m forward, 0m left)
 - Up-center pixel is at (400m forward, 0m left)
