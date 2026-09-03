@@ -267,7 +267,7 @@ when it is present.
 
 There are 2 ways of representing freespaces: [Polygonal](#polygonal-freespaces) and [Raw Images](#raw-image-freespaces). Please see below for more details.
 
-By current software, an image freespace is published compressed, on `rt/provizio_freespace/compressed` — see
+Current software publishes an image freespace compressed, on `rt/provizio_freespace/compressed` — see
 [Compressed Video](#compressed-video). PNG is the format to use for one: the image is drawn
 from a handful of flat colours, which a lossy codec smears across exactly the class boundaries
 the overlay exists to draw, and for flat colours PNG is also the smaller of the two.
