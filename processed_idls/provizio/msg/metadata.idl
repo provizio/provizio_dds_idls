@@ -1,0 +1,23 @@
+#ifndef __ros__provizio__msg__metadata__idl
+#define __ros__provizio__msg__metadata__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from provizio/msg/metadata.msg
+// generated code does not contain a copyright notice
+
+#include "rcl_interfaces/msg/Parameter.idl"
+#include "std_msgs/msg/Header.idl"
+
+module provizio {
+  module msg {
+        struct metadata {
+            std_msgs::msg::Header _header;
+
+            string source;
+
+            sequence<rcl_interfaces::msg::Parameter> parameters;
+    };
+  };
+};
+
+#endif // __ros__provizio__msg__metadata__idl

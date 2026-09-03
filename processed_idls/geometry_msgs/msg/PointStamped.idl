@@ -1,0 +1,21 @@
+#ifndef __ros__geometry_msgs__msg__PointStamped__idl
+#define __ros__geometry_msgs__msg__PointStamped__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from geometry_msgs/msg/PointStamped.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "std_msgs/msg/Header.idl"
+
+module geometry_msgs {
+  module msg {
+        struct PointStamped {
+      std_msgs::msg::Header _header;
+
+      geometry_msgs::msg::Point _point;
+    };
+  };
+};
+
+#endif // __ros__geometry_msgs__msg__PointStamped__idl

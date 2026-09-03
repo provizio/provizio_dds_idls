@@ -1,0 +1,41 @@
+#ifndef __ros__sensor_msgs__msg__CameraInfo__idl
+#define __ros__sensor_msgs__msg__CameraInfo__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from sensor_msgs/msg/CameraInfo.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/RegionOfInterest.idl"
+#include "std_msgs/msg/Header.idl"
+
+module sensor_msgs {
+  module msg {
+    typedef double CameraInfo__double__9[9];
+    typedef double CameraInfo__double__12[12];
+        struct CameraInfo {
+            std_msgs::msg::Header _header;
+
+            uint32 height;
+
+      uint32 width;
+
+            string distortion_model;
+
+            sequence<double> d;
+
+            CameraInfo__double__9 k;
+
+            CameraInfo__double__9 r;
+
+            CameraInfo__double__12 p;
+
+            uint32 binning_x;
+
+      uint32 binning_y;
+
+            sensor_msgs::msg::RegionOfInterest roi;
+    };
+  };
+};
+
+#endif // __ros__sensor_msgs__msg__CameraInfo__idl

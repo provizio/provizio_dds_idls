@@ -1,0 +1,17 @@
+#ifndef __ros__std_msgs__msg__Char__idl
+#define __ros__std_msgs__msg__Char__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from std_msgs/msg/Char.msg
+// generated code does not contain a copyright notice
+
+
+module std_msgs {
+  module msg {
+        struct _Char {
+      uint8 data;
+    };
+  };
+};
+
+#endif // __ros__std_msgs__msg__Char__idl

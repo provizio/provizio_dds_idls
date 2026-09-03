@@ -1,0 +1,17 @@
+#ifndef __ros__sensor_msgs__msg__LaserEcho__idl
+#define __ros__sensor_msgs__msg__LaserEcho__idl
+
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from sensor_msgs/msg/LaserEcho.msg
+// generated code does not contain a copyright notice
+
+
+module sensor_msgs {
+  module msg {
+        struct LaserEcho {
+            sequence<float> echoes;
+    };
+  };
+};
+
+#endif // __ros__sensor_msgs__msg__LaserEcho__idl

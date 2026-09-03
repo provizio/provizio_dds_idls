@@ -1,0 +1,8 @@
+# Generated code. The C++/Python Fast-DDS bindings and the processed IDL text
+# are produced by the codegen pipeline (see CLAUDE.md) and committed to the
+# repo, but they are machine-generated and CI overwrites them on every push.
+# Mark them as generated so GitHub collapses them in diffs and pull requests
+# (easing human review of the hand-authored sources) and omits them from the
+# repository language statistics.
+provizio_dds_idls_fastdds/** linguist-generated=true
+processed_idls/** linguist-generated=true

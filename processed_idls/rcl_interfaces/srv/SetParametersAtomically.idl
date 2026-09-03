@@ -1,0 +1,22 @@
+#ifndef __ros__rcl_interfaces__srv__SetParametersAtomically__idl
+#define __ros__rcl_interfaces__srv__SetParametersAtomically__idl
+
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from rcl_interfaces/srv/SetParametersAtomically.srv
+// generated code does not contain a copyright notice
+
+#include "rcl_interfaces/msg/Parameter.idl"
+#include "rcl_interfaces/msg/SetParametersResult.idl"
+
+module rcl_interfaces {
+  module srv {
+        struct SetParametersAtomically_Request {
+      sequence<rcl_interfaces::msg::Parameter> parameters;
+    };
+        struct SetParametersAtomically_Response {
+      rcl_interfaces::msg::SetParametersResult result;
+    };
+  };
+};
+
+#endif // __ros__rcl_interfaces__srv__SetParametersAtomically__idl
