@@ -137,7 +137,7 @@ Entities can be radar-detected, camera-detected or fused, and hence can contain 
 
 ## Compressed Video
 
-Camera frames and image freespaces are published compressed by current firmware. A DDS topic carries one type,
+Camera frames and image freespaces are published compressed by current software. A DDS topic carries one type,
 so the compressed stream does not replace the contents of the uncompressed topic but travels
 on a sibling of it, named the way `image_transport` names one — `<base topic>/compressed`:
 
@@ -267,7 +267,7 @@ when it is present.
 
 There are 2 ways of representing freespaces: [Polygonal](#polygonal-freespaces) and [Raw Images](#raw-image-freespaces). Please see below for more details.
 
-An image freespace is published compressed by current firmware, on `rt/provizio_freespace/compressed` — see
+By current software, an image freespace is published compressed, on `rt/provizio_freespace/compressed` — see
 [Compressed Video](#compressed-video). PNG is the format to use for one: the image is drawn
 from a handful of flat colours, which a lossy codec smears across exactly the class boundaries
 the overlay exists to draw, and for flat colours PNG is also the smaller of the two.
