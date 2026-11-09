@@ -8,7 +8,7 @@
 | [Super-resolution enhanced radar point cloud](#radar-point-cloud-fields) | rt/provizio_radar_point_cloud_sr | /provizio_radar_point_cloud_sr | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
 | Radar info | rt/provizio_radar_info | /provizio_radar_info | [provizio/msg/radar_info](provizio/msg/radar_info.msg) | `provizio::msg::radar_info` / `provizio::msg::radar_infoPubSubType` | `provizio_dds.radar_info` / `provizio_dds.radar_infoPubSubType` | No |
 | [Generic sensor/frame metadata](#metadata-fields) | rt/provizio_metadata | /provizio_metadata | [provizio/msg/metadata](provizio/msg/metadata.msg) | `provizio::msg::metadata` / `provizio::msg::metadataPubSubType` | `provizio_dds.metadata` / `provizio_dds.metadataPubSubType` | No |
-| Radar-based odometry | rt/provizio_radar_odometry | /provizio_radar_odometry | [nav_msgs/msg/Odometry](ros/nav_msgs/msg/Odometry.msg) | `nav_msgs::msg::Odometry` / `nav_msgs::msg::OdometryPubSubType` | `provizio_dds.Odometry` / `provizio_dds.OdometryPubSubType` | [Yes](https://docs.ros2.org/latest/api/nav_msgs/msg/Odometry.html) |
+| [Radar-based odometry](#radar-odometry) | rt/provizio_radar_odometry | /provizio_radar_odometry | [nav_msgs/msg/Odometry](ros/nav_msgs/msg/Odometry.msg) | `nav_msgs::msg::Odometry` / `nav_msgs::msg::OdometryPubSubType` | `provizio_dds.Odometry` / `provizio_dds.OdometryPubSubType` | [Yes](https://docs.ros2.org/latest/api/nav_msgs/msg/Odometry.html) |
 | [Radar-based entities](#entities-fields) | rt/provizio_entities | /provizio_entities | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
 | [Camera-based entities](#entities-fields) | rt/provizio_entities_camera | /provizio_entities_camera | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
 | [Fusion-based entities](#entities-fields) | rt/provizio_entities_fusion | /provizio_entities_fusion | [sensor_msgs/msg/PointCloud2](ros/sensor_msgs/msg/PointCloud2.msg) | `sensor_msgs::msg::PointCloud2` / `sensor_msgs::msg::PointCloud2PubSubType` | `provizio_dds.PointCloud2` / `provizio_dds.PointCloud2PubSubType` | [Yes](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointCloud2.html) |
@@ -101,6 +101,27 @@ Radar point clouds (regular and super-resolution enhanced) can contain the follo
 | Radar-relative radial velocity of the point in meters per second  | radar_relative_radial_velocity  | FLOAT32   | 1     | Always present                  |
 | Ground-relative radial velocity of the point in meters per second | ground_relative_radial_velocity | FLOAT32   | 1     | **Can be missing or NaN value** |
 | Signal-to-noise ratio (dB)                                        | signal_to_noise_ratio           | FLOAT32   | 1     | Always present                  |
+
+## Radar Odometry
+
+`rt/provizio_radar_odometry` carries a standard [`nav_msgs/Odometry`](ros/nav_msgs/msg/Odometry.msg):
+an estimate of a radar's motion for each of its point clouds. It follows
+[REP 103](https://www.ros.org/reps/rep-0103.html) for axes and signs and
+[REP 105](https://www.ros.org/reps/rep-0105.html) for frames. Every radar that estimates odometry
+publishes on this one topic, so a consumer picks a radar's messages by `child_frame_id`.
+
+| Field                                 | Meaning                                                                                                                                                                  |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `header.frame_id`                     | `odom`: the frame the pose is in. Its origin and axes are the radar's pose when odometry started, so its x axis is the radar's initial heading. It is not east-north-up. |
+| `header.stamp`                        | Capture time of the point cloud the estimate comes from                                                                                                                  |
+| `child_frame_id`                      | The radar the estimate describes, e.g. `provizio_radar_front_center`: the same name as its point clouds' `header.frame_id`                                               |
+| `pose.pose`                           | The radar's pose in `odom`. Planar: z, roll and pitch are 0, and yaw is counter-clockwise positive seen from above                                                       |
+| `twist.twist.linear`                  | In the radar's own frame: x is the signed forward speed in meters per second (negative when reversing); y and z are 0                                                    |
+| `twist.twist.angular`                 | z is the yaw rate in radians per second, counter-clockwise positive; x and y are 0                                                                                       |
+| `pose.covariance`, `twist.covariance` | Not estimated                                                                                                                                                            |
+
+As REP 105 has it for any `odom` frame, the pose is continuous but drifts over time. It starts
+again from the origin whenever odometry restarts.
 
 ## Entities: Fields
 
