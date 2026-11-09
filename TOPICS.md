@@ -123,12 +123,6 @@ publishes on this one topic, so a consumer picks a radar's messages by `child_fr
 As REP 105 has it for any `odom` frame, the pose is continuous but drifts over time. It starts
 again from the origin whenever odometry restarts.
 
-Odometry from earlier software (provizio-apt-odometry 1.5.7 and earlier, and the odometry built
-into earlier radar signal processing) published `twist.twist.angular.z` with the opposite sign, a
-non-zero `twist.twist.linear.y` while turning, and `header.frame_id` `ENU` or `World`. Its pose
-is correct. Recordings made with it carry that twist: a consumer of such recordings can recognise
-it by its `header.frame_id`, or take the yaw rate from the change in pose instead.
-
 ## Entities: Fields
 
 Entities can be radar-detected, camera-detected or fused, and hence can contain the following set of [point fields](https://docs.ros2.org/latest/api/sensor_msgs/msg/PointField.html):
